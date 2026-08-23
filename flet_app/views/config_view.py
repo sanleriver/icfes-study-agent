@@ -26,6 +26,9 @@ from flet_app.theme import DEFAULT_QUESTIONS as _DEFAULT_QUESTIONS
 from flet_app.theme import DROPDOWN_WIDTH as _DROPDOWN_WIDTH
 from flet_app.theme import MAX_QUESTIONS as _MAX_QUESTIONS
 from flet_app.theme import MIN_QUESTIONS as _MIN_QUESTIONS
+from flet_app.theme import PAGE_MAX_WIDTH as _PAGE_MAX_WIDTH
+from flet_app.theme import PAGE_PADDING as _PAGE_PADDING
+from flet_app.theme import RADIUS as _RADIUS
 from flet_app.theme import SURFACE as _SURFACE
 from flet_app.theme import TEXT_MUTED as _TEXT_MUTED
 from flet_app.theme import TEXT_PRIMARY as _TEXT_PRIMARY
@@ -61,6 +64,18 @@ class ConfigView:
     # Construcción de UI
     # ------------------------------------------------------------------
 
+    def _effective_width(self) -> int:
+        """Ancho efectivo responsive: min(1140, viewport-64) para centrado universal."""
+        try:
+            vw = self.page.width
+            if vw is None or vw <= 0:
+                vw = self.page.window.width
+            if vw is None or vw <= 0:
+                return _PAGE_MAX_WIDTH
+            return max(311, min(_PAGE_MAX_WIDTH, int(vw - 2 * _PAGE_PADDING)))
+        except Exception:
+            return _PAGE_MAX_WIDTH
+
     async def build(self) -> ft.View:
         header = ft.Row(
             [
@@ -90,8 +105,10 @@ class ConfigView:
             spacing=16,
         )
 
+        ew_init = self._effective_width()
+        dd_width = min(_DROPDOWN_WIDTH, max(200, ew_init - 48))
         self.section_dropdown = ft.Dropdown(
-            width=_DROPDOWN_WIDTH,
+            width=dd_width,
             hint_text="Selecciona una sección…",
             options=[
                 ft.DropdownOption(key=s.value, text=s.label, leading_icon=_SECTION_ICONS[s])
@@ -128,6 +145,7 @@ class ConfigView:
                 self.increment_button,
             ],
             spacing=8,
+            alignment=ft.MainAxisAlignment.CENTER,
         )
 
         self.start_button = ft.FilledButton(
@@ -146,42 +164,99 @@ class ConfigView:
             on_click=self._on_start,
         )
 
+        # Botón full-width: ew-48 para probar ocupación completa de la card centrada
+        ew_btn = self._effective_width()
+        self.start_button.width = max(200, ew_btn - 48)
+
         content = ft.Column(
             [
-                header,
+                header,  # header izquierda preservado
                 ft.Container(height=10),
-                ft.Text(
-                    "SECCIÓN DEL EXAMEN",
-                    size=11,
-                    weight=ft.FontWeight.BOLD,
-                    color=_TEXT_MUTED,
+                ft.Container(
+                    content=ft.Text(
+                        "SECCIÓN DEL EXAMEN",
+                        size=11,
+                        weight=ft.FontWeight.BOLD,
+                        color=_TEXT_MUTED,
+                        text_align=ft.TextAlign.CENTER,
+                    ),
+                    alignment=ft.Alignment.CENTER,
                 ),
-                self.section_dropdown,
-                ft.Row(
-                    [
-                        ft.Icon(ft.Icons.INFO_OUTLINE, size=15, color=_TEXT_MUTED),
-                        self.availability_text,
-                    ],
-                    spacing=6,
+                ft.Container(content=self.section_dropdown, alignment=ft.Alignment.CENTER),
+                ft.Container(
+                    content=ft.Row(
+                        [
+                            ft.Icon(ft.Icons.INFO_OUTLINE, size=15, color=_TEXT_MUTED),
+                            self.availability_text,
+                        ],
+                        spacing=6,
+                        alignment=ft.MainAxisAlignment.CENTER,
+                    ),
+                    alignment=ft.Alignment.CENTER,
                 ),
                 ft.Container(height=6),
-                ft.Text(
-                    "NÚMERO DE PREGUNTAS",
-                    size=11,
-                    weight=ft.FontWeight.BOLD,
-                    color=_TEXT_MUTED,
+                ft.Container(
+                    content=ft.Text(
+                        "NÚMERO DE PREGUNTAS",
+                        size=11,
+                        weight=ft.FontWeight.BOLD,
+                        color=_TEXT_MUTED,
+                        text_align=ft.TextAlign.CENTER,
+                    ),
+                    alignment=ft.Alignment.CENTER,
                 ),
-                stepper,
+                ft.Container(content=stepper, alignment=ft.Alignment.CENTER),
                 ft.Container(height=10),
-                self.start_button,
+                ft.Container(content=self.start_button, alignment=ft.Alignment.CENTER),
             ],
             spacing=12,
+            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.START,
+        )
+
+        # Card blanca 1140 centrada — ResponsiveRow + ancho efectivo para centrado universal
+        ew = self._effective_width()
+        card = ft.Container(
+            content=content,
+            width=ew,
+            bgcolor=_SURFACE,
+            border=ft.Border.all(1.5, _BORDER),
+            border_radius=_RADIUS,
+            padding=24,
+        )
+
+        # Shell fullscreen: BG + padding32 + columna centrada H, arriba, scroll + ResponsiveRow
+        shell_column = ft.Column(
+            [
+                ft.ResponsiveRow(
+                    [
+                        ft.Container(
+                            col={"xs": 12},
+                            content=ft.Container(
+                                content=card,
+                                alignment=ft.Alignment.TOP_CENTER,
+                            ),
+                            alignment=ft.Alignment.TOP_CENTER,
+                        )
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER,
+                )
+            ],
+            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.START,
             scroll=ft.ScrollMode.AUTO,
             expand=True,
         )
 
         return ft.View(
-            controls=[ft.Container(content=content, padding=32, bgcolor=_BG, expand=True)],
+            controls=[
+                ft.Container(
+                    content=shell_column,
+                    padding=_PAGE_PADDING,
+                    bgcolor=_BG,
+                    expand=True,
+                )
+            ],
             route="/",
             bgcolor=_BG,
         )

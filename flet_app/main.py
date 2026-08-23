@@ -9,10 +9,27 @@ from flet_app.theme import APP_THEME
 def main(page: ft.Page) -> None:
     """Entry point de la app Flet — Tutor ICFES Saber Pro."""
     page.title = "Tutor ICFES Saber Pro"
-    page.window.width = 900
-    page.window.height = 700
+    page.window.width = 1204  # 1140 + 32*2 padding para ver 1140 completo centrado
+    page.window.height = 780
     page.padding = 0
     page.theme = APP_THEME
+    # Centrado universal: OS window centrada, web/móvil el shell ya centra H
+    try:
+        if hasattr(page.window, "center"):
+            maybe = getattr(page.window, "center")
+            if callable(maybe):
+                import inspect
+
+                if inspect.iscoroutinefunction(maybe):
+                    # Window.center es async en 0.86.5 → schedular sin await
+                    try:
+                        page.run_task(maybe)
+                    except Exception:
+                        pass
+                else:
+                    maybe()
+    except Exception:
+        pass
     # Transición Cupertino entre vistas (Fase 6A) — si la API no existe en
     # esta versión de flet, se ignora silenciosamente (no rompe la app).
     try:

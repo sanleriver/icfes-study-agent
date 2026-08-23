@@ -27,7 +27,8 @@ ERROR = ft.Colors.RED_600
 # ------------------------------------------------------------------
 # Layout
 # ------------------------------------------------------------------
-CARD_WIDTH = 640
+PAGE_MAX_WIDTH = 1140
+CARD_WIDTH = PAGE_MAX_WIDTH  # alias legacy — mantener compat `from theme import CARD_WIDTH`
 PAGE_PADDING = 32
 RADIUS = 12
 BORDER_WIDTH = 1.5

@@ -11,6 +11,8 @@ from flet_app.theme import ACCENT as _ACCENT
 from flet_app.theme import ACCENT_TINT as _ACCENT_TINT
 from flet_app.theme import BG as _BG
 from flet_app.theme import BORDER as _BORDER
+from flet_app.theme import PAGE_MAX_WIDTH as _PAGE_MAX_WIDTH
+from flet_app.theme import PAGE_PADDING as _PAGE_PADDING
 from flet_app.theme import SURFACE as _SURFACE
 from flet_app.theme import TEXT_MUTED as _TEXT_MUTED
 from flet_app.theme import TEXT_PRIMARY as _TEXT_PRIMARY
@@ -30,6 +32,18 @@ class ResultsView:
     def __init__(self, page: ft.Page) -> None:
         self.page = page
         self.manager = SessionManager(page)
+
+    def _effective_width(self) -> int:
+        """Ancho efectivo responsive: min(1140, viewport-64) para centrado universal."""
+        try:
+            vw = self.page.width
+            if vw is None or vw <= 0:
+                vw = self.page.window.width
+            if vw is None or vw <= 0:
+                return _PAGE_MAX_WIDTH
+            return max(311, min(_PAGE_MAX_WIDTH, int(vw - 2 * _PAGE_PADDING)))
+        except Exception:
+            return _PAGE_MAX_WIDTH
 
     # ------------------------------------------------------------------
     # Ciclo de vida
@@ -161,15 +175,46 @@ class ResultsView:
             button_row,
         ]
 
-        content = ft.Column(
+        ew = self._effective_width()
+        content_column = ft.Column(
             content_children,
             spacing=10,
+        )
+
+        inner = ft.Container(
+            content=content_column,
+            width=ew,
+            alignment=ft.Alignment.TOP_CENTER,
+        )
+
+        shell_column = ft.Column(
+            [
+                ft.ResponsiveRow(
+                    [
+                        ft.Container(
+                            col={"xs": 12},
+                            content=inner,
+                            alignment=ft.Alignment.TOP_CENTER,
+                        )
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER,
+                )
+            ],
+            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.START,
             scroll=ft.ScrollMode.AUTO,
             expand=True,
         )
 
         return ft.View(
-            controls=[ft.Container(content=content, padding=32, bgcolor=_BG, expand=True)],
+            controls=[
+                ft.Container(
+                    content=shell_column,
+                    padding=_PAGE_PADDING,
+                    bgcolor=_BG,
+                    expand=True,
+                )
+            ],
             route="/results",
             bgcolor=_BG,
         )
