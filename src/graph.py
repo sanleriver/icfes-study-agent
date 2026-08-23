@@ -1,4 +1,5 @@
 from langgraph.checkpoint.memory import InMemorySaver
+from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import interrupt
 
@@ -53,15 +54,26 @@ def build_generate_feedback_node(provider: FeedbackProvider):
 
     Genera feedback únicamente para las respuestas incorrectas mediante el
     `FeedbackProvider` recibido (mock, Gemini o fallback determinista).
+    Paraleliza con ThreadPoolExecutor para reducir latencia N incorrectas.
     """
 
     def generate_feedback(state: SessionState) -> dict:
         by_id = {q.id: q for q in state.questions}
-        feedbacks = [
-            provider.generate_feedback(by_id[r.question_id], r)
-            for r in state.results
-            if not r.is_correct
-        ]
+        incorrect = [r for r in state.results if not r.is_correct]
+        if not incorrect:
+            return {"feedbacks": []}
+        # Paralelo: 1 thread por incorrecta, max 4 para no saturar API
+        if len(incorrect) == 1:
+            feedbacks = [provider.generate_feedback(by_id[incorrect[0].question_id], incorrect[0])]
+        else:
+            from concurrent.futures import ThreadPoolExecutor
+
+            def _gen(r):
+                return provider.generate_feedback(by_id[r.question_id], r)
+
+            max_workers = min(4, len(incorrect))
+            with ThreadPoolExecutor(max_workers=max_workers) as executor:
+                feedbacks = list(executor.map(_gen, incorrect))
         return {"feedbacks": feedbacks}
 
     return generate_feedback
@@ -110,4 +122,13 @@ def build_graph(feedback_provider: FeedbackProvider | None = None):
     builder.add_edge("generate_feedback", "generate_summary")
     builder.add_edge("generate_summary", END)
 
-    return builder.compile(checkpointer=InMemorySaver())
+    serde = JsonPlusSerializer(
+        allowed_msgpack_modules=[
+            ("src.models.section", "Section"),
+            ("src.models.question", "Question"),
+            ("src.models.session", "AnswerRecord"),
+            ("src.models.session", "EvaluationResult"),
+            ("src.models.session", "Feedback"),
+        ]
+    )
+    return builder.compile(checkpointer=InMemorySaver(serde=serde))

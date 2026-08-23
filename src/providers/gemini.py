@@ -1,3 +1,5 @@
+import logging
+import random
 import time
 import urllib.request
 from pathlib import Path
@@ -11,6 +13,8 @@ from src.data.images import image_source
 from src.models import EvaluationResult, Feedback, Question
 
 from .base import FeedbackProvider
+
+logger = logging.getLogger(__name__)
 
 _MIME_BY_EXT = {
     ".png": "image/png",
@@ -47,9 +51,9 @@ class GeminiFeedbackProvider(FeedbackProvider):
     """
 
     DEFAULT_MODEL = "gemini-3.5-flash"
-    MAX_RETRIES = 3
-    RETRY_BASE_DELAY = 1.0
-    DOWNLOAD_TIMEOUT = 10
+    MAX_RETRIES = 2
+    RETRY_BASE_DELAY = 0.3
+    DOWNLOAD_TIMEOUT = 5
 
     def __init__(
         self,
@@ -70,7 +74,14 @@ class GeminiFeedbackProvider(FeedbackProvider):
         try:
             text = self._request_with_retry(contents)
             return self._parse_response(text, question)
-        except Exception:
+        except Exception as exc:
+            logger.warning(
+                "Gemini fallo para %s (elegida %s, correcta %s): %s — usando fallback",
+                question.id,
+                result.selected_option,
+                result.correct_option,
+                exc,
+            )
             return fallback_feedback(question, result)
 
     def _build_contents(
@@ -122,7 +133,7 @@ class GeminiFeedbackProvider(FeedbackProvider):
         return data, mime_type
 
     def _request_with_retry(self, contents: str | list) -> str:
-        """Invoca a Gemini con reintentos y *exponential backoff*."""
+        """Invoca a Gemini con reintentos y *exponential backoff* + jitter."""
         last_error: Exception | None = None
         for attempt in range(self.MAX_RETRIES):
             try:
@@ -140,7 +151,15 @@ class GeminiFeedbackProvider(FeedbackProvider):
             except Exception as exc:
                 last_error = exc
                 if attempt < self.MAX_RETRIES - 1:
-                    time.sleep(self.RETRY_BASE_DELAY * (2**attempt))
+                    delay = self.RETRY_BASE_DELAY * (2**attempt) + random.uniform(0, 0.15)
+                    logger.warning(
+                        "Gemini intento %s/%s fallo (%s), reintentando en %.2fs",
+                        attempt + 1,
+                        self.MAX_RETRIES,
+                        exc,
+                        delay,
+                    )
+                    time.sleep(delay)
         if last_error is not None:
             raise last_error
         raise RuntimeError("Falló la llamada a Gemini")
