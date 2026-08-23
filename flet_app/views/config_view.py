@@ -145,6 +145,7 @@ class ConfigView:
                 self.increment_button,
             ],
             spacing=8,
+            alignment=ft.MainAxisAlignment.CENTER,
         )
 
         self.start_button = ft.FilledButton(
@@ -163,36 +164,54 @@ class ConfigView:
             on_click=self._on_start,
         )
 
+        # Botón full-width: ew-48 para probar ocupación completa de la card centrada
+        ew_btn = self._effective_width()
+        self.start_button.width = max(200, ew_btn - 48)
+
         content = ft.Column(
             [
-                header,
+                header,  # header izquierda preservado
                 ft.Container(height=10),
-                ft.Text(
-                    "SECCIÓN DEL EXAMEN",
-                    size=11,
-                    weight=ft.FontWeight.BOLD,
-                    color=_TEXT_MUTED,
+                ft.Container(
+                    content=ft.Text(
+                        "SECCIÓN DEL EXAMEN",
+                        size=11,
+                        weight=ft.FontWeight.BOLD,
+                        color=_TEXT_MUTED,
+                        text_align=ft.TextAlign.CENTER,
+                    ),
+                    alignment=ft.Alignment.CENTER,
                 ),
-                self.section_dropdown,
-                ft.Row(
-                    [
-                        ft.Icon(ft.Icons.INFO_OUTLINE, size=15, color=_TEXT_MUTED),
-                        self.availability_text,
-                    ],
-                    spacing=6,
+                ft.Container(content=self.section_dropdown, alignment=ft.Alignment.CENTER),
+                ft.Container(
+                    content=ft.Row(
+                        [
+                            ft.Icon(ft.Icons.INFO_OUTLINE, size=15, color=_TEXT_MUTED),
+                            self.availability_text,
+                        ],
+                        spacing=6,
+                        alignment=ft.MainAxisAlignment.CENTER,
+                    ),
+                    alignment=ft.Alignment.CENTER,
                 ),
                 ft.Container(height=6),
-                ft.Text(
-                    "NÚMERO DE PREGUNTAS",
-                    size=11,
-                    weight=ft.FontWeight.BOLD,
-                    color=_TEXT_MUTED,
+                ft.Container(
+                    content=ft.Text(
+                        "NÚMERO DE PREGUNTAS",
+                        size=11,
+                        weight=ft.FontWeight.BOLD,
+                        color=_TEXT_MUTED,
+                        text_align=ft.TextAlign.CENTER,
+                    ),
+                    alignment=ft.Alignment.CENTER,
                 ),
-                stepper,
+                ft.Container(content=stepper, alignment=ft.Alignment.CENTER),
                 ft.Container(height=10),
-                self.start_button,
+                ft.Container(content=self.start_button, alignment=ft.Alignment.CENTER),
             ],
             spacing=12,
+            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.START,
         )
 
         # Card blanca 1140 centrada — ResponsiveRow + ancho efectivo para centrado universal
