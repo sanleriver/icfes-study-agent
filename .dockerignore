@@ -1,0 +1,43 @@
+# Entorno virtual y caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyc
+__pycache__
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# Git e IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Secretos y env
+.env
+.env.local
+
+# Streamlit legacy (deprecado)
+.streamlit/
+
+# Flet build artefacts
+flet_app/.flet/storage/
+flet_app/build/
+flet_app/.flet/
+
+# Docs y planning (no necesarios en runtime)
+docs/
+.github/
+*.md
+!README.md
+
+# Datos generados
+data/*.tmp
+*.tmp
+
+# Sistema
+Thumbs.db
+.DS_Store
+*.log

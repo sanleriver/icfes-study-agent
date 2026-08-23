@@ -1,0 +1,11 @@
+# Override solo para desarrollo local (hot-reload con bind-mounts).
+# Este archivo se carga automáticamente junto a docker-compose.yml.
+# Para prod/CI, usar: docker compose -f docker-compose.yml up --build
+services:
+  flet:
+    volumes:
+      - ./src:/app/src
+      - ./flet_app:/app/flet_app
+      - ./data:/app/data
+    environment:
+      - FEEDBACK_PROVIDER=mock

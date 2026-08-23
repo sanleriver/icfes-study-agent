@@ -1,0 +1,30 @@
+services:
+  flet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - FEEDBACK_PROVIDER=${FEEDBACK_PROVIDER:-mock}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-3.5-flash}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:8000/ > /dev/null || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["pytest", "-q"]
+    env_file:
+      - .env
+    environment:
+      - FEEDBACK_PROVIDER=mock
+    profiles: ["tests"]

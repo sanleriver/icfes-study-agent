@@ -1,0 +1,36 @@
+# Entorno virtual
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Configuracion local y secretos
+.env
+
+# Streamlit legacy (deprecado, ver archive/app_streamlit.py)
+.streamlit/
+
+# Datos generados
+data/*.tmp
+
+# Caches y artefactos
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+__pycache__/
+*.pyc
+
+# Flet build artefacts (generados, ~250MB)
+flet_app/build/
+flet_app/.flet/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Archivos de sistema
+Thumbs.db
+.DS_Store

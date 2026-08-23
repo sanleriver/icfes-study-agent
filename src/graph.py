@@ -1,0 +1,113 @@
+from langgraph.checkpoint.memory import InMemorySaver
+from langgraph.graph import END, START, StateGraph
+from langgraph.types import interrupt
+
+from src.core.evaluation import build_summary, evaluate_session
+from src.data.loader import random_sample
+from src.models import AnswerRecord, SessionState
+from src.providers import FeedbackProvider, MockFeedbackProvider
+
+
+def initialize_session(state: SessionState) -> dict:
+    """Selecciona las preguntas aleatorias de la sección y notifica si el
+    banco no alcanza a cubrir `num_questions`."""
+    if state.section is None:
+        raise ValueError("Se requiere una sección para inicializar la sesión")
+
+    questions = random_sample(state.section, state.num_questions)
+    message = ""
+    if len(questions) < state.num_questions:
+        message = (
+            f"Solo hay {len(questions)} preguntas disponibles para la sección "
+            f"{state.section.label}; se usarán todas."
+        )
+    return {"questions": questions, "message": message}
+
+
+def next_question(state: SessionState) -> dict:
+    """Presenta la siguiente pregunta pendiente y espera la respuesta del
+    estudiante mediante `interrupt()`.
+
+    Al reanudar, `interrupt()` devuelve la opción seleccionada, que se acumula
+    en `answers` con el reducer. Se fusiona el registro de respuesta en este
+    nodo porque al reanudar el nodo se re-ejecuta desde el inicio.
+    """
+    index = len(state.answers)
+    if index >= len(state.questions):
+        return {}
+
+    question = state.questions[index]
+    selected_option = interrupt(question.model_dump(mode="json"))
+    record = AnswerRecord(question_id=question.id, selected_option=selected_option)
+    return {"answers": [record]}
+
+
+def evaluate_node(state: SessionState) -> dict:
+    """Evalúa de forma determinista todas las respuestas de la sesión."""
+    results = evaluate_session(state.questions, state.answers)
+    return {"results": results}
+
+
+def build_generate_feedback_node(provider: FeedbackProvider):
+    """Crea el nodo `generate_feedback` inyectando el proveedor.
+
+    Genera feedback únicamente para las respuestas incorrectas mediante el
+    `FeedbackProvider` recibido (mock, Gemini o fallback determinista).
+    """
+
+    def generate_feedback(state: SessionState) -> dict:
+        by_id = {q.id: q for q in state.questions}
+        feedbacks = [
+            provider.generate_feedback(by_id[r.question_id], r)
+            for r in state.results
+            if not r.is_correct
+        ]
+        return {"feedbacks": feedbacks}
+
+    return generate_feedback
+
+
+def generate_summary(state: SessionState) -> dict:
+    """Construye el resumen final de la sesión."""
+    summary = build_summary(state.section, state.questions, state.results)
+    return {"summary": summary}
+
+
+def should_continue(state: SessionState) -> str:
+    """¿Quedan preguntas por responder? Si no, se evalúa la sesión."""
+    if len(state.answers) < len(state.questions):
+        return "next_question"
+    return "evaluate_session"
+
+
+def build_graph(feedback_provider: FeedbackProvider | None = None):
+    """Construye el grafo de la sesión de estudio.
+
+    Compilado con checkpointer `InMemorySaver` para soportar `interrupt()`.
+    Cada pregunta requiere un `thread_id` y se reanuda con
+    `Command(resume=opcion_seleccionada)`.
+
+    `feedback_provider` inyecta el proveedor de retroalimentación del nodo
+    `generate_feedback` (Fase 5). Si no se indica, se usa `MockFeedbackProvider`
+    determinista para que la suite de tests no dependa de una API key.
+    """
+    provider = feedback_provider if feedback_provider is not None else MockFeedbackProvider()
+    builder = StateGraph(SessionState)
+    builder.add_node("initialize_session", initialize_session)
+    builder.add_node("next_question", next_question)
+    builder.add_node("evaluate_session", evaluate_node)
+    builder.add_node("generate_feedback", build_generate_feedback_node(provider))
+    builder.add_node("generate_summary", generate_summary)
+
+    builder.add_edge(START, "initialize_session")
+    builder.add_edge("initialize_session", "next_question")
+    builder.add_conditional_edges(
+        "next_question",
+        should_continue,
+        ["next_question", "evaluate_session"],
+    )
+    builder.add_edge("evaluate_session", "generate_feedback")
+    builder.add_edge("generate_feedback", "generate_summary")
+    builder.add_edge("generate_summary", END)
+
+    return builder.compile(checkpointer=InMemorySaver())

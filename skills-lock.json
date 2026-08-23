@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "skills": {
+    "LangGraph Fundamentals": {
+      "source": "jackjin1997/clawforge",
+      "sourceType": "github",
+      "skillPath": "skills/langgraph-fundamentals/SKILL.md",
+      "computedHash": "34b8e0f0b29c6e110d36f6fa2304bb5300db95712b5244dbf4b395d8b3a33bfe"
+    },
+    "frontend-design": {
+      "source": "nexu-io/open-design",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "08b0dc8042c4b85a9c57d80e8580bc958da1375824ec2a6a1289dd004a780abb"
+    },
+    "frontend-design-ui-ux": {
+      "source": "ulpi-io/skills",
+      "sourceType": "github",
+      "skillPath": "frontend-design-ui-ux/SKILL.md",
+      "computedHash": "d98f5fb998ca3e06342a771c1955c207ede9b07ba84e1b5c95858f78ba59d17e"
+    },
+    "langgraph-cli": {
+      "source": "langchain-ai/langchain-skills",
+      "sourceType": "github",
+      "skillPath": "config/skills/langgraph-cli/SKILL.md",
+      "computedHash": "089d9b2a9194eda1d1b969bd4e06874081e9f6474330aacc8f3b6c12adebc80e"
+    },
+    "langgraph-human-in-the-loop": {
+      "source": "langchain-ai/langchain-skills",
+      "sourceType": "github",
+      "skillPath": "config/skills/langgraph-human-in-the-loop/SKILL.md",
+      "computedHash": "f98bc8e16c416b859bebf6126009d637b72a26d510d234c296a774d79736ead9"
+    },
+    "langgraph-persistence": {
+      "source": "langchain-ai/langchain-skills",
+      "sourceType": "github",
+      "skillPath": "config/skills/langgraph-persistence/SKILL.md",
+      "computedHash": "7538756e423b3da5ce25b6c7f99070792214a9c7a51510e9579a40a190e88ccd"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474"
+    }
+  }
+}

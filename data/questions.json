@@ -1,0 +1,344 @@
+[
+  {
+    "id": "LC-001",
+    "section": "LECTURA_CRITICA",
+    "correct_option": "B",
+    "key_points": [
+      "Identificar la tesis principal",
+      "Distinguir entre idea principal y ejemplos"
+    ],
+    "topic": "Comprensión de textos",
+    "statement": "En un texto argumentativo, un autor sostiene que 'la educación es el principal motor de movilidad social'. ¿Cuál es la idea principal del texto?",
+    "options": {
+      "A": "La educación garantiza la igualdad total de oportunidades.",
+      "B": "La educación es el factor más importante para que las personas asciendan socialmente.",
+      "C": "La movilidad social solo depende del esfuerzo individual.",
+      "D": "La educación y la movilidad social son conceptos opuestos."
+    }
+  },
+  {
+    "id": "LC-002",
+    "section": "LECTURA_CRITICA",
+    "correct_option": "B",
+    "key_points": [
+      "Diferenciar entre afirmación explícita e implícita",
+      "Reconocer contrastes introducidos por conectores adversativos"
+    ],
+    "topic": "Inferencia",
+    "statement": "Un artículo afirma: 'A pesar del aumento del presupuesto en salud, la cobertura hospitalaria en zonas rurales sigue siendo deficiente'. ¿Qué se puede inferir del texto?",
+    "options": {
+      "A": "El aumento del presupuesto ha solucionado la cobertura rural.",
+      "B": "El dinero destinado a salud no ha resuelto por completo los problemas de cobertura rural.",
+      "C": "Las zonas rurales no requieren más hospitales.",
+      "D": "El presupuesto en salud disminuyó en el último año."
+    }
+  },
+  {
+    "id": "LC-003",
+    "section": "LECTURA_CRITICA",
+    "correct_option": "C",
+    "key_points": [
+      "Reconocer la intención comunicativa",
+      "Distinguir informar, persuadir y describir"
+    ],
+    "topic": "Propósito del autor",
+    "statement": "Un editorial titulado 'Una reforma necesaria' termina con la frase: 'Invitamos al Congreso a aprobar esta ley sin más dilaciones'. ¿Cuál es el propósito del autor?",
+    "options": {
+      "A": "Informar neutralmente sobre la reforma.",
+      "B": "Describir el procedimiento legislativo.",
+      "C": "Convencer a los lectores de la urgencia de la reforma.",
+      "D": "Criticar únicamente la actuación del Congreso."
+    }
+  },
+  {
+    "id": "LC-004",
+    "section": "LECTURA_CRITICA",
+    "correct_option": "B",
+    "key_points": [
+      "Interpretar palabras según el contexto",
+      "Reconocer sentidos figurados"
+    ],
+    "topic": "Significado contextual",
+    "statement": "En la frase 'El investigador tuvo que afinar su metodología para obtener resultados confiables', la palabra 'afinar' significa:",
+    "options": {
+      "A": "Hacer más agudo un instrumento musical.",
+      "B": "Precisar o perfeccionar un proceso.",
+      "C": "Reducir el tamaño de algo.",
+      "D": "Descartar por completo una idea."
+    }
+  },
+  {
+    "id": "RQ-001",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "correct_option": "A",
+    "key_points": [
+      "Calcular porcentajes",
+      "Aplicar descuentos a un valor base"
+    ],
+    "topic": "Porcentajes",
+    "statement": "Un producto cuesta $80.000 y su precio se reduce en un 25%. ¿Cuál es el precio final?",
+    "options": {
+      "A": "$60.000",
+      "B": "$70.000",
+      "C": "$75.000",
+      "D": "$55.000"
+    }
+  },
+  {
+    "id": "RQ-002",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "correct_option": "B",
+    "key_points": [
+      "Regla de Laplace",
+      "Cálculo de casos favorables sobre casos totales"
+    ],
+    "topic": "Probabilidad",
+    "statement": "En la bolsa de la imagen hay bolas de tres colores. Si se extrae una bola al azar, ¿cuál es la probabilidad de que sea verde?",
+    "options": {
+      "A": "1/2",
+      "B": "1/5",
+      "C": "2/5",
+      "D": "1/3"
+    },
+    "statement_image": "RQ-002.png"
+  },
+  {
+    "id": "RQ-003",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "correct_option": "B",
+    "key_points": [
+      "Lectura de datos en gráficas",
+      "Cálculo de promedios"
+    ],
+    "topic": "Interpretación de gráficas",
+    "statement": "La gráfica muestra las ventas mensuales de una tienda. ¿Cuál fue el promedio de ventas en esos tres meses?",
+    "options": {
+      "A": "100",
+      "B": "103",
+      "C": "110",
+      "D": "93"
+    },
+    "statement_image": "RQ-003.png"
+  },
+  {
+    "id": "RQ-004",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "correct_option": "C",
+    "key_points": [
+      "Despeje de ecuaciones lineales",
+      "Operaciones inversas"
+    ],
+    "topic": "Álgebra",
+    "statement": "Si 3x + 5 = 20, ¿cuál es el valor de x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    }
+  },
+  {
+    "id": "CC-001",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "correct_option": "B",
+    "key_points": [
+      "Mecanismos alternativos de solución de conflictos",
+      "Valor del diálogo y la mediación"
+    ],
+    "topic": "Resolución de conflictos",
+    "statement": "Dos vecinos disputan por el límite de sus terrenos. ¿Cuál es una alternativa adecuada de resolución pacífica del conflicto?",
+    "options": {
+      "A": "Ignorar el problema y no hablar del tema.",
+      "B": "Recurrir a la mediación o a una instancia jurídica.",
+      "C": "Resolverlo mediante la fuerza física.",
+      "D": "Hacer que terceros tomen partido por uno de los dos."
+    }
+  },
+  {
+    "id": "CC-002",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "correct_option": "B",
+    "key_points": [
+      "Mecanismos de participación",
+      "Derechos políticos"
+    ],
+    "topic": "Participación ciudadana",
+    "statement": "¿Cuál de las siguientes acciones es una forma de participación ciudadana en Colombia?",
+    "options": {
+      "A": "Pagar los impuestos exclusivamente.",
+      "B": "Votar en las elecciones populares.",
+      "C": "Obedecer todas las normas sin excepción.",
+      "D": "Consumir bienes de producción nacional."
+    }
+  },
+  {
+    "id": "CC-003",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "correct_option": "B",
+    "key_points": [
+      "Principio de igualdad",
+      "Prohibición de discriminación"
+    ],
+    "topic": "Derechos humanos",
+    "statement": "Una empresa despide a un trabajador por su origen étnico. Esta situación constituye una violación al derecho a:",
+    "options": {
+      "A": "La libre competencia.",
+      "B": "La igualdad y la no discriminación.",
+      "C": "La propiedad privada.",
+      "D": "La libre circulación."
+    }
+  },
+  {
+    "id": "CC-004",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "correct_option": "C",
+    "key_points": [
+      "Respeto a la diversidad",
+      "Laicidad y pluralismo"
+    ],
+    "topic": "Pluralismo y diversidad",
+    "statement": "En un colegio, estudiantes de diferentes religiones solicitan espacios para expresar sus creencias. Una respuesta respetuosa del pluralismo sería:",
+    "options": {
+      "A": "Autorizar solo la religión mayoritaria.",
+      "B": "Prohibir toda manifestación religiosa en el plantel.",
+      "C": "Garantizar condiciones equitativas para todas las expresiones religiosas.",
+      "D": "Delegar la decisión exclusivamente a los directivos sin participación."
+    }
+  },
+  {
+    "id": "CE-001",
+    "section": "COMUNICACION_ESCRITA",
+    "correct_option": "A",
+    "key_points": [
+      "Relaciones de causa-consecuencia",
+      "Uso de conectores coherentes"
+    ],
+    "topic": "Coherencia textual",
+    "statement": "¿Cuál de las siguientes oraciones mantiene la coherencia del párrafo? 'El cambio climático afecta la agricultura. _______ , las sequías prolongadas reducen los cultivos.'",
+    "options": {
+      "A": "En consecuencia",
+      "B": "Sin embargo",
+      "C": "Por el contrario",
+      "D": "A pesar de que"
+    }
+  },
+  {
+    "id": "CE-002",
+    "section": "COMUNICACION_ESCRITA",
+    "correct_option": "A",
+    "key_points": [
+      "Mecanismos de cohesión",
+      "Conectores de consecuencia"
+    ],
+    "topic": "Cohesión",
+    "statement": "En el texto 'María estudió toda la noche. ___ presentó el examen con confianza', el conector adecuado para expresar consecuencia es:",
+    "options": {
+      "A": "Por eso",
+      "B": "Aunque",
+      "C": "Pero",
+      "D": "O sea"
+    }
+  },
+  {
+    "id": "CE-003",
+    "section": "COMUNICACION_ESCRITA",
+    "correct_option": "A",
+    "key_points": [
+      "Orden lógico de procesos",
+      "Estructura de un texto científico"
+    ],
+    "topic": "Organización de ideas",
+    "statement": "¿Cuál es la secuencia más lógica para presentar estas ideas en un texto? (1) Se definió el problema de investigación. (2) Se recopilaron los datos. (3) Se analizaron los resultados. (4) Se plantearon las conclusiones.",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "2, 1, 4, 3",
+      "C": "4, 3, 2, 1",
+      "D": "3, 1, 4, 2"
+    }
+  },
+  {
+    "id": "CE-004",
+    "section": "COMUNICACION_ESCRITA",
+    "correct_option": "A",
+    "key_points": [
+      "Ortografía de la palabra 'ilusión'",
+      "Concordancia gramatical"
+    ],
+    "topic": "Norma ortográfica",
+    "statement": "¿Cuál de las siguientes oraciones está escrita correctamente?",
+    "options": {
+      "A": "El niño tenía mucha ilusión por viajar a la costa.",
+      "B": "El niño tenía mucha ilusión por viajar a la costas.",
+      "C": "El niño tenía mucha ilución por viajar a la costa.",
+      "D": "El niño tenía mucha ilusión por viajar a la costa."
+    }
+  },
+  {
+    "id": "IN-001",
+    "section": "INGLES",
+    "correct_option": "B",
+    "key_points": [
+      "Comprehension of explicit details",
+      "Reading time expressions"
+    ],
+    "topic": "Reading comprehension",
+    "statement": "Read the text: 'The library opens at 9 a.m. and closes at 8 p.m. On Sundays it closes earlier.' According to the text, what time does the library close on weekdays?",
+    "options": {
+      "A": "At 9 a.m.",
+      "B": "At 8 p.m.",
+      "C": "At 8 a.m.",
+      "D": "It is not mentioned."
+    }
+  },
+  {
+    "id": "IN-002",
+    "section": "INGLES",
+    "correct_option": "B",
+    "key_points": [
+      "Present simple third person",
+      "Subject-verb agreement"
+    ],
+    "topic": "Verb tenses",
+    "statement": "Complete the sentence: 'She ______ to the gym every morning.'",
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "going",
+      "D": "gone"
+    }
+  },
+  {
+    "id": "IN-003",
+    "section": "INGLES",
+    "correct_option": "B",
+    "key_points": [
+      "Contextual vocabulary",
+      "Collocations with medical settings"
+    ],
+    "topic": "Vocabulary in context",
+    "statement": "Choose the word that best completes the sentence: 'The doctor gave the patient some ______ to reduce the pain.'",
+    "options": {
+      "A": "food",
+      "B": "medicine",
+      "C": "books",
+      "D": "clothes"
+    }
+  },
+  {
+    "id": "IN-004",
+    "section": "INGLES",
+    "correct_option": "C",
+    "key_points": [
+      "Prepositions of time",
+      "Use of 'at' with specific hours"
+    ],
+    "topic": "Prepositions",
+    "statement": "Complete the sentence: 'I usually have breakfast ______ 7 o'clock.'",
+    "options": {
+      "A": "on",
+      "B": "in",
+      "C": "at",
+      "D": "to"
+    }
+  }
+]
