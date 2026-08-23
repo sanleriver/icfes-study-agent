@@ -11,7 +11,8 @@ from flet_app.theme import ACCENT as _ACCENT
 from flet_app.theme import ACCENT_TINT as _ACCENT_TINT
 from flet_app.theme import BG as _BG
 from flet_app.theme import BORDER as _BORDER
-from flet_app.theme import CARD_WIDTH as _CARD_WIDTH
+from flet_app.theme import PAGE_MAX_WIDTH as _PAGE_MAX_WIDTH
+from flet_app.theme import PAGE_PADDING as _PAGE_PADDING
 from flet_app.theme import SURFACE as _SURFACE
 from flet_app.theme import TEXT_MUTED as _TEXT_MUTED
 from flet_app.theme import TEXT_PRIMARY as _TEXT_PRIMARY
@@ -41,6 +42,18 @@ class QuestionView:
         self.submit_button: ft.FilledButton | None = None
         self._card: ft.Container | None = None
         self._card_overlay: ft.Container | None = None
+
+    def _effective_width(self) -> int:
+        """Ancho efectivo responsive: min(1140, viewport-64) para centrado universal."""
+        try:
+            vw = self.page.width
+            if vw is None or vw <= 0:
+                vw = self.page.window.width
+            if vw is None or vw <= 0:
+                return _PAGE_MAX_WIDTH
+            return max(311, min(_PAGE_MAX_WIDTH, int(vw - 2 * _PAGE_PADDING)))
+        except Exception:
+            return _PAGE_MAX_WIDTH
 
     # ------------------------------------------------------------------
     # Ciclo de vida de la vista (invoke / resume)
@@ -127,6 +140,7 @@ class QuestionView:
             spacing=10,
         )
 
+        ew = self._effective_width()
         self.submit_button = ft.FilledButton(
             content=ft.Row(
                 [
@@ -137,7 +151,7 @@ class QuestionView:
                 spacing=8,
                 tight=True,
             ),
-            width=_CARD_WIDTH - 48,
+            width=ew - 48,
             height=48,
             style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=12)),
             disabled=True,
@@ -152,7 +166,7 @@ class QuestionView:
 
         self._card = ft.Container(
             content=ft.Column(card_children, spacing=14),
-            width=_CARD_WIDTH,
+            width=ew,
             bgcolor=_SURFACE,
             border=ft.Border.all(1.5, _BORDER),
             border_radius=12,
@@ -162,7 +176,7 @@ class QuestionView:
         # Velo solo sobre la tarjeta para "Calculando resultados…" (Fase 6A refinado)
         self._card_overlay = ft.Container(
             visible=False,
-            width=_CARD_WIDTH,
+            width=ew,
             border_radius=12,
             bgcolor=ft.Colors.with_opacity(0.68, ft.Colors.WHITE),
             alignment=ft.Alignment.CENTER,
@@ -201,17 +215,40 @@ class QuestionView:
             ),
         )
 
-        card_stack = ft.Stack(controls=[self._card, self._card_overlay], width=_CARD_WIDTH)
+        card_stack = ft.Stack(controls=[self._card, self._card_overlay], width=ew)
 
-        content = ft.Column(
-            [card_stack],
+        # Shell fullscreen: centrado universal H, arriba, scroll + ResponsiveRow (Plan A)
+        shell_column = ft.Column(
+            [
+                ft.ResponsiveRow(
+                    [
+                        ft.Container(
+                            col={"xs": 12},
+                            content=ft.Container(
+                                content=card_stack,
+                                alignment=ft.Alignment.TOP_CENTER,
+                            ),
+                            alignment=ft.Alignment.TOP_CENTER,
+                        )
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER,
+                )
+            ],
             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            alignment=ft.MainAxisAlignment.START,
             scroll=ft.ScrollMode.AUTO,
             expand=True,
         )
 
         return ft.View(
-            controls=[ft.Container(content=content, padding=32, bgcolor=_BG, expand=True)],
+            controls=[
+                ft.Container(
+                    content=shell_column,
+                    padding=_PAGE_PADDING,
+                    bgcolor=_BG,
+                    expand=True,
+                )
+            ],
             route="/question",
             bgcolor=_BG,
         )
@@ -222,15 +259,26 @@ class QuestionView:
         if source is None:
             return None
         if isinstance(source, Path):
-            asset_path = _ASSETS_IMAGES_DIR / source.name
-            src = asset_path if asset_path.exists() else source
+            # Relativo a flet_app/assets (funciona desktop + web assets_dir)
+            src = f"images/{source.name}"
         else:
             src = source
-        return ft.Image(
-            src=str(src),
-            height=280,
-            fit=ft.BoxFit.CONTAIN,
+        ew = self._effective_width()
+        img_w = max(200, ew - 48)
+        # Compat 0.86.5: ImageFit no existe como top-level, usar BoxFit
+        fit = getattr(ft, "ImageFit", getattr(ft, "BoxFit", None))
+        fit_val = fit.CONTAIN if fit is not None else "contain"
+        return ft.Container(
+            content=ft.Image(
+                src=src,
+                height=280,
+                width=img_w,
+                fit=fit_val,
+                border_radius=12,
+            ),
             border_radius=12,
+            clip_behavior=ft.ClipBehavior.ANTI_ALIAS,
+            alignment=ft.Alignment.CENTER,
         )
 
     def _option_tile(self, key: str, text: str) -> ft.Container:
