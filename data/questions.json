@@ -1,143 +1,5 @@
 [
   {
-    "id": "LC-001",
-    "section": "LECTURA_CRITICA",
-    "correct_option": "B",
-    "key_points": [
-      "Identificar la tesis principal",
-      "Distinguir entre idea principal y ejemplos"
-    ],
-    "topic": "Comprensión de textos",
-    "statement": "En un texto argumentativo, un autor sostiene que 'la educación es el principal motor de movilidad social'. ¿Cuál es la idea principal del texto?",
-    "options": {
-      "A": "La educación garantiza la igualdad total de oportunidades.",
-      "B": "La educación es el factor más importante para que las personas asciendan socialmente.",
-      "C": "La movilidad social solo depende del esfuerzo individual.",
-      "D": "La educación y la movilidad social son conceptos opuestos."
-    }
-  },
-  {
-    "id": "LC-002",
-    "section": "LECTURA_CRITICA",
-    "correct_option": "B",
-    "key_points": [
-      "Diferenciar entre afirmación explícita e implícita",
-      "Reconocer contrastes introducidos por conectores adversativos"
-    ],
-    "topic": "Inferencia",
-    "statement": "Un artículo afirma: 'A pesar del aumento del presupuesto en salud, la cobertura hospitalaria en zonas rurales sigue siendo deficiente'. ¿Qué se puede inferir del texto?",
-    "options": {
-      "A": "El aumento del presupuesto ha solucionado la cobertura rural.",
-      "B": "El dinero destinado a salud no ha resuelto por completo los problemas de cobertura rural.",
-      "C": "Las zonas rurales no requieren más hospitales.",
-      "D": "El presupuesto en salud disminuyó en el último año."
-    }
-  },
-  {
-    "id": "LC-003",
-    "section": "LECTURA_CRITICA",
-    "correct_option": "C",
-    "key_points": [
-      "Reconocer la intención comunicativa",
-      "Distinguir informar, persuadir y describir"
-    ],
-    "topic": "Propósito del autor",
-    "statement": "Un editorial titulado 'Una reforma necesaria' termina con la frase: 'Invitamos al Congreso a aprobar esta ley sin más dilaciones'. ¿Cuál es el propósito del autor?",
-    "options": {
-      "A": "Informar neutralmente sobre la reforma.",
-      "B": "Describir el procedimiento legislativo.",
-      "C": "Convencer a los lectores de la urgencia de la reforma.",
-      "D": "Criticar únicamente la actuación del Congreso."
-    }
-  },
-  {
-    "id": "LC-004",
-    "section": "LECTURA_CRITICA",
-    "correct_option": "B",
-    "key_points": [
-      "Interpretar palabras según el contexto",
-      "Reconocer sentidos figurados"
-    ],
-    "topic": "Significado contextual",
-    "statement": "En la frase 'El investigador tuvo que afinar su metodología para obtener resultados confiables', la palabra 'afinar' significa:",
-    "options": {
-      "A": "Hacer más agudo un instrumento musical.",
-      "B": "Precisar o perfeccionar un proceso.",
-      "C": "Reducir el tamaño de algo.",
-      "D": "Descartar por completo una idea."
-    }
-  },
-  {
-    "id": "RQ-001",
-    "section": "RAZONAMIENTO_CUANTITATIVO",
-    "correct_option": "A",
-    "key_points": [
-      "Calcular porcentajes",
-      "Aplicar descuentos a un valor base"
-    ],
-    "topic": "Porcentajes",
-    "statement": "Un producto cuesta $80.000 y su precio se reduce en un 25%. ¿Cuál es el precio final?",
-    "options": {
-      "A": "$60.000",
-      "B": "$70.000",
-      "C": "$75.000",
-      "D": "$55.000"
-    }
-  },
-  {
-    "id": "RQ-002",
-    "section": "RAZONAMIENTO_CUANTITATIVO",
-    "correct_option": "B",
-    "key_points": [
-      "Regla de Laplace",
-      "Cálculo de casos favorables sobre casos totales"
-    ],
-    "topic": "Probabilidad",
-    "statement": "En la bolsa de la imagen hay bolas de tres colores. Si se extrae una bola al azar, ¿cuál es la probabilidad de que sea verde?",
-    "options": {
-      "A": "1/2",
-      "B": "1/5",
-      "C": "2/5",
-      "D": "1/3"
-    },
-    "statement_image": "RQ-002.png"
-  },
-  {
-    "id": "RQ-003",
-    "section": "RAZONAMIENTO_CUANTITATIVO",
-    "correct_option": "B",
-    "key_points": [
-      "Lectura de datos en gráficas",
-      "Cálculo de promedios"
-    ],
-    "topic": "Interpretación de gráficas",
-    "statement": "La gráfica muestra las ventas mensuales de una tienda. ¿Cuál fue el promedio de ventas en esos tres meses?",
-    "options": {
-      "A": "100",
-      "B": "103",
-      "C": "110",
-      "D": "93"
-    },
-    "statement_image": "RQ-003.png"
-  },
-  {
-    "id": "RQ-004",
-    "section": "RAZONAMIENTO_CUANTITATIVO",
-    "correct_option": "C",
-    "key_points": [
-      "Despeje de ecuaciones lineales",
-      "Operaciones inversas"
-    ],
-    "topic": "Álgebra",
-    "statement": "Si 3x + 5 = 20, ¿cuál es el valor de x?",
-    "options": {
-      "A": "3",
-      "B": "4",
-      "C": "5",
-      "D": "6"
-    }
-  },
-  {
     "id": "CC-001",
     "section": "COMPETENCIAS_CIUDADANAS",
     "correct_option": "B",
@@ -340,5 +202,968 @@
       "C": "at",
       "D": "to"
     }
+  },
+  {
+    "id": "LC-005",
+    "section": "LECTURA_CRITICA",
+    "topic": "Inferencia: implicaciones de una propuesta",
+    "statement": "La medicina popular colombiana conserva una amplia serie de conocimientos empíricos sobre gran diversidad de recursos botánicos, que han sido esenciales para el cuidado de la salud. Pero, con la oficialización de la medicina a finales del siglo XIX, la creación de las primeras escuelas de medicina y de farmacia y la creación de una legislación que buscaba regular estas disciplinas, muchos de estos conocimientos fueron rechazados al igual que sus prácticas médicas. Paradójicamente, mientras la medicina oficial negaba los conocimientos populares, se servía de ellos para desarrollar muchos de los avances farmacéuticos de los que se vale la medicina oficial para sus tratamientos. Por otro lado, según la Organización Mundial de la Salud, la atención primaria en salud por parte de la medicina oficial cubre apenas a un 20 % de la población en los países en vías de desarrollo, mientras que el 80 % tiene que recurrir a otras prácticas médicas populares y lo hace en gran parte por la poca garantía de acceso y de aseguramiento de la población pobre. Lo anterior sigue generando inconformidad en quienes practican la medicina oficial pues consideran que la medicina popular no representa un conocimiento válido porque no se fundamenta en pruebas científicas y no está regulada. Sin embargo, ambas medicinas pueden llegar a ser complementarias si se estudian de manera juiciosa y se determinan cuáles de las prácticas y de los recursos botánicos usados por la medicina popular son perjudiciales y cuáles brindan alternativas de salud a las poblaciones necesitadas. De esta manera, también se promueve la inclusión, el reconocimiento y el respeto por la diversidad cultural y por los conocimientos populares.\n\nLa promoción de estudios académicos para determinar cuáles de las prácticas usadas por la medicina popular son perjudiciales y cuáles brindan alternativas de salud implica que",
+    "options": {
+      "A": "se prolongue la inconformidad de quienes practican la medicina oficial.",
+      "B": "se inicien procesos de regulación oficiales sobre este tipo de prácticas.",
+      "C": "se derogue la ley de que la medicina científica es la única oficial.",
+      "D": "se extienda la brecha entre la medicina química y la medicina botánica."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Inferir consecuencias implícitas de una propuesta",
+      "Distinguir lo explícito de lo sugerido por el texto"
+    ]
+  },
+  {
+    "id": "LC-006",
+    "section": "LECTURA_CRITICA",
+    "topic": "Comprensión literal: condición para cobertura en salud",
+    "statement": "La medicina popular colombiana conserva una amplia serie de conocimientos empíricos sobre gran diversidad de recursos botánicos, que han sido esenciales para el cuidado de la salud. Pero, con la oficialización de la medicina a finales del siglo XIX, la creación de las primeras escuelas de medicina y de farmacia y la creación de una legislación que buscaba regular estas disciplinas, muchos de estos conocimientos fueron rechazados al igual que sus prácticas médicas. Paradójicamente, mientras la medicina oficial negaba los conocimientos populares, se servía de ellos para desarrollar muchos de los avances farmacéuticos de los que se vale la medicina oficial para sus tratamientos. Por otro lado, según la Organización Mundial de la Salud, la atención primaria en salud por parte de la medicina oficial cubre apenas a un 20 % de la población en los países en vías de desarrollo, mientras que el 80 % tiene que recurrir a otras prácticas médicas populares y lo hace en gran parte por la poca garantía de acceso y de aseguramiento de la población pobre. Lo anterior sigue generando inconformidad en quienes practican la medicina oficial pues consideran que la medicina popular no representa un conocimiento válido porque no se fundamenta en pruebas científicas y no está regulada. Sin embargo, ambas medicinas pueden llegar a ser complementarias si se estudian de manera juiciosa y se determinan cuáles de las prácticas y de los recursos botánicos usados por la medicina popular son perjudiciales y cuáles brindan alternativas de salud a las poblaciones necesitadas. De esta manera, también se promueve la inclusión, el reconocimiento y el respeto por la diversidad cultural y por los conocimientos populares.\n\nSegún el texto, para que la atención primaria en salud, por parte de la medicina oficial, pueda atender a más del 20 % de la población, sería necesario principalmente",
+    "options": {
+      "A": "promover sistemas de financiación adecuados y equitativos que canalicen los recursos necesarios para lograr una atención de mejor calidad y con mayor cobertura.",
+      "B": "prever el envejecimiento demográfico de la población, las estructuras familiares cambiantes, y el de los mercados de trabajo informales.",
+      "C": "respetar el derecho a los servicios de salud, el respeto a las diferencias culturales y a los principios de igualdad y de no discriminación.",
+      "D": "crear un sistema de información, con un enfoque de Derechos Humanos, que permita evaluar los avances en salud."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Localizar información explícita en el texto",
+      "Distinguir causa requerida vs. contexto mencionado"
+    ]
+  },
+  {
+    "id": "LC-007",
+    "section": "LECTURA_CRITICA",
+    "topic": "Evaluación de argumentos: falacias",
+    "statement": "DEFENSA DE LA FIESTA BRAVA — Jorge Nacif\n\nLa fiesta de los toros es uno de los espectáculos más antiguos de la humanidad, sus primeros antecedentes datan de la antigua Grecia. Desde entonces, este juego tuvo muchos detractores. Los que están en contra de la fiesta, argumentan que se \"tortura\" al toro con las banderillas, y claro, que la res es muerta en el ruedo.\n\nSin embargo, creo que los opositores no entienden en lo más mínimo lo que es el toreo. La tauromaquia es, ante todo, un arte pues posee dos características fundamentales: la estética y la técnica, aunque el arte es un concepto subjetivo, casi siempre cumple con estos dos elementos. Pero el arte del toreo tiene algo más: el peligro. Decía David Silveti que el don más generoso de un artista es poner en juego la vida misma.\n\nPara los que no sepan, los puyazos que dan los picadores tienen un objetivo claro. La carne del toro se come y como esta se contamina por la adrenalina, el puyazo sirve para descongestionar al toro, mientras sangra, se va purificando. Por otra parte, la muerte del toro debe ser entendida como algo natural, toda vida termina en la muerte, la única certeza que tenemos siempre.\n\nFinalmente se habla de los derechos de los animales, bueno, esto se oye bien pero es una falacia, el término de derecho es un concepto meramente humano. Lo importante en una sociedad es garantizar los derechos de los hombres.\n\nEntre las razones dadas por Jorge Nacif para sustentar su tesis, resulta una falacia",
+    "options": {
+      "A": "decir que es un arte, pues para otras personas la tauromaquia puede no tener absolutamente nada de artístico.",
+      "B": "citar a David Silveti, pues él es un reconocido torero que evidentemente tendrá la misma opinión del autor respecto a la tauromaquia.",
+      "C": "recurrir a un referente histórico para expresar que, aunque desde los inicios de la tauromaquia ha habido detractores, nunca han logrado impedirla.",
+      "D": "indicar que el toro, como todos los seres, debe morir, porque establece una analogía entre un hecho natural y la muerte provocada."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Identificar falacia de autoridad / sesgo de fuente interesada",
+      "Evaluar pertinencia de una cita como apoyo"
+    ]
+  },
+  {
+    "id": "LC-008",
+    "section": "LECTURA_CRITICA",
+    "topic": "Estrategia argumentativa: desvirtuar al opositor",
+    "statement": "DEFENSA DE LA FIESTA BRAVA — Jorge Nacif\n\nLa fiesta de los toros es uno de los espectáculos más antiguos de la humanidad, sus primeros antecedentes datan de la antigua Grecia. Desde entonces, este juego tuvo muchos detractores. Los que están en contra de la fiesta, argumentan que se \"tortura\" al toro con las banderillas, y claro, que la res es muerta en el ruedo.\n\nSin embargo, creo que los opositores no entienden en lo más mínimo lo que es el toreo. La tauromaquia es, ante todo, un arte pues posee dos características fundamentales: la estética y la técnica, aunque el arte es un concepto subjetivo, casi siempre cumple con estos dos elementos. Pero el arte del toreo tiene algo más: el peligro. Decía David Silveti que el don más generoso de un artista es poner en juego la vida misma.\n\nPara los que no sepan, los puyazos que dan los picadores tienen un objetivo claro. La carne del toro se come y como esta se contamina por la adrenalina, el puyazo sirve para descongestionar al toro, mientras sangra, se va purificando. Por otra parte, la muerte del toro debe ser entendida como algo natural, toda vida termina en la muerte, la única certeza que tenemos siempre.\n\nFinalmente se habla de los derechos de los animales, bueno, esto se oye bien pero es una falacia, el término de derecho es un concepto meramente humano. Lo importante en una sociedad es garantizar los derechos de los hombres.\n\nEn el segundo párrafo, se desvirtúa a los opositores de la tauromaquia",
+    "options": {
+      "A": "citando la opinión de una fuente reconocida como David Silveti.",
+      "B": "denunciando su falta de comprensión del arte del toreo.",
+      "C": "alabando la forma en que se tortura al animal en el ruedo.",
+      "D": "señalando el carácter natural de la muerte del toro."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Reconocer la estrategia de descalificación del oponente",
+      "Distinguir tipos de argumentos (ad hominem, analogía, autoridad)"
+    ]
+  },
+  {
+    "id": "LC-009",
+    "section": "LECTURA_CRITICA",
+    "topic": "Comprensión literal: estrategia propuesta por Truman",
+    "statement": "LA DOCTRINA TRUMAN\n\nEn su discurso de posesión como presidente de Estados Unidos el 20 de enero de 1949, Harry Truman anunció al mundo entero su concepto de \"trato justo\". Un componente esencial del concepto era su llamado a Estados Unidos y al mundo para resolver los problemas de las \"áreas subdesarrolladas\" del globo:\n\nLa doctrina Truman inició una nueva era en la comprensión y el manejo de los asuntos mundiales, en particular de aquellos que se referían a los países económicamente menos avanzados. El propósito era bastante ambicioso: crear las condiciones necesarias para reproducir en todo el mundo los rasgos característicos de las sociedades avanzadas de la época: altos niveles de industrialización y urbanización, tecnificación de la agricultura, rápido crecimiento de la producción material y los niveles de vida, y adopción generalizada de la educación y los valores culturales modernos. En concepto de Truman, el capital, la ciencia y la tecnología eran los principales componentes que harían posible tal revolución masiva. Solo así el sueño americano de paz y abundancia podría extenderse a todos los pueblos del planeta.\n\n\"Más de la mitad de la población del mundo vive en condiciones cercanas a la miseria. Su alimentación es inadecuada, es víctima de la enfermedad. Su vida económica es primitiva y está estancada. Su pobreza constituye un obstáculo y una amenaza tanto para ellos como para las áreas más prósperas. Por primera vez en la historia, la humanidad posee el conocimiento y la capacidad para aliviar el sufrimiento de estas gentes… Creo que deberíamos poner a disposición de los amantes de la paz los beneficios de nuestro acervo de conocimiento técnico para ayudarlos a lograr sus aspiraciones de una vida mejor… Lo que tenemos en mente es un programa de desarrollo basado en los conceptos del trato justo y democrático… Producir más es la clave para la paz y la prosperidad. Y la clave para producir más es una aplicación mayor y más vigorosa del conocimiento técnico y científico moderno\" (Truman, 1964).\n\nTomado de: La invención del Tercer Mundo. Construcción y deconstrucción del desarrollo (Introducción). Arturo Escobar.\n\nPara alcanzar los propósitos de la doctrina, Harry Truman proponía como estrategia",
+    "options": {
+      "A": "elevar los niveles de industrialización y urbanización.",
+      "B": "tratar equitativamente a todas las naciones y a todos los pueblos del planeta.",
+      "C": "producir más fortaleciendo la alianza entre capital, ciencia y tecnología.",
+      "D": "mitigar las condiciones de pobreza, hambre y miseria en todas las áreas del globo."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Distinguir propósito general de estrategia concreta",
+      "Localizar información literal diferenciando Truman vs. Escobar"
+    ]
+  },
+  {
+    "id": "LC-010",
+    "section": "LECTURA_CRITICA",
+    "topic": "Inferencia: propósito según Arturo Escobar",
+    "statement": "LA DOCTRINA TRUMAN\n\nEn su discurso de posesión como presidente de Estados Unidos el 20 de enero de 1949, Harry Truman anunció al mundo entero su concepto de \"trato justo\". Un componente esencial del concepto era su llamado a Estados Unidos y al mundo para resolver los problemas de las \"áreas subdesarrolladas\" del globo:\n\nLa doctrina Truman inició una nueva era en la comprensión y el manejo de los asuntos mundiales, en particular de aquellos que se referían a los países económicamente menos avanzados. El propósito era bastante ambicioso: crear las condiciones necesarias para reproducir en todo el mundo los rasgos característicos de las sociedades avanzadas de la época: altos niveles de industrialización y urbanización, tecnificación de la agricultura, rápido crecimiento de la producción material y los niveles de vida, y adopción generalizada de la educación y los valores culturales modernos. En concepto de Truman, el capital, la ciencia y la tecnología eran los principales componentes que harían posible tal revolución masiva. Solo así el sueño americano de paz y abundancia podría extenderse a todos los pueblos del planeta.\n\n\"Más de la mitad de la población del mundo vive en condiciones cercanas a la miseria. Su alimentación es inadecuada, es víctima de la enfermedad. Su vida económica es primitiva y está estancada. Su pobreza constituye un obstáculo y una amenaza tanto para ellos como para las áreas más prósperas. Por primera vez en la historia, la humanidad posee el conocimiento y la capacidad para aliviar el sufrimiento de estas gentes… Creo que deberíamos poner a disposición de los amantes de la paz los beneficios de nuestro acervo de conocimiento técnico para ayudarlos a lograr sus aspiraciones de una vida mejor… Lo que tenemos en mente es un programa de desarrollo basado en los conceptos del trato justo y democrático… Producir más es la clave para la paz y la prosperidad. Y la clave para producir más es una aplicación mayor y más vigorosa del conocimiento técnico y científico moderno\" (Truman, 1964).\n\nTomado de: La invención del Tercer Mundo. Construcción y deconstrucción del desarrollo (Introducción). Arturo Escobar.\n\nDe acuerdo con Arturo Escobar, el propósito de la doctrina Truman era",
+    "options": {
+      "A": "crear condiciones para reproducir en todo el mundo los rasgos característicos de las sociedades avanzadas.",
+      "B": "adoptar, en el primer mundo, el sueño americano de paz y abundancia, la educación y los valores culturales modernos.",
+      "C": "iniciar una nueva era en la comprensión y manejo de los asuntos de los países económicamente más avanzados.",
+      "D": "generar altos niveles de industrialización y urbanización, tecnificando la agricultura de los países desarrollados."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Diferenciar la voz de Truman y la interpretación de Escobar",
+      "Inferir el propósito global vs. local"
+    ]
+  },
+  {
+    "id": "LC-011",
+    "section": "LECTURA_CRITICA",
+    "topic": "Comprensión global: función de un objeto en el diálogo",
+    "statement": "Recientemente, Isabel se convirtió en madrastra de Felipe. Ella acaba de estrellar accidentalmente la bicicleta de Felipe porque él la dejó a la entrada del garaje. Felipe entra en la cocina con la llanta trasera de su bicicleta doblada.\n\nFelipe: Te anotaste un punto. ¡Gracias por dejarme sin bicicleta!\nIsabel: ¿Y cómo querías que la viera?\nFelipe: ¡Pues usando el espejo retrovisor, así se hace!\nIsabel: Perdón, pero escuché a tu padre decirte que dejaras tu bicicleta lejos.\nFelipe: Ah. Se desploma en una silla y se sienta con la cabeza inclinada.\nIsabel: Bueno, y ¿cómo te fue en el colegio hoy? Ella le pasa una gaseosa. Felipe hace ruido de desprecio.\nIsabel: ¿Hiciste educación física hoy? Felipe: No.\nIsabel: Entonces, apuesto a que tuviste matemáticas. Felipe: Sí. ¿Y qué?\nIsabel: ¿Y qué hiciste…? En este momento entra el padre de Felipe.\nFelipe: (Sosteniendo su llanta doblada en las manos). ¡Mira lo que ella hizo!\nPadre: En primer lugar, por favor, no le digas a Isabel \"ella\". Eso es muy grosero. En segundo lugar, te he dicho que no dejes tu bicicleta a la entrada del garaje. No me sorprende que eso haya pasado.\nFelipe: ¿Por qué siempre me echan la culpa? ¿Por qué no le dices a ella que tenga más cuidado? ¡Ella… Isabel me tiene que comprar una nueva!\nPadre: ¡Por nada del mundo! Puedes empezar a ahorrar para comprar una y a lo mejor la cuidarás más cuando la compres con tu propio dinero.\nFelipe: Te advierto, me voy a ir de la casa apenas tenga la edad para hacerlo. ¡Eres la persona más tacaña que haya conocido! Se va dando un portazo.\n\nLa bicicleta averiada le da a Felipe una oportunidad de",
+    "options": {
+      "A": "insultar a su padre.",
+      "B": "buscar el apoyo de su padre.",
+      "C": "mostrar su resentimiento contra Isabel.",
+      "D": "demostrarle a Isabel que él es casi un adulto."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Inferir la función pragmática de una acción en el diálogo",
+      "Comprender motivaciones implícitas de los personajes"
+    ]
+  },
+  {
+    "id": "LC-012",
+    "section": "LECTURA_CRITICA",
+    "topic": "Análisis de la interacción: estilo de discusión",
+    "statement": "El siguiente pasaje es tomado de una novela ambientada en la década de 1930. David y su esposa, Helena, han estado viviendo en una urbanización nueva, La Arboleda. David es el que habla en el pasaje.\n\nCuando regresé a La Arboleda descargué el pequeño árbol a la entrada cerca de la puerta principal y me dirigí a la cocina, y Helena dijo: \"David, ¿dónde diablos has estado? No me dijiste que ibas a salir. Pensé que aún estabas trabajando en el techo cuando te llamé para que tomaras una taza de té\".\n— \"Me fui y compré un árbol\", le dije.\n— \"¿Un árbol?\"\n— \"Un árbol para el jardín. Fui a los viveros de La Siembra Verde. Solamente costó seis chelines\", agregué orgullosamente.\n— \"¡Maravilloso, David!\" exclamó ella. \"¿Dónde está?\"\n— \"Afuera, a la entrada. Ven a verlo\".\nSu expresión cambió cuando lo vio, y tengo que admitir que se veía más bien sucio, débil y gris con sus raíces apretadas como un nudo de estopa mojada sin forma.\n— \"Sí, pero ¿qué es?\" preguntó ella. \"Parece un árbol de caucho\".\n— \"Es un árbol de caucho. Caucho de azúcar\".\n— \"¡Oh!\", dijo ella, y por unos cuantos segundos se quedó en blanco, y luego dijo: \"¿Dónde vas a ponerlo?, es decir, ¿dónde quieres que crezca?\"\n— \"Allá\". Le señalé. \"¡Justo allá, en toda la mitad del jardín!\"\n— \"¡Oh!\"\n— \"¿Por qué solo dices: '¡Oh!'?\"\n— \"Por nada… Es decir, si va a quedar allá, justo en la mitad de todo, yo hubiera pensado en algo más pequeño, o incluso… \"\n— \"¿Qué tiene de malo el árbol de caucho?\"\n— \"Bueno, si quieres saberlo, querido, personalmente creo que son más bien ordinarios. Son tan monótonos, David. Honestamente prefiero algo decorativo, especialmente para allá, justo en el frente de la casa, algo como arbustos con buena floración, o camelias, o celindas. Lo que se vería hermoso, sería uno de esos arces japoneses enanos.\"\n— \"¡Ni se te ocurra, querida! ¡No quiero nada enano! Yo quiero un árbol. ¡Un árbol de verdad! ¿Te das cuenta?\", le dije, \"no hay ni un solo árbol en toda esta maldita calle, quizás ni siquiera en la ciudad\".\n\nCuando Helena está discutiendo con David, ella",
+    "options": {
+      "A": "enfatiza sus puntos de vista.",
+      "B": "indaga por los intereses del otro.",
+      "C": "se concentra en la búsqueda de un acuerdo.",
+      "D": "convierte la discusión en un ataque personal."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Caracterizar el estilo comunicativo de un personaje",
+      "Distinguir entre enfatizar, indagar y atacar"
+    ]
+  },
+  {
+    "id": "LC-013",
+    "section": "LECTURA_CRITICA",
+    "topic": "Causa de cambio de expresión: inferencia local",
+    "statement": "El siguiente pasaje es tomado de una novela ambientada en la década de 1930. David y su esposa, Helena, han estado viviendo en una urbanización nueva, La Arboleda. David es el que habla en el pasaje.\n\nCuando regresé a La Arboleda descargué el pequeño árbol a la entrada cerca de la puerta principal y me dirigí a la cocina, y Helena dijo: \"David, ¿dónde diablos has estado? No me dijiste que ibas a salir. Pensé que aún estabas trabajando en el techo cuando te llamé para que tomaras una taza de té\".\n— \"Me fui y compré un árbol\", le dije.\n— \"¿Un árbol?\"\n— \"Un árbol para el jardín. Fui a los viveros de La Siembra Verde. Solamente costó seis chelines\", agregué orgullosamente.\n— \"¡Maravilloso, David!\" exclamó ella. \"¿Dónde está?\"\n— \"Afuera, a la entrada. Ven a verlo\".\nSu expresión cambió cuando lo vio, y tengo que admitir que se veía más bien sucio, débil y gris con sus raíces apretadas como un nudo de estopa mojada sin forma.\n— \"Sí, pero ¿qué es?\" preguntó ella. \"Parece un árbol de caucho\".\n— \"Es un árbol de caucho. Caucho de azúcar\".\n— \"¡Oh!\", dijo ella, y por unos cuantos segundos se quedó en blanco, y luego dijo: \"¿Dónde vas a ponerlo?, es decir, ¿dónde quieres que crezca?\"\n— \"Allá\". Le señalé. \"¡Justo allá, en toda la mitad del jardín!\"\n— \"¡Oh!\"\n— \"¿Por qué solo dices: '¡Oh!'?\"\n— \"Por nada… Es decir, si va a quedar allá, justo en la mitad de todo, yo hubiera pensado en algo más pequeño, o incluso… \"\n— \"¿Qué tiene de malo el árbol de caucho?\"\n— \"Bueno, si quieres saberlo, querido, personalmente creo que son más bien ordinarios. Son tan monótonos, David. Honestamente prefiero algo decorativo, especialmente para allá, justo en el frente de la casa, algo como arbustos con buena floración, o camelias, o celindas. Lo que se vería hermoso, sería uno de esos arces japoneses enanos.\"\n— \"¡Ni se te ocurra, querida! ¡No quiero nada enano! Yo quiero un árbol. ¡Un árbol de verdad! ¿Te das cuenta?\", le dije, \"no hay ni un solo árbol en toda esta maldita calle, quizás ni siquiera en la ciudad\".\n\nHelena cambió su expresión porque",
+    "options": {
+      "A": "David compró un árbol.",
+      "B": "el árbol le pareció costoso.",
+      "C": "el árbol no tenía la mejor apariencia.",
+      "D": "David quería sembrar el árbol en el jardín."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Inferir causa local a partir de descripción",
+      "Distinguir hecho vs. apariencia descrita"
+    ]
+  },
+  {
+    "id": "LC-014",
+    "section": "LECTURA_CRITICA",
+    "topic": "Intención comunicativa en publicidad",
+    "statement": "Observa la siguiente propaganda de Tetra Pak (ver imagen).\n\nEl mensaje que el publicista quiso enviar al poner una vaca y referirse al envase de Tetra Pak se podría enunciar así:",
+    "options": {
+      "A": "“Proteja el planeta utilizando envases reciclables y renovables”.",
+      "B": "“Lleve la leche con la frescura que tiene en su envase natural”.",
+      "C": "“Mantenga por más tiempo sus alimentos en óptimas condiciones”.",
+      "D": "“Protéjase de la luz y del aire utilizando materias primas recicladas”."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Inferir la intención persuasiva de una imagen publicitaria",
+      "Relacionar imagen (vaca) con concepto de naturalidad"
+    ],
+    "statement_image": "LC-014.png"
+  },
+  {
+    "id": "LC-015",
+    "section": "LECTURA_CRITICA",
+    "topic": "Razonamiento: inferencia errónea inducida",
+    "statement": "Observa la siguiente propaganda de Tetra Pak (ver imagen).\n\nConsidere el siguiente enunciado: \"Los envases de Tetra Pak están fabricados con una materia prima natural renovable y reciclable —papel— y no dejan pasar NI LA LUZ NI EL AIRE. Por eso los alimentos se conservan en óptimas condiciones y mantienen todo su sabor, vitaminas y propiedades intactas hasta el momento de su consumo.\" Este texto induce al lector a pensar que erróneamente\n\nElija la interpretación errónea que el texto induce:",
+    "options": {
+      "A": "los alimentos no se conservarán frescos, si no se utilizan envases Tetra Pak.",
+      "B": "como el Tetra Pak está hecho con materiales reciclables, no deja pasar la luz ni el aire.",
+      "C": "ya que los productos son envasados en Tetra Pak, tienen una duración ilimitada.",
+      "D": "los envases que conservan los alimentos y el ambiente son los Tetra Pak."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Detectar inferencia causal errónea",
+      "Distinguir características del material vs. propiedades funcionales"
+    ],
+    "statement_image": "LC-014.png"
+  },
+  {
+    "id": "LC-016",
+    "section": "LECTURA_CRITICA",
+    "topic": "Recurso retórico: analogía con Mafalda",
+    "statement": "Mafalda es una historieta que presenta a una niña que observa críticamente el mundo de los adultos. En una de sus viñetas, Mafalda le da a su tortuga el nombre \"Burocracia\".\n\n[Imagen: viñeta de Mafalda con la tortuga \"Burocracia\" — ver imagen del enunciado]\n\nMafalda le da a la tortuga el nombre \"Burocracia\" con el propósito de destacar que la burocracia es",
+    "options": {
+      "A": "silenciosa y tranquila en su comportamiento.",
+      "B": "tímida para relacionarse con personas desconocidas.",
+      "C": "organizada para administrar su tiempo y el de los demás.",
+      "D": "caprichosa en la organización de los horarios."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Interpretar la analogía humorística",
+      "Asociar lentitud de la tortuga con estereotipo de la burocracia"
+    ],
+    "statement_image": "LC-016.png"
+  },
+  {
+    "id": "LC-017",
+    "section": "LECTURA_CRITICA",
+    "topic": "Función de una cita: producción de estados mentales",
+    "statement": "EL CONSUMIDOR DEL \"AJUSTE\" — Luis Enrique Alonso\n\nLuis Enrique Alonso, autor español reconocido por sus estudios sociológicos sobre el nuevo consumidor, afirma que los consumidores del cambio del milenio superaron la llamada cultura light posmoderna y que hoy estamos frente al consumidor del ajuste; uno con fuerte tendencia a la personalización de las referencias y la individualización de los argumentos en las presentaciones de la identidad en la vida cotidiana. Dice, además, que la cultura de masas se ha vuelto más selectiva y el consumo se convierte en testigo de la afirmación de la personalidad, siguiendo pautas no tanto de adhesión a macrogrupos abstractos e indiferenciados, como a círculos, relatos y símbolos fuertemente particularistas.\n\nEse nuevo consumidor socializado exige y escoge con mayor libertad e inteligencia, es una mezcla de convicción, impulso de compra y reflexión; su compra está determinada por las percepciones, las representaciones y los valores que conforman su estilo de vida, su ámbito privado y este en razón de su pertenencia a un grupo que legitima su actuar.\n\nBien decía Mattelart que \"la era de la mencionada sociedad de la información es también la de la producción de estados mentales\". Y es que este consumidor, compra y consume de acuerdo con su estado mental. Por eso, cada día con más fuerza, es necesario alcanzar a este consumidor en su cotidianidad y sorprenderlo no solo con la fuerza del mensaje sino con la novedad del medio: altas dosis de sorpresa y sentido de oportunidad. Lo ingenioso son los nuevos canales, las formas de entrometerse en su cotidianidad, generando percepciones favorables, amigables, positivas. Hoy la producción de \"estados mentales\" es garantía de posicionamiento, de recordación, de percepciones acordes al producto y la marca; porque en definitiva las personas no actúan por lo que oyen, sino por lo que \"ven\" en su imaginación cuando oyen, como lo dice Santiago Rodríguez, \"la palabra mar no ahoga a nadie. El concepto que lleva dentro, sí\".\n\nLa afirmación \"La era de la mencionada sociedad de la información es también la de la producción de estados mentales\" es",
+    "options": {
+      "A": "una conclusión a la que llega la autora del texto después de reconocer que hay un nuevo tipo de consumidor.",
+      "B": "una idea que se supone verdadera así no se planteen evidencias para comprobarla.",
+      "C": "una inferencia que resulta de relacionar las ideas del texto con la imagen del consumidor de la cultura light.",
+      "D": "un argumento sustentado desde el concepto de sociedad de la información asumido en el texto."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Identificar función de una afirmación: conclusión vs. premisa",
+      "Reconocer estructura argumentativa del texto"
+    ]
+  },
+  {
+    "id": "LC-018",
+    "section": "LECTURA_CRITICA",
+    "topic": "Idea opuesta a la tesis central",
+    "statement": "EL CONSUMIDOR DEL \"AJUSTE\" — Luis Enrique Alonso\n\nLuis Enrique Alonso, autor español reconocido por sus estudios sociológicos sobre el nuevo consumidor, afirma que los consumidores del cambio del milenio superaron la llamada cultura light posmoderna y que hoy estamos frente al consumidor del ajuste; uno con fuerte tendencia a la personalización de las referencias y la individualización de los argumentos en las presentaciones de la identidad en la vida cotidiana. Dice, además, que la cultura de masas se ha vuelto más selectiva y el consumo se convierte en testigo de la afirmación de la personalidad, siguiendo pautas no tanto de adhesión a macrogrupos abstractos e indiferenciados, como a círculos, relatos y símbolos fuertemente particularistas.\n\nEse nuevo consumidor socializado exige y escoge con mayor libertad e inteligencia, es una mezcla de convicción, impulso de compra y reflexión; su compra está determinada por las percepciones, las representaciones y los valores que conforman su estilo de vida, su ámbito privado y este en razón de su pertenencia a un grupo que legitima su actuar.\n\nBien decía Mattelart que \"la era de la mencionada sociedad de la información es también la de la producción de estados mentales\". Y es que este consumidor, compra y consume de acuerdo con su estado mental. Por eso, cada día con más fuerza, es necesario alcanzar a este consumidor en su cotidianidad y sorprenderlo no solo con la fuerza del mensaje sino con la novedad del medio: altas dosis de sorpresa y sentido de oportunidad. Lo ingenioso son los nuevos canales, las formas de entrometerse en su cotidianidad, generando percepciones favorables, amigables, positivas. Hoy la producción de \"estados mentales\" es garantía de posicionamiento, de recordación, de percepciones acordes al producto y la marca; porque en definitiva las personas no actúan por lo que oyen, sino por lo que \"ven\" en su imaginación cuando oyen, como lo dice Santiago Rodríguez, \"la palabra mar no ahoga a nadie. El concepto que lleva dentro, sí\".\n\nDe las siguientes ideas, la que se opone a la idea central defendida por el autor es:",
+    "options": {
+      "A": "Las corridas de toros deben prohibirse.",
+      "B": "Las fiestas taurinas son rituales de tortura.",
+      "C": "La crianza de animales es una acción hipócrita.",
+      "D": "La tolerancia es el medio para superar el desacuerdo."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Identificar tesis central sobre el consumidor del ajuste",
+      "Reconocer idea antagónica vs. complementaria"
+    ]
+  },
+  {
+    "id": "LC-019",
+    "section": "LECTURA_CRITICA",
+    "topic": "Inferencia sobre motivaciones: caso Luisa",
+    "statement": "Wendy, Valérie y todas las demás\n\nA finales de 2000, Wendy, una adolescente hondureña, fue violada en grupo por pandilleros de la Mara Salvatrucha. Tras el ritual conocido como \"el trencito\", los mareros decidieron hacer negocio y corrieron la voz de que cobraban cincuenta lempiras a quien quisiera tener relaciones con la muchacha.\n\nEl pasado diciembre la policía detuvo en Málaga a una rumana que había firmado un contrato para vender sus dos hijas a unos proxenetas. Por 5.000 euros aceptó que fueran llevadas a España a prostituirse.\n\nLuisa, universitaria bogotana, empezó en un videochat. Le pagaban por desnudarse ante la cámara. De allí pasó a concertar citas vía celular y ya con clientes se enroló en un lujoso burdel: \"Si estoy con un man que me gusta porque sí, ¿por qué no voy a estar con otro por plata?\".\n\nLa Valeska vive en función de la plata. Ejerce la prostitución desde los 17 años, cuando aburrida del maltrato de su padre dejó la comodidad del barrio Laureles para ofrecerse en Bogotá.\n\nPoca gente pasa el umbral, pero son varias las vías para llegar al sexo pago. A pesar de esta verdad de a puño, muchos se resisten a la evidencia disponible y enfatizan una doctrina cada vez más terca e improcedente para la prevención: la prostitución siempre es forzada. Sin embargo, ¿cuántas personas venden su cuerpo empujadas por la miseria, cuántas obligadas por proxenetas, cuántas seducidas y abandonadas, cuántas huyendo del abuso, cuántas por morbo o curiosidad, cuántas por arribistas, cuántas por la adrenalina, cuántas por hipersexuales? ¿Cuántas Wendys por cada Valeska o cada Luisa? Nadie sabe, las respuestas no son obvias e incluso la disponibilidad de testimonios puede estar sesgada. Además de los antecedentes familiares o las experiencias individuales, el entorno y la época influyen. En Colombia, aunque tenemos indicios de que el negocio de las prepagos está en franca expansión, no conocemos el tamaño de la actividad ni su composición. Nadie comprende bien por qué se inician, por qué se mantienen o por qué dejan la actividad, y cada vez es mayor la influencia de quienes no están interesados en que se sepa.\n\nLa industria del rescate es ya una poderosa alianza multinacional de burócratas, periodistas y oenegés (ONG) que logró simplificar hasta el absurdo el diagnóstico, demostrando de paso que no solo tiene más prejuicios que la Iglesia, los viejos criminólogos o los médicos higienistas sino que carece de cualquier vocación para entender lo que ocurre, lo que piensan o lo que quieren las víctimas.\n\nLa afirmación de Luisa, \"Si estoy con un man que me gusta porque sí, ¿por qué no voy a estar con otro por plata?\", implica que ella",
+    "options": {
+      "A": "toma decisiones dentro de las normas de una comunidad.",
+      "B": "no le da más importancia a los sentimientos que al dinero.",
+      "C": "gusta de los hombres que tienen dinero.",
+      "D": "la opinión de los demás es importante a la hora de tomar decisiones."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Inferir implicación de una justificación personal",
+      "Distinguir motivaciones económicas vs. afectivas"
+    ]
+  },
+  {
+    "id": "LC-020",
+    "section": "LECTURA_CRITICA",
+    "topic": "Lógica: inferencia a partir de condicional",
+    "statement": "La Justicia es en primer lugar una cualidad posible, pero no necesaria, de un orden social que regula las relaciones mutuas entre los hombres. Sólo secundariamente es una virtud humana, ya que un hombre es justo sólo si su conducta se adecúa a las normas de un orden social supuestamente justo. Pero ¿qué significa decir que un orden social es justo? Significa que este orden social regula la conducta de los hombres de un modo satisfactorio para todos, es decir, que todos los hombres encuentran en él la felicidad. La búsqueda de la Justicia es la eterna búsqueda de la felicidad humana. Es una finalidad que el hombre no puede encontrar por sí mismo y por ello la busca en la sociedad. La Justicia es la felicidad social, garantizada por un orden social. Platón, identificando la Justicia con la felicidad, sostiene que un hombre justo es feliz y un hombre injusto es infeliz. Evidentemente, la afirmación según la cual la Justicia es la felicidad no es una respuesta definitiva, sino una forma de eludir el problema. Pues inmediatamente se plantea la cuestión: ‘¿Qué es la felicidad?’.\n\nTomado de: Kelsen, H. (1992). ¿Qué es justicia?. Planeta-De Agostini.\n\nDe los siguientes enunciados, ¿cuál NO se puede deducir correctamente de la afirmación \"un hombre es justo solo si su conducta se adecúa a las normas de un orden social supuestamente justo\"?",
+    "options": {
+      "A": "Un hombre que se comporta justamente sigue las normas de un orden social.",
+      "B": "Todo hombre que no se adecúe a las normas de un orden social justo es injusto.",
+      "C": "Hay hombres que se adecúan a un orden social supuestamente justo y sin embargo son injustos.",
+      "D": "No hay hombres que se adecúen a un orden social supuestamente justo y sin embargo sean injustos."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Aplicar lógica condicional 'solo si'",
+      "Distinguir deducción válida de inválida"
+    ]
+  },
+  {
+    "id": "LC-021",
+    "section": "LECTURA_CRITICA",
+    "topic": "Función de conectores: oposición y salvedad",
+    "statement": "La Justicia es en primer lugar una cualidad posible, pero no necesaria, de un orden social que regula las relaciones mutuas entre los hombres. Sólo secundariamente es una virtud humana, ya que un hombre es justo sólo si su conducta se adecúa a las normas de un orden social supuestamente justo. Pero ¿qué significa decir que un orden social es justo? Significa que este orden social regula la conducta de los hombres de un modo satisfactorio para todos, es decir, que todos los hombres encuentran en él la felicidad. La búsqueda de la Justicia es la eterna búsqueda de la felicidad humana. Es una finalidad que el hombre no puede encontrar por sí mismo y por ello la busca en la sociedad. La Justicia es la felicidad social, garantizada por un orden social. Platón, identificando la Justicia con la felicidad, sostiene que un hombre justo es feliz y un hombre injusto es infeliz. Evidentemente, la afirmación según la cual la Justicia es la felicidad no es una respuesta definitiva, sino una forma de eludir el problema. Pues inmediatamente se plantea la cuestión: ‘¿Qué es la felicidad?’.\n\nTomado de: Kelsen, H. (1992). ¿Qué es justicia?. Planeta-De Agostini.\n\nConsidere el siguiente fragmento: \"La Justicia es en primer lugar una cualidad posible, pero no necesaria, de un orden social que regula las relaciones mutuas entre los hombres. Sólo secundariamente es una virtud humana, ya que un hombre es justo sólo si su conducta se adecúa a las normas de un orden social supuestamente justo\". Las palabras subrayadas indican respectivamente\n\n",
+    "options": {
+      "A": "una oposición y una salvedad.",
+      "B": "una aclaración y una razón.",
+      "C": "una aclaración y una oposición.",
+      "D": "una oposición y una conclusión."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Identificar función de conectores ('pero', 'ya que')",
+      "Distinguir oposición, aclaración y causalidad"
+    ]
+  },
+  {
+    "id": "LC-022",
+    "section": "LECTURA_CRITICA",
+    "topic": "Antítesis de una definición de justicia",
+    "statement": "Considere el siguiente fragmento: \"¿Qué significa decir que un orden social es justo? Significa que este orden social regula la conducta de los hombres de un modo satisfactorio para todos, es decir, que todos los hombres encuentran en él la felicidad\".\n\n¿Cuál de las siguientes opciones es una antítesis de las ideas presentadas?",
+    "options": {
+      "A": "El orden social justo beneficia a todos los miembros de la comunidad donde tal orden rige.",
+      "B": "Un orden social no puede ser justo y no regular de modo satisfactorio el comportamiento de todos los miembros de la comunidad donde tal orden rige.",
+      "C": "Los órdenes sociales justos proveen felicidad para todos los miembros de la comunidad donde tales órdenes rigen.",
+      "D": "Un orden social puede ser justo y aun así no regular de modo satisfactorio el comportamiento de todos los miembros de la comunidad donde tal orden rige."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Construir la antítesis de una definición",
+      "Manejar negación de condicional universal"
+    ]
+  },
+  {
+    "id": "LC-023",
+    "section": "LECTURA_CRITICA",
+    "topic": "Conclusión de un enunciado sobre justicia y felicidad",
+    "statement": "Considere el siguiente enunciado: \"La búsqueda de la Justicia es la eterna búsqueda de la felicidad humana\".\n\n¿Cuál de las siguientes opciones se puede concluir del enunciado?",
+    "options": {
+      "A": "Quien busca la justicia no encuentra la felicidad.",
+      "B": "Quien busca la justicia también busca la felicidad.",
+      "C": "El que busca la justicia nunca encuentra la felicidad.",
+      "D": "El que busca la justicia siempre encuentra la felicidad."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Inferir equivalencia entre búsqueda de justicia y felicidad",
+      "Evitar sobregeneralización (también vs. siempre)"
+    ]
+  },
+  {
+    "id": "LC-024",
+    "section": "LECTURA_CRITICA",
+    "topic": "Antónimo contextual: mutua benevolencia",
+    "statement": "\"Aunque las comodidades de esta vida pueden aumentarse con la ayuda mutua, sin embargo, como eso se puede conseguir dominando a los demás mejor que asociándose con ellos, nadie debe dudar de que los hombres por su naturaleza, si no existiera el miedo, se verían inclinados más al dominio que a la sociedad. Por lo tanto, hay que afirmar que el origen de las sociedades grandes y duraderas no se ha debido a la mutua benevolencia de los hombres sino al miedo mutuo\".\n\nTomado de: Hobbes, T. (1999). Tratado sobre el ciudadano. trad. Joaquín Rodríguez Feo, Madrid, Trotta.\n\nSegún el enunciado anterior, ¿cuál de las siguientes palabras sería el antónimo más adecuado para la expresión \"mutua benevolencia\"?",
+    "options": {
+      "A": "Mutua discrepancia.",
+      "B": "Mutua negligencia.",
+      "C": "Mutuo desagrado.",
+      "D": "Mutua hostilidad."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Identificar antónimo contextual (benevolencia vs hostilidad)",
+      "Comprender campo semántico de la tesis hobbesiana"
+    ]
+  },
+  {
+    "id": "LC-025",
+    "section": "LECTURA_CRITICA",
+    "topic": "Relación argumentativa entre premisa y conclusión",
+    "statement": "\"Aunque las comodidades de esta vida pueden aumentarse con la ayuda mutua, sin embargo, como eso se puede conseguir dominando a los demás mejor que asociándose con ellos, nadie debe dudar de que los hombres por su naturaleza, si no existiera el miedo, se verían inclinados más al dominio que a la sociedad. Por lo tanto, hay que afirmar que el origen de las sociedades grandes y duraderas no se ha debido a la mutua benevolencia de los hombres sino al miedo mutuo\".\n\nTomado de: Hobbes, T. (1999). Tratado sobre el ciudadano. trad. Joaquín Rodríguez Feo, Madrid, Trotta.\n\nPor un lado el autor afirma (i) que el miedo origina las sociedades. Por otro lado, (ii) que si no existiera el miedo el hombre buscaría dominar a los demás. ¿Cuál es la relación argumentativa entre estas dos afirmaciones?\n\n",
+    "options": {
+      "A": "(i) es una premisa y (ii) la conclusión.",
+      "B": "(ii) es una premisa y (i) la conclusión.",
+      "C": "(i) y (ii) son premisas de un mismo argumento.",
+      "D": "(i) y (ii) presentan la misma conclusión de diferente manera."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Distinguir premisa y conclusión en argumento hobbesiano",
+      "Reconocer estructura de dos premisas independientes"
+    ]
+  },
+  {
+    "id": "LC-026",
+    "section": "LECTURA_CRITICA",
+    "topic": "Función del conector 'sin embargo'",
+    "statement": "\"Aunque las comodidades de esta vida pueden aumentarse con la ayuda mutua, sin embargo, como eso se puede conseguir dominando a los demás mejor que asociándose con ellos, nadie debe dudar de que los hombres por su naturaleza, si no existiera el miedo, se verían inclinados más al dominio que a la sociedad. Por lo tanto, hay que afirmar que el origen de las sociedades grandes y duraderas no se ha debido a la mutua benevolencia de los hombres sino al miedo mutuo\".\n\nTomado de: Hobbes, T. (1999). Tratado sobre el ciudadano. trad. Joaquín Rodríguez Feo, Madrid, Trotta.\n\n¿Qué función cumple el conector \"sin embargo\" en el texto anterior?",
+    "options": {
+      "A": "Aclarar la idea de que la ayuda mutua aumenta las comodidades con la idea de que el dominio de los demás es una mejor forma de aumentarlas.",
+      "B": "Desmentir la idea de que la ayuda mutua aumenta las comodidades y afirmar que es por medio del dominio de los demás que se logra.",
+      "C": "Contrastar la idea de que la ayuda mutua aumenta las comodidades, con la idea de que es más efectivo dominar a los demás para aumentarlas.",
+      "D": "Cuestionar la idea de que la ayuda mutua aumenta las comodidades al afirmar que en realidad el dominio puede aumentarlas."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Identificar función adversativa de 'sin embargo'",
+      "Distinguir contrastar vs. desmentir"
+    ]
+  },
+  {
+    "id": "LC-027",
+    "section": "LECTURA_CRITICA",
+    "topic": "Antítesis de la tesis principal hobbesiana",
+    "statement": "\"Aunque las comodidades de esta vida pueden aumentarse con la ayuda mutua, sin embargo, como eso se puede conseguir dominando a los demás mejor que asociándose con ellos, nadie debe dudar de que los hombres por su naturaleza, si no existiera el miedo, se verían inclinados más al dominio que a la sociedad. Por lo tanto, hay que afirmar que el origen de las sociedades grandes y duraderas no se ha debido a la mutua benevolencia de los hombres sino al miedo mutuo\".\n\nTomado de: Hobbes, T. (1999). Tratado sobre el ciudadano. trad. Joaquín Rodríguez Feo, Madrid, Trotta.\n\n¿Cuál de las siguientes afirmaciones expresa de manera exacta la antítesis de la tesis principal del texto anterior?",
+    "options": {
+      "A": "El origen de las sociedades grandes y duraderas se debe a la desconfianza de los hombres que las conforman.",
+      "B": "El origen de las sociedades grandes y duraderas se explica por la indiferencia de los hombres que las conforman.",
+      "C": "El origen de las sociedades grandes y duraderas se halla en la obediencia recíproca de los hombres que las conforman.",
+      "D": "El origen de las sociedades grandes y duraderas resulta de la colaboración desinteresada de los hombres que las conforman."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Formular la antítesis (miedo mutuo vs. colaboración desinteresada)",
+      "Comprender tesis: origen en miedo, no en benevolencia"
+    ]
+  },
+  {
+    "id": "LC-028",
+    "section": "LECTURA_CRITICA",
+    "topic": "Compatibilidad con la inclinación al dominio",
+    "statement": "\"Aunque las comodidades de esta vida pueden aumentarse con la ayuda mutua, sin embargo, como eso se puede conseguir dominando a los demás mejor que asociándose con ellos, nadie debe dudar de que los hombres por su naturaleza, si no existiera el miedo, se verían inclinados más al dominio que a la sociedad. Por lo tanto, hay que afirmar que el origen de las sociedades grandes y duraderas no se ha debido a la mutua benevolencia de los hombres sino al miedo mutuo\".\n\nTomado de: Hobbes, T. (1999). Tratado sobre el ciudadano. trad. Joaquín Rodríguez Feo, Madrid, Trotta.\n\nDe acuerdo con el texto ¿cuál de las siguientes afirmaciones es compatible con la posición del autor sobre la inclinación natural del hombre hacia la dominación de los demás?",
+    "options": {
+      "A": "El dominio es una inclinación desfavorable en tanto que no aumenta las comodidades de la vida.",
+      "B": "El dominio es una inclinación deseable en tanto que favorece la cooperación entre los hombres.",
+      "C": "El dominio es una inclinación ineludible, pues resulta más eficiente para alcanzar comodidades que la ayuda mutua.",
+      "D": "El dominio es una inclinación admirable en tanto que causa el miedo que conlleva a la creación de la sociedad."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Evaluar juicios de valor sobre el dominio en Hobbes",
+      "Distinguir descripción eficiente vs. valoración moral"
+    ]
+  },
+  {
+    "id": "LC-029",
+    "section": "LECTURA_CRITICA",
+    "topic": "Intención persuasiva en propaganda",
+    "statement": "[Imagen: propaganda bancaria con el lema \"ESCOGE LA MADRE DE TUS HIJOS\" — ver imagen del enunciado]\n\nLa propaganda corresponde a una entidad bancaria que utiliza el eslogan \"ESCOGE LA MADRE DE TUS HIJOS\" asociado a la elección de sus servicios financieros y la conformación de una familia.\n\nEn la propaganda, la expresión \"ESCOGE LA MADRE DE TUS HIJOS\", busca dar a entender que",
+    "options": {
+      "A": "un contrato conlleva responsabilidades mutuas.",
+      "B": "al elegir los servicios de la entidad, se aseguran las condiciones para conformar una familia.",
+      "C": "el dinero garantiza la armonía de las parejas.",
+      "D": "escoger un banco es tan importante como compartir tiempo con la pareja."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Interpretar eslogan publicitario y su implicatura",
+      "Detectar asociación entre servicio financiero y proyecto familiar"
+    ],
+    "statement_image": "LC-029.png"
+  },
+  {
+    "id": "LC-030",
+    "section": "LECTURA_CRITICA",
+    "topic": "Explicación causal: por qué surgen sociedades duraderas",
+    "statement": "\"Aunque las comodidades de esta vida pueden aumentarse con la ayuda mutua, sin embargo, como eso se puede conseguir dominando a los demás mejor que asociándose con ellos, nadie debe dudar de que los hombres por su naturaleza, si no existiera el miedo, se verían inclinados más al dominio que a la sociedad. Por lo tanto, hay que afirmar que el origen de las sociedades grandes y duraderas no se ha debido a la mutua benevolencia de los hombres sino al miedo mutuo\".\n\nTomado de: Hobbes, T. (1999). Tratado sobre el ciudadano. trad. Joaquín Rodríguez Feo, Madrid, Trotta.\n\nDe acuerdo con las ideas expresadas en el texto, si \"los hombres por su naturaleza están más inclinados al dominio que a la sociedad\", ¿por qué aparecieron sociedades grandes y duraderas?\n\n",
+    "options": {
+      "A": "Es natural para el hombre asociarse con otros para ejercer su dominio con seguridad.",
+      "B": "Para ampliar su capacidad de dominio, al hombre le resulta más efectivo vivir en sociedad.",
+      "C": "Es propio del hombre evitar todo tipo de dominio a través de las relaciones confiables que le brinda la vida en sociedad.",
+      "D": "El hombre busca la seguridad y es más seguro para él vivir en comunidad que estar expuesto a ser dominado por otro."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Inferir causa hobbesiana: miedo mutuo lleva a asociación",
+      "Distinguir dominio como medio vs. fin de la sociedad"
+    ]
+  },
+  {
+    "id": "RQ-001",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "correct_option": "A",
+    "key_points": [
+      "Calcular porcentajes",
+      "Aplicar descuentos a un valor base"
+    ],
+    "topic": "Porcentajes",
+    "statement": "Un producto cuesta $80.000 y su precio se reduce en un 25%. ¿Cuál es el precio final?",
+    "options": {
+      "A": "$60.000",
+      "B": "$70.000",
+      "C": "$75.000",
+      "D": "$55.000"
+    }
+  },
+  {
+    "id": "RQ-002",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "correct_option": "B",
+    "key_points": [
+      "Regla de Laplace",
+      "Cálculo de casos favorables sobre casos totales"
+    ],
+    "topic": "Probabilidad",
+    "statement": "En la bolsa de la imagen hay bolas de tres colores. Si se extrae una bola al azar, ¿cuál es la probabilidad de que sea verde?",
+    "options": {
+      "A": "1/2",
+      "B": "1/5",
+      "C": "2/5",
+      "D": "1/3"
+    },
+    "statement_image": "RQ-002.png"
+  },
+  {
+    "id": "RQ-003",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "correct_option": "B",
+    "key_points": [
+      "Lectura de datos en gráficas",
+      "Cálculo de promedios"
+    ],
+    "topic": "Interpretación de gráficas",
+    "statement": "La gráfica muestra las ventas mensuales de una tienda. ¿Cuál fue el promedio de ventas en esos tres meses?",
+    "options": {
+      "A": "100",
+      "B": "103",
+      "C": "110",
+      "D": "93"
+    },
+    "statement_image": "RQ-003.png"
+  },
+  {
+    "id": "RQ-004",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "correct_option": "C",
+    "key_points": [
+      "Despeje de ecuaciones lineales",
+      "Operaciones inversas"
+    ],
+    "topic": "Álgebra",
+    "statement": "Si 3x + 5 = 20, ¿cuál es el valor de x?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    }
+  },
+  {
+    "id": "RQ-005",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Interpretación de tablas: relación magnitud-frecuencia",
+    "statement": "Observa la tabla de sismos (ver imagen).\n\nUn sismólogo afirma que en cualquier año era más probable que hubiese sismos de baja que de alta magnitud. Según el registro histórico, la relación que justifica la opinión del sismólogo es:",
+    "options": {
+      "A": "A mayor magnitud, mayor cantidad de sismos.",
+      "B": "A mayor magnitud, menor cantidad de sismos.",
+      "C": "A mayor cantidad de sismos, menor magnitud de estos.",
+      "D": "A mayor cantidad de sismos, mayor magnitud de estos."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Lectura de tabla de doble entrada",
+      "Interpretar relación inversa entre magnitud y frecuencia"
+    ],
+    "statement_image": "RQ-005.png"
+  },
+  {
+    "id": "RQ-006",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Validación de predicción con tendencia",
+    "statement": "Observa la tabla de sismos (ver imagen).\n\nA partir de los datos, una persona predice que en el 2011 se presentarán exactamente 173 sismos de magnitud igual o superior a 6,0 grados. Que suceda lo que esta persona predice es",
+    "options": {
+      "A": "imposible, pues el número de sismos, de cualquier magnitud, ha ido disminuyendo desde 2007.",
+      "B": "poco probable, porque, de acuerdo con la tendencia, el número de sismos en el 2011 será mayor que 173.",
+      "C": "incierto, pues a partir del número de sismos de cualquier magnitud presentado en el pasado no se puede predecir el número de sismos de magnitud superior a 6,0.",
+      "D": "seguro, pues el promedio de sismos de magnitud superior a 6,0 en la década fue cercano a 173."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Analizar tendencia histórica",
+      "Distinguir predicción determinista vs. probabilística"
+    ],
+    "statement_image": "RQ-005.png"
+  },
+  {
+    "id": "RQ-007",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Cálculo de promedios: sismos mensuales",
+    "statement": "Observa la tabla de sismos (ver imagen).\n\n¿Cuál de los siguientes cocientes permite estimar la cantidad de sismos mensuales?",
+    "options": {
+      "A": "Total de sismos sobre meses del año.",
+      "B": "Total de sismos por año sobre meses del año.",
+      "C": "Total de sismos por año sobre días del año.",
+      "D": "Total de sismos sobre su magnitud."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Concepto de tasa promedio",
+      "Identificar cociente correcto"
+    ],
+    "statement_image": "RQ-005.png"
+  },
+  {
+    "id": "RQ-008",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Promedio anual y valores extremos",
+    "statement": "Observa la tabla de sismos (ver imagen).\n\nEl promedio anual de sismos en la primera década del siglo XXI fue 3.783. Los años con el número de sismos más cercano y más lejano al promedio son",
+    "options": {
+      "A": "2007 y 2010, respectivamente.",
+      "B": "2006 y 2005, respectivamente.",
+      "C": "2005 y 2002, respectivamente.",
+      "D": "2002 y 2008, respectivamente."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Calcular promedio y distancia",
+      "Comparar valores respecto a la media"
+    ],
+    "statement_image": "RQ-005.png"
+  },
+  {
+    "id": "RQ-009",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Proporciones: sismos de alta magnitud",
+    "statement": "Observa la tabla de sismos (ver imagen).\n\nEn la primera década del siglo XXI, la proporción de sismos de magnitud entre 8,0 y 8,9 es de, aproximadamente,",
+    "options": {
+      "A": "1 de cada 3.000 sismos.",
+      "B": "1 de cada 12 sismos.",
+      "C": "12 de cada 18.000 sismos.",
+      "D": "12 de cada 4.000 sismos."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Cálculo de proporciones",
+      "Interpretar frecuencia relativa de eventos raros"
+    ],
+    "statement_image": "RQ-005.png"
+  },
+  {
+    "id": "RQ-010",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Reparto hereditario: porcentaje y fracciones",
+    "statement": "Observa el esquema de herederos y el testamento de la señora Antonia (ver imagen).\n\nPatricia está muy contenta, pues afirma que, de la forma en que su tía repartió el dinero de sus bienes, ella obtendrá más dinero que si la herencia se dividiera en partes iguales entre los familiares vivos de la tía según el esquema. La afirmación de Patricia es",
+    "options": {
+      "A": "incorrecta, pues de cualquiera de las dos formas los herederos reciben $32.000.000.",
+      "B": "correcta, pues según el testamento la herencia se distribuye entre 6 personas; de la otra forma se debe repartir entre 8.",
+      "C": "incorrecta, pues Patricia recibirá 10% de la herencia, que es menos que el 12,5% que recibiría con la otra distribución.",
+      "D": "correcta, pues el dinero se divide solo entre ella y su hermano."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Cálculo de reparto proporcional",
+      "Comparar distribución testamentaria vs. equitativa"
+    ],
+    "statement_image": "RQ-010.png"
+  },
+  {
+    "id": "RQ-011",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Fracción de herencia: heredero indirecto",
+    "statement": "Observa el esquema de herederos y el testamento (ver imagen).\n\n¿Qué parte de la herencia le corresponde a Juan?",
+    "options": {
+      "A": "La quinta parte.",
+      "B": "La mitad.",
+      "C": "La octava parte.",
+      "D": "La tercera parte."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Fracciones y herencia por representación",
+      "Distribuir parte de fallecido entre sus hijos"
+    ],
+    "statement_image": "RQ-010.png"
+  },
+  {
+    "id": "RQ-012",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Costo por sesión: optimización",
+    "statement": "Observa las tablas de sesiones y horarios de pilates (ver imagen).\n\nCamilo quiere inscribirse a las clases de pilates y escoger el total de sesiones mensual en la que el costo por sesión sea de menor precio. Camilo elige tomar 2 sesiones semanales, con esto, ¿logra Camilo cumplir su propósito de que el costo por sesión sea el de menor precio?",
+    "options": {
+      "A": "No, pues el costo por sesión de menor precio lo obtiene si toma 4 sesiones por semana.",
+      "B": "Sí, pues tomar 2 sesiones por semana tiene el menor costo mensual de todas las opciones.",
+      "C": "No, pues se paga un menor precio por sesión si toma 3 sesiones por semana.",
+      "D": "Sí, pues tomar menos sesiones garantiza pagar menos por cada una de ellas."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Dividir costo mensual entre número de clases",
+      "Optimizar costo unitario"
+    ],
+    "statement_image": "RQ-012.png"
+  },
+  {
+    "id": "RQ-013",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Disponibilidad horaria: conteo",
+    "statement": "Observa las tablas de pilates (ver imagen).\n\n¿Cuál de las siguientes afirmaciones es incorrecta?",
+    "options": {
+      "A": "Hay más horas disponibles de 8 a.m. a 1 p.m., que de 1 p.m. a 7 p.m.",
+      "B": "Todos los días hay 5 horas disponibles.",
+      "C": "Hay más horas disponibles de jueves a sábado, que de lunes a miércoles.",
+      "D": "El sábado de 12 m. a 7 p.m. no hay clases asignadas."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Conteo en tabla de horarios",
+      "Comparar intervalos de disponibilidad"
+    ],
+    "statement_image": "RQ-012.png"
+  },
+  {
+    "id": "RQ-014",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Lectura de gráfica de barras: inversión",
+    "statement": "Observa la gráfica de inversión en seguridad vial 1996-2002 (ver imagen).\n\nDurante el período 1996-2002, los años en los que se hizo mayor inversión en seguridad vial fueron",
+    "options": {
+      "A": "1997, 1998, 1999 y 2000.",
+      "B": "2000, 2001 y 2002.",
+      "C": "1997, 1998 y 1999.",
+      "D": "1996, 1997, 1998 y 1999."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Lectura de gráfica de barras",
+      "Identificar máximos en serie temporal"
+    ],
+    "statement_image": "RQ-014.png"
+  },
+  {
+    "id": "RQ-015",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Conversión de moneda y procedimientos",
+    "statement": "Observa la gráfica de inversión en seguridad vial (ver imagen).\n\nLa inversión en seguridad se realiza el 10 de enero de cada año. En enero 10 de 2002, un euro equivalía a 2.800 pesos colombianos, aproximadamente. Se proponen los siguientes procedimientos para hallar el valor de la inversión en seguridad en pesos colombianos:\nI. Convertir 194,39 millones de euros a pesos colombianos.\nII. Convertir 2.800 pesos colombianos a euros.\nIII. Multiplicar 194,39 por 2.800 y luego dividir entre el total de años.\n¿Cuál o cuáles de los procedimientos es correcto para hallar lo solicitado?",
+    "options": {
+      "A": "I y III solamente.",
+      "B": "I solamente.",
+      "C": "II y III solamente.",
+      "D": "II solamente."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Conversión de unidades monetarias",
+      "Validar procedimientos de cálculo"
+    ],
+    "statement_image": "RQ-014.png"
+  },
+  {
+    "id": "RQ-016",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Proporcionalidad: reciclaje y recursos",
+    "statement": "En una ciudad se producen en promedio 600 toneladas diarias de residuos domésticos, de las cuales el 25% corresponde a papel y cartón, materiales fácilmente reciclables; además, por cada tonelada de papel y cartón que se recicla se evita la tala de 17 árboles, se ahorran 140 litros de petróleo y 50.000 litros de agua.\n\nSe realizó una campaña de reciclaje durante tres días en una unidad residencial, en la que se recogieron 2 toneladas diarias de papel y cartón; por tanto, se evitó la tala de 2×3×17=102 árboles. Si esta campaña se efectuara durante 20 días en la misma unidad y se recolectara la misma cantidad se podrían ahorrar",
+    "options": {
+      "A": "680 litros de agua.",
+      "B": "5.600 litros de agua.",
+      "C": "300.000 litros de agua.",
+      "D": "2.000.000 litros de agua."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Regla de tres y proporcionalidad",
+      "Extrapolar ahorro por días"
+    ]
+  },
+  {
+    "id": "RQ-017",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Diferencia de tiempos en tabla de aves",
+    "statement": "Observa la tabla de comportamiento de aves (ver imagen).\n\nLos resultados indican que el ave 5 tarda más alimentándose que desplazándose. Esto es correcto, puesto que el tiempo en alimentación excede al de desplazamiento en",
+    "options": {
+      "A": "20 minutos.",
+      "B": "25 minutos.",
+      "C": "33 minutos.",
+      "D": "45 minutos."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Resta en tabla",
+      "Interpretar diferencia de duraciones"
+    ],
+    "statement_image": "RQ-016.png"
+  },
+  {
+    "id": "RQ-018",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Validación de proporción 3:2 en aves",
+    "statement": "Observa la tabla de aves (ver imagen).\n\nAl analizar los resultados, el científico afirma que la relación entre cada tiempo de las actividades del ave 1 y del ave 5 es 3:2. La afirmación del científico es",
+    "options": {
+      "A": "correcta, porque el tiempo invertido en las actividades 2, 5 y 6 por el ave 1 es igual al tiempo invertido en las actividades 4 y 7 por el ave 5.",
+      "B": "incorrecta, porque el tiempo invertido en las actividades 3, 6 y 7 por el ave 1 es igual al tiempo invertido en las actividades 4, 6 y 7 por el ave 5.",
+      "C": "correcta, porque para la actividad Comunicación la relación entre los tiempos está dada por 15/10 = 3/2.",
+      "D": "incorrecta, porque para la actividad Alimentación la relación entre los tiempos está dada por 30/45 = 2/3."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Validar razón 3:2",
+      "Comparar tiempos por actividad"
+    ],
+    "statement_image": "RQ-016.png"
+  },
+  {
+    "id": "RQ-019",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Análisis de aves: característica similar",
+    "statement": "Observa la tabla de aves (ver imagen).\n\nEl científico quiere identificar cuál de las aves presenta las características más similares en cuanto a la distribución de tiempos por actividad. ¿Cuál de las siguientes aves presenta el comportamiento más similar al del ave 1?",
+    "options": {
+      "A": "Ave 2",
+      "B": "Ave 3",
+      "C": "Ave 4",
+      "D": "Ave 5"
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Comparación de perfiles en tabla",
+      "Identificar similitud"
+    ],
+    "statement_image": "RQ-016.png"
+  },
+  {
+    "id": "RQ-020",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Numeración de pistas: conversión grados",
+    "statement": "Observa la figura de pistas de aterrizaje (ver imagen).\n\nUna pista marcada en un extremo con el número 24, en el extremo opuesto está marcada con el número",
+    "options": {
+      "A": "06",
+      "B": "18",
+      "C": "36",
+      "D": "42"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Conversión grados a número de pista",
+      "Suma 18 para extremo opuesto (180°)"
+    ],
+    "statement_image": "RQ-019.png"
+  },
+  {
+    "id": "RQ-021",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Cambio de rumbo 30° en pista",
+    "statement": "Observa la figura de pistas (ver imagen).\n\nAl piloto de un avión que está alineado para aterrizar en el extremo 24 se le pide que cambie su rumbo girando 30 grados a su derecha para que use una pista libre. El número que encuentra en la nueva pista es",
+    "options": {
+      "A": "06",
+      "B": "21",
+      "C": "27",
+      "D": "54"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Rotación y numeración magnética",
+      "Sumar 3 al número (30°/10)"
+    ],
+    "statement_image": "RQ-019.png"
+  },
+  {
+    "id": "RQ-022",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Dirección cardinal según pista",
+    "statement": "Observa la figura de pistas (ver imagen).\n\nUn avión que despega en dirección al extremo 32, va hacia el",
+    "options": {
+      "A": "sureste.",
+      "B": "noreste.",
+      "C": "suroeste.",
+      "D": "noroeste."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Interpretar rosa de los vientos",
+      "Asociar número de pista con punto cardinal"
+    ],
+    "statement_image": "RQ-019.png"
+  },
+  {
+    "id": "RQ-023",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Combinatoria: etiquetas de jabón",
+    "statement": "Observa la tabla de jabón de tocador (ver imagen).\n\nLa etiqueta del jabón debe especificar tres aspectos: presentación, contenido y aroma. ¿Cuántas etiquetas diferentes debe utilizar la fábrica?",
+    "options": {
+      "A": "2",
+      "B": "6",
+      "C": "12",
+      "D": "18"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Principio multiplicativo",
+      "Contar combinaciones"
+    ],
+    "statement_image": "RQ-023.png"
+  },
+  {
+    "id": "RQ-024",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Capacidad de tanque para envasado",
+    "statement": "Observa la tabla de jabón (ver imagen).\n\nUn tanque almacena exactamente la cantidad de jabón líquido necesaria para envasar exactamente 50 unidades de cada tipo de contenido. Teniendo en cuenta que 1 Litro contiene 1.000 mL, ¿cuál es la capacidad del tanque?",
+    "options": {
+      "A": "15 litros.",
+      "B": "75 litros.",
+      "C": "1.500 litros.",
+      "D": "75.000 litros."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Suma de contenidos y conversión mL a L",
+      "Multiplicar por unidades"
+    ],
+    "statement_image": "RQ-023.png"
+  },
+  {
+    "id": "RQ-025",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Proporcionalidad precio-contenido",
+    "statement": "Observa la tabla de jabón (ver imagen).\n\nDe acuerdo con la información de la tabla, si se conservara la relación entre el contenido y el precio por unidad, ¿cuál debería ser el precio de la presentación de jabón líquido con contenido de 1.800 mL?",
+    "options": {
+      "A": "$15.300",
+      "B": "$18.000",
+      "C": "$30.600",
+      "D": "$31.660"
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Regla de tres con precio unitario",
+      "Mantener proporcionalidad"
+    ],
+    "statement_image": "RQ-023.png"
+  },
+  {
+    "id": "RQ-026",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Incentivo por ventas semanales",
+    "statement": "Observa la tabla de ventas semanales (ver imagen).\n\nLa microempresa otorga incentivos a los vendedores cuyas ventas semanales sean superiores a $500.000. La tabla muestra los registros de ventas de tres vendedores durante una semana. ¿A cuál o cuáles de los vendedores se debe dar el incentivo?",
+    "options": {
+      "A": "I solamente.",
+      "B": "III solamente.",
+      "C": "I y II solamente.",
+      "D": "I, II y III."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Cálculo de total por vendedor",
+      "Comparar contra umbral"
+    ],
+    "statement_image": "RQ-023.png"
+  },
+  {
+    "id": "RQ-027",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Conversión de unidades: año luz",
+    "statement": "Usualmente, las distancias en el espacio se miden en años luz. Un año luz corresponde a la distancia que recorre la luz en un año (aproximadamente 9,46 × 10^12 km). Un estudiante sabe que el diámetro de la Vía Láctea mide aproximadamente 10^21 m, y para determinar la cantidad de años luz a la que esto equivale usa la expresión: 10^21 / (9,46 × 10^12) = 10^9 / 9,46 = 106 millones. El estudiante concluye que el diámetro es 106 millones de años luz. El anterior procedimiento es incorrecto, porque",
+    "options": {
+      "A": "el denominador de la fracción debe expresarse en potencias de diez.",
+      "B": "no se tiene en cuenta la equivalencia de unidades entre las magnitudes involucradas.",
+      "C": "para obtener el diámetro se debe determinar el producto entre ambas medidas relacionadas.",
+      "D": "el resultado no se expresa en potencias de diez como los otros datos."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Conversión km a m",
+      "Homogeneizar unidades antes de dividir"
+    ]
+  },
+  {
+    "id": "RQ-028",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Capacidad de fuente de chocolate: datos faltantes",
+    "statement": "Para una fiesta infantil se tiene una fuente de chocolate con tres niveles, cuyos recipientes son cilíndricos, como lo muestra la figura. El tubo cilíndrico que los une permite que el chocolate suba desde el nivel más bajo hasta el más alto. Cuando el nivel superior se llena, el chocolate se desborda al nivel medio y, cuando este se llena, el chocolate pasa al nivel inferior. La figura muestra los recipientes con sus dimensiones (altura y radio del nivel inferior y de los otros niveles) y el tubo de circulación.\n\nEl organizador de la fiesta quiere estimar cuál es la capacidad de la fuente, para lo cual mide la altura y el radio del recipiente en el nivel inferior. De las medidas halladas por el organizador para estimar la capacidad total de la fuente, es verdadero afirmar que",
+    "options": {
+      "A": "no son suficientes, pues falta conocer el peso del chocolate y la resistencia que tiene el material de los recipientes.",
+      "B": "son suficientes, pues si se llenan los otros recipientes, el chocolate se saldrá de la fuente cuando esta comience a operar.",
+      "C": "no son suficientes, pues no toman en cuenta la capacidad de los otros recipientes y el chocolate del tubo de circulación.",
+      "D": "son suficientes, pues el recipiente más bajo es el que recibe el chocolate que se vierte de los otros dos."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Volumen cilindros y sistema comunicante",
+      "Identificar datos faltantes"
+    ],
+    "statement_image": "RQ-028.png"
+  },
+  {
+    "id": "RQ-029",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Comparación de procedimientos: reciclaje",
+    "statement": "Se realizó una campaña de reciclaje durante tres días en una unidad residencial, en la que se recogieron 2 toneladas diarias de papel y cartón. Si la campaña se efectuara durante 7 días con la misma tasa, ¿cuántos árboles se evitaría talar?",
+    "options": {
+      "A": "34",
+      "B": "102",
+      "C": "238",
+      "D": "340"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Proporcionalidad directa",
+      "Escalar por días"
+    ]
   }
 ]
