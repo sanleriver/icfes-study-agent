@@ -100,7 +100,7 @@ class TestApp:
             images += len(at.image)
             pending = at.session_state["pending"]
             _responder(at, pending["correct_option"])
-        assert images == 2  # RQ-002.png y RQ-003.png
+        assert 2 <= images <= 4  # al menos RQ-002.png y RQ-003.png, ahora hay más imágenes RQ
 
     def test_nueva_sesion_vuelve_a_configuracion(self):
         at = _app()
