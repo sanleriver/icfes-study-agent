@@ -22,7 +22,6 @@ from src.models import Question
 logger = logging.getLogger(__name__)
 
 _ASSETS_IMAGES_DIR = Path(__file__).resolve().parents[1] / "assets" / "images"
-_OPTION_KEYS = ("A", "B", "C", "D")
 
 
 class QuestionView:
@@ -136,7 +135,7 @@ class QuestionView:
         self._selected = None
         self._option_tiles = {}
         options_column = ft.Column(
-            [self._option_tile(k, q.options[k]) for k in _OPTION_KEYS],
+            [self._option_tile(k, q.options[k]) for k in sorted(q.options.keys())],
             spacing=10,
         )
 

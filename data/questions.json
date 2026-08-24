@@ -68,6 +68,431 @@
     }
   },
   {
+    "id": "CC-005",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Diferentes perspectivas: activistas vs científicos",
+    "statement": "Un grupo de activistas que defiende los derechos de los animales busca evitar que un centro de investigación siga utilizando cerdos para sus experimentos, pues los tratamientos incluyen procedimientos que se consideran maltrato y que en algunos casos terminan en la muerte de los animales. Por su parte, los investigadores defienden su uso, pues estos animales proveen la mejor plataforma para desarrollar sus medicinas sin poner en riesgo vidas humanas. Además, mencionan que el laboratorio no viola ninguna de las normas existentes sobre investigación con animales y que su labor permite proteger la vida de las personas.\n\nLas divergencias de intereses entre científicos y activistas radican en que",
+    "options": {
+      "A": "los activistas quieren oponerse al desarrollo económico, mientras que los científicos quieren mejorar la vida de todos.",
+      "B": "los activistas quieren cuestionar la efectividad de la ciencia, mientras que los científicos quieren evadir el control a su trabajo.",
+      "C": "los científicos quieren utilizar a los animales como instrumentos de investigación, mientras que los activistas quieren que todos desarrollen sentimientos de apego hacia los animales.",
+      "D": "los científicos quieren priorizar la vida humana, mientras que los activistas quieren proteger lo que consideran un derecho de los animales a su propia vida."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Reconocer perspectivas divergentes",
+      "Identificar intereses en conflicto"
+    ]
+  },
+  {
+    "id": "CC-006",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Deberes constitucionales: solidaridad",
+    "statement": "Después de una fuerte temporada de lluvias, el Gobierno nacional despliega ayudas para atender a la población afectada. No obstante, los daños materiales y de afectación a la vida y a la salud de las personas son muy grandes. Se hace un llamado a la ciudadanía para que aporte dinero y materiales y así poder brindar una mejor respuesta a la emergencia. Tras este llamado, la respuesta de la ciudadanía es casi nula.\n\nTeniendo en cuenta lo planteado en la Constitución política colombiana, esta respuesta de la ciudadanía refleja",
+    "options": {
+      "A": "la incapacidad del Gobierno nacional para atender la emergencia.",
+      "B": "la deficiencia en la infraestructura nacional para la prevención de desastres.",
+      "C": "la inobservancia del principio de solidaridad por parte de los ciudadanos.",
+      "D": "la libertad de los ciudadanos para decidir el uso de sus recursos propios."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Principio constitucional de solidaridad",
+      "Deberes ciudadanos frente a emergencia"
+    ]
+  },
+  {
+    "id": "CC-007",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Derecho a la educación en inundaciones",
+    "statement": "Durante las épocas de lluvias, en muchas zonas rurales de Colombia se inundan escuelas y se interrumpen los caminos para llegar a estas.\n\n¿Cuál de las siguientes soluciones vulnera el derecho a la educación?",
+    "options": {
+      "A": "Organizar esquemas de transporte para que los estudiantes vayan a clases en escuelas no afectadas por las inundaciones.",
+      "B": "Ajustar el calendario para incluir los sábados como día escolar y que no haya clases en las épocas de inundación.",
+      "C": "Dar una parte de las clases a través de tutores a domicilio para reducir los días en que los niños tienen que asistir presencialmente al colegio.",
+      "D": "Trasladar a los niños a escuelas no inundadas dos veces por semana y reducir el número de horas de clases."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Derecho a la educación y condiciones mínimas",
+      "Evaluar vulneración por reducción horaria"
+    ]
+  },
+  {
+    "id": "CC-008",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Análisis de pertinencia: policía y congestión",
+    "statement": "Algunas personas critican a los policías de tránsito y los culpan de grandes congestiones de vehículos en las ciudades, porque observan que cuando hay una gran congestión es frecuente que haya un policía guiando el tránsito.\n\n¿Cuál de los siguientes es un argumento válido para contradecir la postura expuesta?",
+    "options": {
+      "A": "Los policías no deben ser cuestionados, ya que representan a una institución que está hecha para ayudar.",
+      "B": "El hecho de que los policías estén donde hay grandes congestiones de vehículos no quiere decir que ellos sean quienes los originan.",
+      "C": "Los policías hacen adecuadamente su labor, pero no son suficientes para evitar todas las congestiones de vehículos que se presentan.",
+      "D": "El hecho de que haya grandes congestiones vehiculares no significa que los policías no estén capacitados adecuadamente."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Falacia de correlación vs causalidad",
+      "Evaluar argumento pertinente"
+    ]
+  },
+  {
+    "id": "CC-009",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Discriminación en oferta de empleo",
+    "statement": "Un Gobierno ofreció reducir impuestos a las empresas privadas que generen nuevos empleos. El gerente de una reconocida empresa que anualmente paga importantes sumas de dinero en impuestos, dijo: \"Para acogerse al beneficio, mi empresa puede abrir 100 nuevas plazas para operarios, siempre y cuando quienes se postulen hayan nacido en municipios de tierra fría, porque los habitantes de tierra caliente no trabajan igual. Estoy seguro de que la junta directiva de la empresa estará de acuerdo conmigo\".\n\n¿Cuál de los siguientes es una consecuencia de lo dicho por el gerente?",
+    "options": {
+      "A": "Los miembros de la junta directiva de la empresa respaldarían el pronunciamiento porque implica seleccionar a los mejores trabajadores.",
+      "B": "Los empresarios del país respaldarían el pronunciamiento porque significaría un aumento de empleo en los municipios de tierra fría.",
+      "C": "Representantes del Gobierno se opondrían a la pretensión de la empresa de aprovechar la política para reducir sus impuestos.",
+      "D": "Representantes de los trabajadores se opondrían porque se basa en un prejuicio personal en contra de los empleados de tierra caliente."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Principio de igualdad y no discriminación",
+      "Identificar prejuicio en selección laboral"
+    ]
+  },
+  {
+    "id": "CC-010",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Minimización de violencia de género",
+    "statement": "Un estudio reveló que el 30 % de las mujeres en Colombia son víctimas de violencia física. A partir de este estudio varias organizaciones feministas solicitaron el endurecimiento de las penas para las personas que ejercían violencia contra las mujeres. Ante esta petición un funcionario del Gobierno señaló que el estudio no era confiable, porque no consideraba los distintos contextos de estas agresiones y que era muy importante tener en cuenta la justificación de los hechos.\n\nSegún la información presentada, la afirmación del funcionario podría tener como consecuencia que:",
+    "options": {
+      "A": "se cuestione la idoneidad de los investigadores que realizaron el estudio.",
+      "B": "se entienda la necesidad de contar con estrategias efectivas para prevenir la violencia contra las mujeres.",
+      "C": "se reconozca la gravedad de los actos de violencia en contra de las mujeres.",
+      "D": "se minimice la responsabilidad de los victimarios en los casos de violencia en contra de las mujeres."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Análisis de discurso que justifica violencia",
+      "Identificar efecto de minimizar responsabilidad"
+    ]
+  },
+  {
+    "id": "CC-011",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Conflicto de intereses: cierre de barrios",
+    "statement": "Ante los crecientes robos a residencias en algunos sectores de estratos altos de una ciudad, el alcalde está considerando autorizar el cierre de grandes sectores residenciales que agrupen varios barrios de la ciudad, para que sean vigilados por seguridad privada y para que solo se permita la entrada a los residentes o a personas autorizadas por estos.\n\nA la hora de evaluar la propuesta, ¿qué intereses podrían entrar en conflicto?",
+    "options": {
+      "A": "Los de las empresas de seguridad privada que buscan expandir su negocio y los de los residentes de los barrios cerrados quienes tendrían que soportar controles de seguridad a diario.",
+      "B": "Los de los residentes que buscan su seguridad, y los de los demás habitantes de la ciudad que dejarían de tener acceso a las vías y otros espacios públicos de los sectores encerrados.",
+      "C": "Los de los residentes que buscan su beneficio particular y los intereses del gobierno local que debe encargarse del bienestar de la comunidad.",
+      "D": "Los de las empresas de seguridad privada que serían contratadas para cuidar los sectores encerrados, y los de la Policía encargada de la seguridad en la ciudad."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Conflicto entre interés particular y bien público",
+      "Espacio público y acceso ciudadano"
+    ]
+  },
+  {
+    "id": "CC-012",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Conflicto: libertad de expresión vs creencias religiosas",
+    "statement": "A raíz de la autocensura de varios medios europeos acerca de temas de religión, en 2005 un periódico danés le pidió a varios caricaturistas expresar sus impresiones y sentimientos sobre el Islam. Como resultado, el periódico publicó doce caricaturas sobre Mahoma, los cuales despertaron la rabia de muchos musulmanes que protestaron por este hecho.\n\n¿En esta situación, qué aspectos están en conflicto?",
+    "options": {
+      "A": "La censura de los medios europeos y la libertad de prensa.",
+      "B": "Las democracias de los países europeos industrializados y las teocracias de algunos países de Oriente.",
+      "C": "La libertad de expresión de los caricaturistas y las creencias religiosas de un grupo de personas.",
+      "D": "Las religiones occidentales como el Cristianismo y el Judaísmo, y las religiones orientales como el Islam."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Libertad de expresión como derecho",
+      "Respeto a creencias religiosas"
+    ]
+  },
+  {
+    "id": "CC-013",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Efecto de estigmatización en contratación",
+    "statement": "El Gobierno ha anunciado que otorgará beneficios a las empresas que contraten a personas que hayan dejado de consumir sustancias psicoactivas y se hayan rehabilitado. Una empresa decide acogerse a este beneficio y, tras un proceso de selección, contrata a varias personas rehabilitadas. En un conversatorio con los empleados, uno de los directivos dice lo siguiente: \"Esta empresa tiene gran compromiso social. Aunque es muy difícil que los nuevos puedan tener un nivel de desempeño alto en la compañía, dadas sus adicciones anteriores, nosotros cumplimos con darles el beneficio de la duda\".\n\n¿Cuál podría ser un efecto de lo que dijo este directivo?",
+    "options": {
+      "A": "Que los nuevos trabajadores sientan el respaldo de la compañía.",
+      "B": "Que los demás trabajadores duden de las capacidades laborales de los nuevos.",
+      "C": "Que los nuevos trabajadores les colaboren en sus labores a los demás.",
+      "D": "Que los demás trabajadores desconfíen de las habilidades sociales de los nuevos."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Estigmatización y profecía autocumplida",
+      "Efecto del discurso directivo en clima laboral"
+    ]
+  },
+  {
+    "id": "CC-014",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Conflicto: salubridad vs autonomía municipal",
+    "statement": "Para solucionar los problemas de basura de la capital del departamento, se decidió construir un relleno sanitario en un lote de otro municipio cercano, al cual se le compensaría económicamente por prestar este servicio a la capital. Según el gobierno departamental, la escogencia del lote se hizo conjuntamente con las autoridades ambientales y con la alcaldía del municipio. El proyecto del relleno sanitario cuenta con todas las licencias ambientales requeridas y su construcción es necesaria para la salubridad de la capital. En una consulta popular, los habitantes del municipio cercano votaron 96 % en contra de la construcción del relleno, porque consideran que este es una amenaza para la salud de la población y el ecosistema, y disminuiría el valor de la tierra circundante.\n\nEn esta situación, ¿cuáles de los siguientes aspectos están en conflicto?",
+    "options": {
+      "A": "El medio ambiente en la capital y la voluntad del gobierno departamental.",
+      "B": "La economía del municipio y las políticas medioambientales de la capital.",
+      "C": "La salubridad de la capital y la voluntad de los habitantes del municipio.",
+      "D": "Las políticas económicas de la alcaldía del municipio y la salubridad de la capital."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Tensión salubridad colectiva vs. autonomía local",
+      "Consulta popular y decisiones ambientales"
+    ]
+  },
+  {
+    "id": "CC-015",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Legalización de drogas: argumento a favor",
+    "statement": "El problema del tráfico de drogas ilícitas ha generado que gobernantes, académicos y miembros de la sociedad civil de países productores debatan sobre el asunto con el fin de encontrar soluciones. Algunos proponen que, para defender el bien común, se deben legalizar las drogas.\n\n¿Cuál de los siguientes es el argumento que está a favor de la propuesta de legalización?",
+    "options": {
+      "A": "Una gran parte de la violencia mundial está asociada al tráfico y consumo de drogas, por tanto, su comercialización debe tener estrictos controles.",
+      "B": "En los países productores no existe ninguna responsabilidad en el tráfico de drogas; la responsabilidad debe recaer sobre los controles de los países consumidores.",
+      "C": "Una gran parte quienes consumen drogas son personas enfermas que necesitan que el Estado garantice ambientes sanos para que puedan superar su adicción.",
+      "D": "En los países productores, la prohibición ha generado problemas sociales más graves que aquellos efectos económicos que se querían evitar con esta medida."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Evaluar argumento consecuencialista",
+      "Bien común y prohibición"
+    ]
+  },
+  {
+    "id": "CC-016",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Circuncisión y derechos del niño",
+    "statement": "Durante siglos, los practicantes judíos y musulmanes les han practicado la circuncisión a sus hijos. En Alemania, un juez tomó la decisión de prohibir la circuncisión a niños menores de 14 años de edad. A esa edad, cada niño decidirá por sí mismo si se la realiza. Las grandes comunidades de judíos y musulmanes piensan que este es un ataque en contra de sus creencias e invitan a seguir practicando circuncisiones a temprana edad. El asunto ha generado polémica, pues se considera un nuevo ataque a las costumbres y herencia judía y musulmana, pueblos que siguen siendo discriminados por su cultura a pesar de sus grandes aportes económicos a los países europeos.\n\nEn la descripción de esta situación, se le da mayor énfasis a",
+    "options": {
+      "A": "las consecuencias económicas de la discriminación a un pueblo con grandes capitales.",
+      "B": "los efectos de la decisión del juez en las relaciones internacionales alemanas.",
+      "C": "las creencias religiosas y tradiciones que respaldan la práctica de la circuncisión.",
+      "D": "los derechos de los menores de edad y la responsabilidad de sus padres de respetarlos."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Identificar énfasis del relato",
+      "Sesgo en descripción de conflicto cultural"
+    ]
+  },
+  {
+    "id": "CC-017",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Dimensión privilegiada en decisión médica",
+    "statement": "Una paciente debe someterse a cirugía. El médico tratante conoce las prohibiciones que por su religión tiene la paciente en cuanto a las transfusiones de sangre y le advierte que podría haber hemorragia durante la intervención quirúrgica. El médico diligencia los formularios de rutina y la paciente firma el \"consentimiento informado\" para recibir transfusiones si las llegara a necesitar. Días después de la cirugía presenta una fuerte hemorragia, por lo que se hacen necesarias las transfusiones. Los padres de la paciente le dicen a los médicos que para ellos es más importante la salud de su hija que la religión. Sin embargo, la paciente le dice al cirujano que cambió de opinión y que no autoriza la transfusión.\n\nAl tomar esta decisión final, ¿qué dimensión está privilegiando la paciente?",
+    "options": {
+      "A": "sus creencias religiosas y el estilo de vida que ellas exigen.",
+      "B": "las consecuencias en su salud y estado físico en un futuro tras la cirugía.",
+      "C": "las recomendaciones médicas y evidencia científica que respalda las transfusiones.",
+      "D": "sus relaciones familiares y el concepto que tienen sus padres."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Autonomía y libertad de cultos",
+      "Dimensiones en conflicto en consentimiento informado"
+    ]
+  },
+  {
+    "id": "CC-018",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Proyecto que condena satanismo y Constitución",
+    "statement": "Recientemente se propuso un proyecto de ley ordinaria que condena el satanismo, porque es contrario a las creencias religiosas de la mayoría de la población colombiana.\n\n¿Por qué este proyecto no podría aprobarse?",
+    "options": {
+      "A": "Porque contradice lo dicho en la Constitución, la cual protege todas las creencias religiosas y no solo las de la mayoría.",
+      "B": "Porque contradice los derechos de los legisladores que pertenezcan a una religión minoritaria, quienes tendrían que renunciar al Congreso.",
+      "C": "Porque contradice las normas internacionales, las cuales establecen que las creencias religiosas son del dominio de las iglesias y no de los estados.",
+      "D": "Porque contradice las leyes actuales, las cuales establecen que la religión es un asunto privado que no interesa al Estado."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Laicidad y libertad de cultos en Constitución",
+      "Protección a minorías religiosas"
+    ]
+  },
+  {
+    "id": "CC-019",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Solución basura: aspecto no contemplado",
+    "statement": "Un municipio turístico colombiano está altamente afectado por el manejo incontrolado de las basuras. La administración municipal decide trabajar en una solución que contempla varias dimensiones. En lo político se implementan acuerdos y ordenanzas en cuanto al mejoramiento del medio ambiente; en lo social se brinda capacitación a los habitantes del lugar en el manejo de residuos y se comienza a reciclar; en lo económico se asignan recursos del presupuesto municipal a la adecuación de los edificios públicos para facilitar el reciclaje y la separación de las basuras.\n\n¿Cuál de las siguientes opciones muestra un aspecto que NO se contempló en la solución propuesta?",
+    "options": {
+      "A": "El poco compromiso de la administración con la conservación del medio ambiente.",
+      "B": "El desconocimiento del manejo de residuos sólidos por parte de la población.",
+      "C": "La inversión de dineros públicos para llevar a cabo las obras de infraestructura necesarias.",
+      "D": "La existencia de turistas poco comprometidos con el manejo de las basuras en el lugar."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Analizar solución multidimensional",
+      "Identificar dimensión faltante"
+    ]
+  },
+  {
+    "id": "CC-020",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Pena de muerte y mecanismos de participación",
+    "statement": "Suponga que en el país se discute la conveniencia de reformar la Constitución para permitir la pena de muerte.\n\nDe acuerdo con la Constitución política de Colombia, ¿podrían los ciudadanos acudir a un mecanismo de participación directa para pronunciarse sobre este tema?",
+    "options": {
+      "A": "No, los asuntos penales son competencia exclusiva de la Rama Judicial.",
+      "B": "No, la decisión debe ser tomada por el presidente vía decreto.",
+      "C": "Sí, a través de un referendo constitucional.",
+      "D": "Sí, a través de un plebiscito convocado por el presidente."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Mecanismos de participación: referendo vs plebiscito",
+      "Reforma constitucional"
+    ]
+  },
+  {
+    "id": "CC-021",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Generalización videojuegos y violencia",
+    "statement": "Los autores de un tiroteo fueron identificados como tres personas que dedicaban largas horas de sus días a jugar videojuegos de acción y violencia. Como consecuencia de esto, se prohibió la comercialización de todo videojuego de carácter violento como medida de prevención para este tipo de atentados.\n\nSobre la justificación de esta propuesta, se puede afirmar que realiza",
+    "options": {
+      "A": "una demostración de la relación causal entre el uso de videojuegos y comportamientos violentos, lo cual permite saber cómo fortalecer la seguridad.",
+      "B": "un argumento acerca de la comercialización de los juegos de video como problema de fondo, pues si están disponibles los jóvenes siempre los jugarán.",
+      "C": "un juicio hacia los jóvenes que juegan cualquier tipo de videojuego, acusándolos de ser muy poco empáticos y de tener actitudes violentas con las personas que los rodean.",
+      "D": "una generalización sobre la coincidencia del uso de videojuegos violentos y un comportamiento violento, pues aplica en este caso en particular, pero nada garantiza que siempre sea así."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Falacia de generalización apresurada",
+      "Correlación no implica causalidad"
+    ]
+  },
+  {
+    "id": "CC-022",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Corte Constitucional y parejas homosexuales",
+    "statement": "Entre el 2007 y 2008, la Corte Constitucional extendió a parejas homosexuales los beneficios del régimen contributivo de salud y del derecho a la pensión de sobrevivientes.\n\n¿Cuál de los siguientes argumentos respalda esta decisión de la Corte?",
+    "options": {
+      "A": "Se requiere garantizar la igualdad de derechos para todos los ciudadanos.",
+      "B": "Es necesaria la protección de los derechos de los ciudadanos pensionados.",
+      "C": "Se requieren proteger los derechos derivados del matrimonio entre hombres y mujeres.",
+      "D": "Es necesario que las instituciones garanticen la preservación de los valores tradicionales."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Igualdad y no discriminación",
+      "Derechos de parejas del mismo sexo"
+    ]
+  },
+  {
+    "id": "CC-023",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Equilibrio de poderes: cierre del Congreso",
+    "statement": "Colombia, por ser un Estado social de derecho constitucional, se caracteriza por su división y control recíproco entre los poderes públicos. ¿Cuál de las siguientes decisiones sería una acción en contra del principio de equilibrio de poderes y por qué?",
+    "options": {
+      "A": "Que el presidente anunciara el cierre del Congreso, porque sería injerencia del Poder Ejecutivo en el Legislativo.",
+      "B": "Que el presidente decidiera las principales políticas de seguridad en el país, porque esto es potestad del poder Legislativo.",
+      "C": "Que la Corte Constitucional revisara si los decretos presidenciales cumplen con la Constitución, porque esto no hace parte de las funciones del Poder Judicial.",
+      "D": "Que el Congreso de la República discutiera y aprobara leyes sobre el sistema educativo del país, pues esto no hace parte de las funciones del Poder Legislativo."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Separación de poderes",
+      "Injerencia Ejecutivo-Legislativo"
+    ]
+  },
+  {
+    "id": "CC-024",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Estado laico y clase de religión",
+    "statement": "\"El Estado y la Iglesia deben estar separados\".\n\n¿Cuál de los siguientes enunciados es coherente con la afirmación anterior?",
+    "options": {
+      "A": "El único matrimonio válido frente al Estado es el matrimonio por la Iglesia católica.",
+      "B": "El diezmo será descontado automáticamente del salario de los empleados públicos.",
+      "C": "Los estudiantes de colegios públicos no están obligados a asistir a clase de religión.",
+      "D": "La fe de bautismo es el único documento que equivale al registro civil de los ciudadanos."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Laicidad del Estado",
+      "Coherencia con separación Iglesia-Estado"
+    ]
+  },
+  {
+    "id": "CC-025",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Educación indígena y autonomía cultural",
+    "statement": "Una comunidad indígena ha preservado su cultura durante los últimos siglos. En donde viven no hay escuelas, carreteras ni presencia de personas ajenas a la comunidad. Un grupo de sacerdotes católicos decide fundar una escuela en la zona para educar a los niños indígenas. Un grupo de antropólogos se opone y les pide que no lo hagan.\n\n¿Cuál es el fundamento de la oposición de los antropólogos?",
+    "options": {
+      "A": "Que los indígenas no reciban ningún tipo de educación, mientras no se consulte a la comunidad.",
+      "B": "Que se respete la autonomía cultural y el derecho de la comunidad a decidir sobre su educación.",
+      "C": "Que los sacerdotes no tienen formación pedagógica para educar a los indígenas.",
+      "D": "Que la educación debe ser laica y no confesional."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Autonomía cultural y consulta previa",
+      "Derechos de comunidades indígenas"
+    ]
+  },
+  {
+    "id": "CC-026",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Contralor General: quién lo elige",
+    "statement": "¿Cuál de los siguientes es el organismo encargado de elegir al contralor General de la República?",
+    "options": {
+      "A": "La Presidencia de la República.",
+      "B": "La Corte Constitucional.",
+      "C": "El Congreso de la República.",
+      "D": "La Procuraduría General de la Nación."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Organización del Estado",
+      "Funciones del Congreso"
+    ]
+  },
+  {
+    "id": "CC-027",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Pañoleta islámica y derecho a la igualdad",
+    "statement": "Una colombiana es devota del islam y todos los días cubre su cabeza con una pañoleta. En una entrevista, después de aprobar con éxito una convocatoria para un cargo en la alcaldía de su ciudad, el funcionario entrevistador le advierte que no puede tomar el trabajo si no acepta llevar la cabeza descubierta en las horas laborales.\n\n¿Tiene razón el funcionario al hacerle a la mujer esta solicitud?",
+    "options": {
+      "A": "Sí, porque Colombia es un país católico.",
+      "B": "Sí, porque el Estado colombiano es laico.",
+      "C": "No, porque le está vulnerando el derecho a la privacidad.",
+      "D": "No, porque le está vulnerando el derecho a la igualdad."
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Libertad de cultos y no discriminación",
+      "Derecho a la igualdad en acceso laboral"
+    ]
+  },
+  {
+    "id": "CC-028",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Tutela y derechos fundamentales",
+    "statement": "Un ciudadano interpone una acción de tutela porque una entidad le niega el acceso a un medicamento vital. La acción de tutela procede porque",
+    "options": {
+      "A": "protege derechos fundamentales de manera inmediata.",
+      "B": "es un mecanismo para demandar penalmente.",
+      "C": "solo aplica para derechos colectivos.",
+      "D": "requiere abogado para interponerse."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Acción de tutela como mecanismo",
+      "Protección inmediata de derechos"
+    ]
+  },
+  {
+    "id": "CC-029",
+    "section": "COMPETENCIAS_CIUDADANAS",
+    "topic": "Participación y Constitución",
+    "statement": "De acuerdo con la Constitución, ¿cuál es un deber del ciudadano?",
+    "options": {
+      "A": "Respetar los derechos ajenos y no abusar de los propios.",
+      "B": "Obedecer solo las leyes con las que está de acuerdo.",
+      "C": "Participar solo si recibe beneficio económico.",
+      "D": "Ignorar las normas de convivencia."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Deberes ciudadanos en Constitución",
+      "Corresponsabilidad"
+    ]
+  },
+  {
     "id": "CE-001",
     "section": "COMUNICACION_ESCRITA",
     "correct_option": "A",
@@ -202,6 +627,439 @@
       "C": "at",
       "D": "to"
     }
+  },
+  {
+    "id": "IN-005",
+    "section": "INGLES",
+    "topic": "Vocabulary: feelings - sad",
+    "statement": "Parte 2 — Relaciona descripciones con palabras (A-H). La opción H se usa para el ejemplo. Sobran dos palabras.\n\nEjemplo: 0. A person feels like this when they need to sleep. -> H tired\n\nPalabras:\nA. afraid | B. angry | C. cold | D. happy | E. hungry | F. sad | G. thirsty | H. tired\n\n1. People often cry when they feel like this.",
+    "options": {
+      "A": "afraid",
+      "B": "angry",
+      "C": "cold",
+      "D": "happy",
+      "E": "hungry",
+      "F": "sad",
+      "G": "thirsty",
+      "H": "tired"
+    },
+    "correct_option": "F",
+    "key_points": [
+      "Vocabulary feelings",
+      "Match description to word"
+    ]
+  },
+  {
+    "id": "IN-006",
+    "section": "INGLES",
+    "topic": "Vocabulary: feelings - hungry",
+    "statement": "Parte 2 — Relaciona descripciones con palabras (A-H). La opción H se usa para el ejemplo. Sobran dos palabras.\n\nEjemplo: 0. A person feels like this when they need to sleep. -> H tired\n\nPalabras:\nA. afraid | B. angry | C. cold | D. happy | E. hungry | F. sad | G. thirsty | H. tired\n\n2. If we feel like this, we want to eat something.",
+    "options": {
+      "A": "afraid",
+      "B": "angry",
+      "C": "cold",
+      "D": "happy",
+      "E": "hungry",
+      "F": "sad",
+      "G": "thirsty",
+      "H": "tired"
+    },
+    "correct_option": "E",
+    "key_points": [
+      "Vocabulary feelings",
+      "Hungry vs thirsty"
+    ]
+  },
+  {
+    "id": "IN-007",
+    "section": "INGLES",
+    "topic": "Vocabulary: feelings - angry",
+    "statement": "Parte 2 — Relaciona descripciones con palabras (A-H). La opción H se usa para el ejemplo. Sobran dos palabras.\n\nEjemplo: 0. A person feels like this when they need to sleep. -> H tired\n\nPalabras:\nA. afraid | B. angry | C. cold | D. happy | E. hungry | F. sad | G. thirsty | H. tired\n\n3. When we hate something, we sometimes feel like this.",
+    "options": {
+      "A": "afraid",
+      "B": "angry",
+      "C": "cold",
+      "D": "happy",
+      "E": "hungry",
+      "F": "sad",
+      "G": "thirsty",
+      "H": "tired"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Vocabulary feelings",
+      "Angry vs sad"
+    ]
+  },
+  {
+    "id": "IN-008",
+    "section": "INGLES",
+    "topic": "Vocabulary: feelings - thirsty",
+    "statement": "Parte 2 — Relaciona descripciones con palabras (A-H). La opción H se usa para el ejemplo. Sobran dos palabras.\n\nEjemplo: 0. A person feels like this when they need to sleep. -> H tired\n\nPalabras:\nA. afraid | B. angry | C. cold | D. happy | E. hungry | F. sad | G. thirsty | H. tired\n\n4. Some people usually feel like this when they need to drink something.",
+    "options": {
+      "A": "afraid",
+      "B": "angry",
+      "C": "cold",
+      "D": "happy",
+      "E": "hungry",
+      "F": "sad",
+      "G": "thirsty",
+      "H": "tired"
+    },
+    "correct_option": "G",
+    "key_points": [
+      "Vocabulary feelings",
+      "Thirsty"
+    ]
+  },
+  {
+    "id": "IN-009",
+    "section": "INGLES",
+    "topic": "Vocabulary: feelings - afraid",
+    "statement": "Parte 2 — Relaciona descripciones con palabras (A-H). La opción H se usa para el ejemplo. Sobran dos palabras.\n\nEjemplo: 0. A person feels like this when they need to sleep. -> H tired\n\nPalabras:\nA. afraid | B. angry | C. cold | D. happy | E. hungry | F. sad | G. thirsty | H. tired\n\n5. Some people feel this way when they are scared of spiders.",
+    "options": {
+      "A": "afraid",
+      "B": "angry",
+      "C": "cold",
+      "D": "happy",
+      "E": "hungry",
+      "F": "sad",
+      "G": "thirsty",
+      "H": "tired"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Vocabulary feelings",
+      "Afraid"
+    ]
+  },
+  {
+    "id": "IN-010",
+    "section": "INGLES",
+    "topic": "Conversation: preference",
+    "statement": "Complete the conversation:\n\n6. Do you prefer cats or dogs?",
+    "options": {
+      "A": "Both are nice.",
+      "B": "It´s not OK.",
+      "C": "All right."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Functional language",
+      "Preference response"
+    ]
+  },
+  {
+    "id": "IN-011",
+    "section": "INGLES",
+    "topic": "Conversation: forgetting",
+    "statement": "Complete the conversation:\n\n7. I forgot to turn the lights off.",
+    "options": {
+      "A": "How about this?",
+      "B": "Are you sure?",
+      "C": "Do it this way."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Conversation repair",
+      "Checking"
+    ]
+  },
+  {
+    "id": "IN-012",
+    "section": "INGLES",
+    "topic": "Conversation: sympathy",
+    "statement": "Complete the conversation:\n\n8. I am afraid my sister is sick.",
+    "options": {
+      "A": "Oh, I’m sorry.",
+      "B": "Too late.",
+      "C": "Can I go now?"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Expressing sympathy",
+      "Appropriate response"
+    ]
+  },
+  {
+    "id": "IN-013",
+    "section": "INGLES",
+    "topic": "Conversation: suggestion",
+    "statement": "Complete the conversation:\n\n9. Let’s go to the park next weekend.",
+    "options": {
+      "A": "So do I.",
+      "B": "Hope it is.",
+      "C": "Great idea."
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Suggestion acceptance",
+      "Great idea"
+    ]
+  },
+  {
+    "id": "IN-014",
+    "section": "INGLES",
+    "topic": "Conversation: request",
+    "statement": "Complete the conversation:\n\n10. Can I talk to you for a minute?",
+    "options": {
+      "A": "Be careful.",
+      "B": "Of course.",
+      "C": "Take one."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Request permission",
+      "Of course"
+    ]
+  },
+  {
+    "id": "IN-015",
+    "section": "INGLES",
+    "topic": "Grammar: present simple negative",
+    "statement": "Lee el texto y selecciona la palabra correcta para cada espacio (ver imagen).\n\nGREEK AND ROMAN CULTURES: The Greek culture, together with the Roman one, (0) ________ fascinated humans for centuries. Sadly, many people today (11) __________ know the differences between Greeks and Romans. Some people think Romans are an extension of Greeks; others assume that the two are similar. In fact, the two are very different (12) __________ one another, and show opposite life values. (13) __________ Greeks and Romans were great architects. Greeks used to (14) __________ more about shape than function. They (15) __________ the most important thing was making beautiful buildings. (16) __________, Romans were perfect engineers. For (17) __________, street planning and use had the greatest importance. Greeks admired poets and philosophers, (18) __________ Romans admired their soldiers who were extremely brave and successful.\n\n11. ______",
+    "options": {
+      "A": "doesn’t",
+      "B": "don’t",
+      "C": "didn’t"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Present simple negative",
+      "Subject-verb agreement"
+    ],
+    "statement_image": "IN-015.png"
+  },
+  {
+    "id": "IN-016",
+    "section": "INGLES",
+    "topic": "Preposition: from",
+    "statement": "Lee el texto y selecciona la palabra correcta para cada espacio (ver imagen).\n\nGREEK AND ROMAN CULTURES: The Greek culture, together with the Roman one, (0) ________ fascinated humans for centuries. Sadly, many people today (11) __________ know the differences between Greeks and Romans. Some people think Romans are an extension of Greeks; others assume that the two are similar. In fact, the two are very different (12) __________ one another, and show opposite life values. (13) __________ Greeks and Romans were great architects. Greeks used to (14) __________ more about shape than function. They (15) __________ the most important thing was making beautiful buildings. (16) __________, Romans were perfect engineers. For (17) __________, street planning and use had the greatest importance. Greeks admired poets and philosophers, (18) __________ Romans admired their soldiers who were extremely brave and successful.\n\n12. ______",
+    "options": {
+      "A": "among",
+      "B": "against",
+      "C": "from"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Preposition different from",
+      "Collocation"
+    ],
+    "statement_image": "IN-015.png"
+  },
+  {
+    "id": "IN-017",
+    "section": "INGLES",
+    "topic": "Determiners: Both",
+    "statement": "Lee el texto y selecciona la palabra correcta para cada espacio (ver imagen).\n\nGREEK AND ROMAN CULTURES: The Greek culture, together with the Roman one, (0) ________ fascinated humans for centuries. Sadly, many people today (11) __________ know the differences between Greeks and Romans. Some people think Romans are an extension of Greeks; others assume that the two are similar. In fact, the two are very different (12) __________ one another, and show opposite life values. (13) __________ Greeks and Romans were great architects. Greeks used to (14) __________ more about shape than function. They (15) __________ the most important thing was making beautiful buildings. (16) __________, Romans were perfect engineers. For (17) __________, street planning and use had the greatest importance. Greeks admired poets and philosophers, (18) __________ Romans admired their soldiers who were extremely brave and successful.\n\n13. ______",
+    "options": {
+      "A": "Either",
+      "B": "Both",
+      "C": "Each"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Both vs either/each",
+      "Plural reference"
+    ],
+    "statement_image": "IN-015.png"
+  },
+  {
+    "id": "IN-018",
+    "section": "INGLES",
+    "topic": "Verb: worry",
+    "statement": "Lee el texto y selecciona la palabra correcta para cada espacio (ver imagen).\n\nGREEK AND ROMAN CULTURES: The Greek culture, together with the Roman one, (0) ________ fascinated humans for centuries. Sadly, many people today (11) __________ know the differences between Greeks and Romans. Some people think Romans are an extension of Greeks; others assume that the two are similar. In fact, the two are very different (12) __________ one another, and show opposite life values. (13) __________ Greeks and Romans were great architects. Greeks used to (14) __________ more about shape than function. They (15) __________ the most important thing was making beautiful buildings. (16) __________, Romans were perfect engineers. For (17) __________, street planning and use had the greatest importance. Greeks admired poets and philosophers, (18) __________ Romans admired their soldiers who were extremely brave and successful.\n\n14. ______",
+    "options": {
+      "A": "worry",
+      "B": "worries",
+      "C": "worrying"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Infinitive after used to",
+      "Worry"
+    ],
+    "statement_image": "IN-015.png"
+  },
+  {
+    "id": "IN-019",
+    "section": "INGLES",
+    "topic": "Verb: believed",
+    "statement": "Lee el texto y selecciona la palabra correcta para cada espacio (ver imagen).\n\nGREEK AND ROMAN CULTURES: The Greek culture, together with the Roman one, (0) ________ fascinated humans for centuries. Sadly, many people today (11) __________ know the differences between Greeks and Romans. Some people think Romans are an extension of Greeks; others assume that the two are similar. In fact, the two are very different (12) __________ one another, and show opposite life values. (13) __________ Greeks and Romans were great architects. Greeks used to (14) __________ more about shape than function. They (15) __________ the most important thing was making beautiful buildings. (16) __________, Romans were perfect engineers. For (17) __________, street planning and use had the greatest importance. Greeks admired poets and philosophers, (18) __________ Romans admired their soldiers who were extremely brave and successful.\n\n15. ______",
+    "options": {
+      "A": "believed",
+      "B": "believes",
+      "C": "believe"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Past tense believed",
+      "Sequence"
+    ],
+    "statement_image": "IN-015.png"
+  },
+  {
+    "id": "IN-020",
+    "section": "INGLES",
+    "topic": "Connector: However",
+    "statement": "Lee el texto y selecciona la palabra correcta para cada espacio (ver imagen).\n\nGREEK AND ROMAN CULTURES: The Greek culture, together with the Roman one, (0) ________ fascinated humans for centuries. Sadly, many people today (11) __________ know the differences between Greeks and Romans. Some people think Romans are an extension of Greeks; others assume that the two are similar. In fact, the two are very different (12) __________ one another, and show opposite life values. (13) __________ Greeks and Romans were great architects. Greeks used to (14) __________ more about shape than function. They (15) __________ the most important thing was making beautiful buildings. (16) __________, Romans were perfect engineers. For (17) __________, street planning and use had the greatest importance. Greeks admired poets and philosophers, (18) __________ Romans admired their soldiers who were extremely brave and successful.\n\n16. ______",
+    "options": {
+      "A": "Almost",
+      "B": "However",
+      "C": "Because"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Contrast connector",
+      "However"
+    ],
+    "statement_image": "IN-015.png"
+  },
+  {
+    "id": "IN-021",
+    "section": "INGLES",
+    "topic": "Pronoun: them",
+    "statement": "Lee el texto y selecciona la palabra correcta para cada espacio (ver imagen).\n\nGREEK AND ROMAN CULTURES: The Greek culture, together with the Roman one, (0) ________ fascinated humans for centuries. Sadly, many people today (11) __________ know the differences between Greeks and Romans. Some people think Romans are an extension of Greeks; others assume that the two are similar. In fact, the two are very different (12) __________ one another, and show opposite life values. (13) __________ Greeks and Romans were great architects. Greeks used to (14) __________ more about shape than function. They (15) __________ the most important thing was making beautiful buildings. (16) __________, Romans were perfect engineers. For (17) __________, street planning and use had the greatest importance. Greeks admired poets and philosophers, (18) __________ Romans admired their soldiers who were extremely brave and successful.\n\n17. ______",
+    "options": {
+      "A": "you",
+      "B": "her",
+      "C": "them"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Pronoun them",
+      "Anaphora"
+    ],
+    "statement_image": "IN-015.png"
+  },
+  {
+    "id": "IN-022",
+    "section": "INGLES",
+    "topic": "Conjunction: but",
+    "statement": "Lee el texto y selecciona la palabra correcta para cada espacio (ver imagen).\n\nGREEK AND ROMAN CULTURES: The Greek culture, together with the Roman one, (0) ________ fascinated humans for centuries. Sadly, many people today (11) __________ know the differences between Greeks and Romans. Some people think Romans are an extension of Greeks; others assume that the two are similar. In fact, the two are very different (12) __________ one another, and show opposite life values. (13) __________ Greeks and Romans were great architects. Greeks used to (14) __________ more about shape than function. They (15) __________ the most important thing was making beautiful buildings. (16) __________, Romans were perfect engineers. For (17) __________, street planning and use had the greatest importance. Greeks admired poets and philosophers, (18) __________ Romans admired their soldiers who were extremely brave and successful.\n\n18. ______",
+    "options": {
+      "A": "but",
+      "B": "or",
+      "C": "so"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Contrast but",
+      "Greeks vs Romans"
+    ],
+    "statement_image": "IN-015.png"
+  },
+  {
+    "id": "IN-023",
+    "section": "INGLES",
+    "topic": "Reading: purpose of Noyes travel",
+    "statement": "A SOCIAL EXPERIMENT IN ONEIDA, NEW YORK\n\nIn the nineteenth century there was a village called Oneida in New York State where a \"family\" of 300 members lived together in a large beautiful house where they shared everything. A man named John Humphrey Noyes, and a small group of people moved there in 1848. They wanted a place where they could live according to their particular beliefs in their efforts to create a more equal society.\n\nToday, this place is touristic and, like me, many visitors come because they had relatives among those 19th century dreamers. Others just want to see for themselves the building where this successful social group in American history lived. “I don’t know of anywhere else where you can live in a historical place,” said the director of the Oneida site. “It’s very unusual.”\n\nThe present owners share the building with guests who stay in large comfortably furnished bedrooms with private baths. There are eight guest rooms in the hotel area, and each guest pays $100 for a big bedroom, a simple breakfast and a private tour around the 10,300-square-meter building, which also contains 35 apartments.\n\nThe library and the building’s grounds are also open to guests, as well as several of the public rooms. The 170-year-old library, unchanged from the original construction, holds a rich collection of 19th century books and magazines, which learners used to study Latin, Greek, algebra and astronomy.\n\n19. John Humphrey Noyes travelled to New York State",
+    "options": {
+      "A": "to visit his family.",
+      "B": "to change his way of life.",
+      "C": "to know more about his country."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Reading detail",
+      "Purpose"
+    ]
+  },
+  {
+    "id": "IN-024",
+    "section": "INGLES",
+    "topic": "Reading: Oneida today",
+    "statement": "A SOCIAL EXPERIMENT IN ONEIDA, NEW YORK\n\nIn the nineteenth century there was a village called Oneida in New York State where a \"family\" of 300 members lived together in a large beautiful house where they shared everything. A man named John Humphrey Noyes, and a small group of people moved there in 1848. They wanted a place where they could live according to their particular beliefs in their efforts to create a more equal society.\n\nToday, this place is touristic and, like me, many visitors come because they had relatives among those 19th century dreamers. Others just want to see for themselves the building where this successful social group in American history lived. “I don’t know of anywhere else where you can live in a historical place,” said the director of the Oneida site. “It’s very unusual.”\n\nThe present owners share the building with guests who stay in large comfortably furnished bedrooms with private baths. There are eight guest rooms in the hotel area, and each guest pays $100 for a big bedroom, a simple breakfast and a private tour around the 10,300-square-meter building, which also contains 35 apartments.\n\nThe library and the building’s grounds are also open to guests, as well as several of the public rooms. The 170-year-old library, unchanged from the original construction, holds a rich collection of 19th century books and magazines, which learners used to study Latin, Greek, algebra and astronomy.\n\n20. Nowadays Oneida is",
+    "options": {
+      "A": "a hotel.",
+      "B": "a bath.",
+      "C": "a school."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Reading comprehension",
+      "Current status"
+    ]
+  },
+  {
+    "id": "IN-025",
+    "section": "INGLES",
+    "topic": "Reading: writer motive",
+    "statement": "A SOCIAL EXPERIMENT IN ONEIDA, NEW YORK\n\nIn the nineteenth century there was a village called Oneida in New York State where a \"family\" of 300 members lived together in a large beautiful house where they shared everything. A man named John Humphrey Noyes, and a small group of people moved there in 1848. They wanted a place where they could live according to their particular beliefs in their efforts to create a more equal society.\n\nToday, this place is touristic and, like me, many visitors come because they had relatives among those 19th century dreamers. Others just want to see for themselves the building where this successful social group in American history lived. “I don’t know of anywhere else where you can live in a historical place,” said the director of the Oneida site. “It’s very unusual.”\n\nThe present owners share the building with guests who stay in large comfortably furnished bedrooms with private baths. There are eight guest rooms in the hotel area, and each guest pays $100 for a big bedroom, a simple breakfast and a private tour around the 10,300-square-meter building, which also contains 35 apartments.\n\nThe library and the building’s grounds are also open to guests, as well as several of the public rooms. The 170-year-old library, unchanged from the original construction, holds a rich collection of 19th century books and magazines, which learners used to study Latin, Greek, algebra and astronomy.\n\n21. The writer visited the place because he",
+    "options": {
+      "A": "had particular social beliefs.",
+      "B": "had family who had lived there.",
+      "C": "had interest in historical buildings."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Inference",
+      "Family link"
+    ]
+  },
+  {
+    "id": "IN-026",
+    "section": "INGLES",
+    "topic": "Reading: visiting building",
+    "statement": "A SOCIAL EXPERIMENT IN ONEIDA, NEW YORK\n\nIn the nineteenth century there was a village called Oneida in New York State where a \"family\" of 300 members lived together in a large beautiful house where they shared everything. A man named John Humphrey Noyes, and a small group of people moved there in 1848. They wanted a place where they could live according to their particular beliefs in their efforts to create a more equal society.\n\nToday, this place is touristic and, like me, many visitors come because they had relatives among those 19th century dreamers. Others just want to see for themselves the building where this successful social group in American history lived. “I don’t know of anywhere else where you can live in a historical place,” said the director of the Oneida site. “It’s very unusual.”\n\nThe present owners share the building with guests who stay in large comfortably furnished bedrooms with private baths. There are eight guest rooms in the hotel area, and each guest pays $100 for a big bedroom, a simple breakfast and a private tour around the 10,300-square-meter building, which also contains 35 apartments.\n\nThe library and the building’s grounds are also open to guests, as well as several of the public rooms. The 170-year-old library, unchanged from the original construction, holds a rich collection of 19th century books and magazines, which learners used to study Latin, Greek, algebra and astronomy.\n\n22. If you want to see the building,",
+    "options": {
+      "A": "you need to pay to have a guided visit.",
+      "B": "you can join a small group of people.",
+      "C": "you will have your own map included."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Detail: pays $100 for tour",
+      "Inference"
+    ]
+  },
+  {
+    "id": "IN-027",
+    "section": "INGLES",
+    "topic": "Reading: access to house",
+    "statement": "A SOCIAL EXPERIMENT IN ONEIDA, NEW YORK\n\nIn the nineteenth century there was a village called Oneida in New York State where a \"family\" of 300 members lived together in a large beautiful house where they shared everything. A man named John Humphrey Noyes, and a small group of people moved there in 1848. They wanted a place where they could live according to their particular beliefs in their efforts to create a more equal society.\n\nToday, this place is touristic and, like me, many visitors come because they had relatives among those 19th century dreamers. Others just want to see for themselves the building where this successful social group in American history lived. “I don’t know of anywhere else where you can live in a historical place,” said the director of the Oneida site. “It’s very unusual.”\n\nThe present owners share the building with guests who stay in large comfortably furnished bedrooms with private baths. There are eight guest rooms in the hotel area, and each guest pays $100 for a big bedroom, a simple breakfast and a private tour around the 10,300-square-meter building, which also contains 35 apartments.\n\nThe library and the building’s grounds are also open to guests, as well as several of the public rooms. The 170-year-old library, unchanged from the original construction, holds a rich collection of 19th century books and magazines, which learners used to study Latin, Greek, algebra and astronomy.\n\n23. All visitors to the Oneida historical site",
+    "options": {
+      "A": "have access to most parts of the house.",
+      "B": "must go to the 19th century library.",
+      "C": "are not allowed to see the 35 apartments."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Reading",
+      "Access"
+    ]
+  },
+  {
+    "id": "IN-028",
+    "section": "INGLES",
+    "topic": "Reading: old library",
+    "statement": "A SOCIAL EXPERIMENT IN ONEIDA, NEW YORK\n\nIn the nineteenth century there was a village called Oneida in New York State where a \"family\" of 300 members lived together in a large beautiful house where they shared everything. A man named John Humphrey Noyes, and a small group of people moved there in 1848. They wanted a place where they could live according to their particular beliefs in their efforts to create a more equal society.\n\nToday, this place is touristic and, like me, many visitors come because they had relatives among those 19th century dreamers. Others just want to see for themselves the building where this successful social group in American history lived. “I don’t know of anywhere else where you can live in a historical place,” said the director of the Oneida site. “It’s very unusual.”\n\nThe present owners share the building with guests who stay in large comfortably furnished bedrooms with private baths. There are eight guest rooms in the hotel area, and each guest pays $100 for a big bedroom, a simple breakfast and a private tour around the 10,300-square-meter building, which also contains 35 apartments.\n\nThe library and the building’s grounds are also open to guests, as well as several of the public rooms. The 170-year-old library, unchanged from the original construction, holds a rich collection of 19th century books and magazines, which learners used to study Latin, Greek, algebra and astronomy.\n\n24. The old library",
+    "options": {
+      "A": "has changed a little.",
+      "B": "has remained the same.",
+      "C": "has been damaged."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Library unchanged",
+      "Detail"
+    ]
+  },
+  {
+    "id": "IN-029",
+    "section": "INGLES",
+    "topic": "Reading: Oneida studied",
+    "statement": "A SOCIAL EXPERIMENT IN ONEIDA, NEW YORK\n\nIn the nineteenth century there was a village called Oneida in New York State where a \"family\" of 300 members lived together in a large beautiful house where they shared everything. A man named John Humphrey Noyes, and a small group of people moved there in 1848. They wanted a place where they could live according to their particular beliefs in their efforts to create a more equal society.\n\nToday, this place is touristic and, like me, many visitors come because they had relatives among those 19th century dreamers. Others just want to see for themselves the building where this successful social group in American history lived. “I don’t know of anywhere else where you can live in a historical place,” said the director of the Oneida site. “It’s very unusual.”\n\nThe present owners share the building with guests who stay in large comfortably furnished bedrooms with private baths. There are eight guest rooms in the hotel area, and each guest pays $100 for a big bedroom, a simple breakfast and a private tour around the 10,300-square-meter building, which also contains 35 apartments.\n\nThe library and the building’s grounds are also open to guests, as well as several of the public rooms. The 170-year-old library, unchanged from the original construction, holds a rich collection of 19th century books and magazines, which learners used to study Latin, Greek, algebra and astronomy.\n\n25. People at Oneida studied",
+    "options": {
+      "A": "languages.",
+      "B": "politics.",
+      "C": "anatomy."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Languages Latin Greek",
+      "Detail"
+    ]
   },
   {
     "id": "LC-005",

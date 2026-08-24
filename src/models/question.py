@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field, field_validator
 
 from .section import Section
 
-OPTION_KEYS = ("A", "B", "C", "D")
+OPTION_KEYS = ("A", "B", "C", "D", "E", "F", "G", "H")
 
 
 class Question(BaseModel):
@@ -29,13 +29,20 @@ class Question(BaseModel):
     @field_validator("options")
     @classmethod
     def validate_options(cls, value: dict[str, str]) -> dict[str, str]:
-        if set(value.keys()) != set(OPTION_KEYS):
-            raise ValueError(f"Las opciones deben contener exactamente {OPTION_KEYS}")
+        if not (3 <= len(value) <= 8):
+            raise ValueError("Las opciones deben tener entre 3 y 8 entradas")
+        if not set(value.keys()).issubset(set(OPTION_KEYS)):
+            raise ValueError(f"Las opciones deben ser subconjunto de {OPTION_KEYS}")
+        if list(value.keys()) != sorted(value.keys()):
+            raise ValueError("Las opciones deben estar ordenadas alfabéticamente")
         return value
 
     @field_validator("correct_option")
     @classmethod
     def validate_correct_option(cls, value: str, info) -> str:
+        opts = info.data.get("options")
+        if opts is not None and value not in opts:
+            raise ValueError("La opción correcta debe estar entre las opciones definidas")
         if value not in OPTION_KEYS:
             raise ValueError(f"La opción correcta debe ser una de {OPTION_KEYS}")
         return value

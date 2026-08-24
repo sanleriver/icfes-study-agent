@@ -21,7 +21,7 @@ def _play(graph, section, num_questions, answer_fn, thread_id):
 
 
 def _wrong_option(question):
-    return next(o for o in ("A", "B", "C", "D") if o != question["correct_option"])
+    return next(o for o in ("A", "B", "C", "D", "E", "F", "G", "H") if o in question["options"] and o != question["correct_option"])
 
 
 class TestGraphSesion:
@@ -60,8 +60,11 @@ class TestGraphSesion:
     def test_agotamiento_de_preguntas_notifica(self):
         graph = build_graph()
         result = _play(graph, Section.INGLES, 99, lambda q: q["correct_option"], "t-ago")
-        assert result["summary"].total_questions == 4
-        assert "solo hay 4 preguntas" in result["message"].lower()
+        from src.data.loader import get_questions_by_section
+
+        expected = len(get_questions_by_section(Section.INGLES))
+        assert result["summary"].total_questions == expected
+        assert f"solo hay {expected} preguntas" in result["message"].lower()
 
     def test_sin_preguntas_para_la_seccion_termina_sin_preguntar(self):
         graph = build_graph()
