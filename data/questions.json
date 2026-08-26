@@ -2023,5 +2023,441 @@
       "Proporcionalidad directa",
       "Escalar por días"
     ]
+  },
+  {
+    "id": "RQ-030",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Porcentajes sucesivos: descuento e IVA",
+    "statement": "Una tienda anuncia: \"15% de descuento y luego 19% de IVA sobre el precio con descuento\". Un computador tiene precio base de $2.000.000 antes de descuento e impuestos. ¿Cuál es el precio final que paga el cliente?",
+    "options": {
+      "A": "$2.023.000",
+      "B": "$2.080.000",
+      "C": "$2.000.000",
+      "D": "$1.700.000"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Aplicar descuentos y recargos de forma sucesiva sobre la base intermedia",
+      "Distinguir que 15% descuento + 19% IVA no se anulan ni se suman linealmente"
+    ]
+  },
+  {
+    "id": "RQ-031",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Descuentos sucesivos",
+    "statement": "Un almacén aplica dos descuentos sucesivos del 10% y del 20% sobre un televisor de $500.000. ¿Cuál es el precio final?",
+    "options": {
+      "A": "$360.000",
+      "B": "$350.000",
+      "C": "$400.000",
+      "D": "$300.000"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Multiplicar por factores sucesivos (0,9 y 0,8)",
+      "No sumar porcentajes linealmente"
+    ]
+  },
+  {
+    "id": "RQ-032",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Comparación de esquemas de descuento",
+    "statement": "Para un producto de $400.000 se ofrecen dos opciones: Opción 1: 30% de descuento directo. Opción 2: 20% y luego 10% sucesivos. ¿Cuál afirmación es correcta?",
+    "options": {
+      "A": "La opción 1 es más barata por $8.000 ($280.000 vs $288.000).",
+      "B": "La opción 2 es más barata por $8.000.",
+      "C": "Ambas opciones dan el mismo precio final.",
+      "D": "La opción 1 es más barata por $20.000."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Calcular 0,7 vs 0,8×0,9 y comparar",
+      "Reconocer que descuentos sucesivos no equivalen a la suma"
+    ]
+  },
+  {
+    "id": "RQ-033",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Probabilidad simple con bolsa",
+    "statement": "En la bolsa de la imagen hay 6 fichas rojas, 4 azules y 2 verdes (12 en total). Si se extrae una ficha al azar, ¿cuál es la probabilidad de que sea azul?",
+    "options": {
+      "A": "1/2",
+      "B": "1/3",
+      "C": "1/4",
+      "D": "1/6"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Regla de Laplace: casos favorables sobre totales",
+      "Identificar 4 favorables de 12 → 1/3"
+    ],
+    "statement_image": "RQ-033.png"
+  },
+  {
+    "id": "RQ-034",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Probabilidad condicional sin reemplazo",
+    "statement": "Una bolsa tiene 5 fichas rojas y 3 verdes (8 en total). Se extrae una ficha roja y no se devuelve. ¿Cuál es la probabilidad de que la segunda extracción sea verde?",
+    "options": {
+      "A": "3/8",
+      "B": "3/5",
+      "C": "3/7",
+      "D": "5/7"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Actualizar espacio muestral tras extracción sin reemplazo",
+      "3 verdes sobre 7 restantes"
+    ]
+  },
+  {
+    "id": "RQ-035",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Combinatoria: contraseñas con restricción",
+    "statement": "Se quiere formar una contraseña de 3 dígitos distintos con cifras del 0 al 9, que no puede empezar por 0. ¿Cuántas contraseñas diferentes se pueden formar?",
+    "options": {
+      "A": "720",
+      "B": "504",
+      "C": "648",
+      "D": "900"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Principio multiplicativo con restricción en primera posición",
+      "9×9×8 = 648"
+    ]
+  },
+  {
+    "id": "RQ-036",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Promedio en tabla de ventas",
+    "statement": "Observa la tabla de ventas diarias de una tienda (ver imagen).\nLunes: $120.000, Martes: $150.000, Miércoles: $90.000, Jueves: $180.000, Viernes: $210.000. ¿Cuál fue el promedio diario de ventas de lunes a viernes?",
+    "options": {
+      "A": "$140.000",
+      "B": "$150.000",
+      "C": "$180.000",
+      "D": "$210.000"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Sumar valores y dividir entre número de días",
+      "Promedio aritmético simple"
+    ],
+    "statement_image": "RQ-036.png"
+  },
+  {
+    "id": "RQ-037",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Mediana en tabla de ventas",
+    "statement": "Observa la misma tabla de ventas (ver imagen).\nValores: $120.000, $150.000, $90.000, $180.000, $210.000. ¿Cuál es la mediana de las ventas diarias?",
+    "options": {
+      "A": "$90.000",
+      "B": "$150.000",
+      "C": "$180.000",
+      "D": "$210.000"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Ordenar datos y ubicar valor central",
+      "Mediana como medida de tendencia central"
+    ],
+    "statement_image": "RQ-036.png"
+  },
+  {
+    "id": "RQ-038",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Efecto de valor atípico: promedio vs mediana",
+    "statement": "Observa la tabla de ventas (ver imagen). Si el sábado las ventas fueron $600.000 y se incluye en el cálculo (6 días: 120, 150, 90, 180, 210, 600 en miles), ¿qué afirmación describe mejor el comportamiento?",
+    "options": {
+      "A": "El promedio (225.000) representa mejor la tendencia que la mediana.",
+      "B": "La mediana (165.000) representa mejor la tendencia; el promedio queda distorsionado por el valor atípico.",
+      "C": "Promedio y mediana coinciden y ambas representan bien la tendencia.",
+      "D": "El promedio baja a 120.000 por el valor atípico."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Calcular promedio 1.350/6=225 y mediana (150+180)/2=165",
+      "Reconocer sensibilidad del promedio a outliers"
+    ],
+    "statement_image": "RQ-036.png"
+  },
+  {
+    "id": "RQ-039",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Escala de mapa y conversión de unidades",
+    "statement": "Un mapa está a escala 1:50.000. La distancia entre dos colegios en el mapa es de 8 cm. ¿Cuál es la distancia real en kilómetros?",
+    "options": {
+      "A": "4 km",
+      "B": "0,4 km",
+      "C": "40 km",
+      "D": "8 km"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Multiplicar por factor de escala: 8×50.000 = 400.000 cm",
+      "Convertir cm a km (1 km = 100.000 cm)"
+    ]
+  },
+  {
+    "id": "RQ-040",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Conversión km/h a m/s y distancia",
+    "statement": "Un ciclista se desplaza a 36 km/h constantes. ¿A cuántos m/s equivale y cuántos metros recorre en 15 segundos?",
+    "options": {
+      "A": "36 m/s y 540 m",
+      "B": "15 m/s y 225 m",
+      "C": "12 m/s y 180 m",
+      "D": "10 m/s y 150 m"
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Dividir entre 3,6 para convertir km/h a m/s",
+      "Multiplicar velocidad por tiempo para distancia"
+    ]
+  },
+  {
+    "id": "RQ-041",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Interés simple",
+    "statement": "Observa la tabla de planes de crédito (ver imagen). Un préstamo de $3.000.000 se pacta al 2% mensual con interés simple durante 6 meses. ¿Cuánto se paga en total por intereses?",
+    "options": {
+      "A": "$60.000",
+      "B": "$120.000",
+      "C": "$360.000",
+      "D": "$600.000"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Fórmula interés simple I = C×i×t",
+      "3.000.000×0,02×6 = 360.000"
+    ],
+    "statement_image": "RQ-041.png"
+  },
+  {
+    "id": "RQ-042",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Comparación de planes de pago",
+    "statement": "Observa la tabla de planes (ver imagen). Producto $2.400.000. Plan A: 12 cuotas de $220.000 (total $2.640.000). Plan B: 6 cuotas de $410.000 (total $2.460.000). ¿Cuál afirmación es correcta?",
+    "options": {
+      "A": "El Plan A es más barato por $180.000.",
+      "B": "El Plan B es más barato por $180.000.",
+      "C": "Ambos planes cuestan lo mismo.",
+      "D": "El Plan B es más barato por $410.000."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Calcular total de cada plan multiplicando cuota por número de cuotas",
+      "Comparar totales para optimizar costo"
+    ],
+    "statement_image": "RQ-041.png"
+  },
+  {
+    "id": "RQ-043",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Perímetro y cerca con portón",
+    "statement": "Observa el plano del lote rectangular (ver imagen). El lote mide 25 m de ancho por 40 m de largo. Se quiere cercar dejando un portón de 3 m sin cerca. ¿Cuántos metros de cerca se necesitan?",
+    "options": {
+      "A": "130 m",
+      "B": "127 m",
+      "C": "65 m",
+      "D": "62 m"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Perímetro 2×(25+40)=130 m",
+      "Restar apertura del portón"
+    ],
+    "statement_image": "RQ-043.png"
+  },
+  {
+    "id": "RQ-044",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Área y baldosas",
+    "statement": "Un salón de 6 m por 4 m se quiere enchapar con baldosas cuadradas de 40 cm de lado. ¿Cuántas baldosas se necesitan (sin desperdicio)?",
+    "options": {
+      "A": "60",
+      "B": "100",
+      "C": "120",
+      "D": "150"
+    },
+    "correct_option": "D",
+    "key_points": [
+      "Área salón 24 m² y baldosa 0,16 m²",
+      "Dividir áreas: 24/0,16 = 150"
+    ]
+  },
+  {
+    "id": "RQ-045",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Volumen de caja con reducción",
+    "statement": "Una caja rectangular mide 30 cm × 20 cm × 15 cm. Si la altura se reduce 20% manteniendo largo y ancho, ¿cuál es el nuevo volumen?",
+    "options": {
+      "A": "9.000 cm³",
+      "B": "8.000 cm³",
+      "C": "7.200 cm³",
+      "D": "6.000 cm³"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Nueva altura 12 cm (80% de 15)",
+      "Volumen 30×20×12 = 7.200 cm³"
+    ]
+  },
+  {
+    "id": "RQ-046",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Modelación lineal: tarifa de taxi",
+    "statement": "Un taxi cobra $4.500 de banderazo más $120 por cada 100 m recorridos. ¿Cuánto cuesta un recorrido de 2,5 km?",
+    "options": {
+      "A": "$7.000",
+      "B": "$7.500",
+      "C": "$8.500",
+      "D": "$4.620"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Convertir 2,5 km a 25 tramos de 100 m",
+      "Costo = 4.500 + 25×120 = 7.500"
+    ]
+  },
+  {
+    "id": "RQ-047",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Sistema de ecuaciones 2×2: cafetería",
+    "statement": "En una cafetería 2 cafés + 1 sándwich cuestan $18.000 y 1 café + 2 sándwiches cuestan $21.000. ¿Cuánto cuesta un café?",
+    "options": {
+      "A": "$5.000",
+      "B": "$6.000",
+      "C": "$7.000",
+      "D": "$9.000"
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Plantear sistema 2c+s=18.000 y c+2s=21.000",
+      "Resolver por eliminación: c=5.000"
+    ]
+  },
+  {
+    "id": "RQ-048",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Mezcla y promedio ponderado",
+    "statement": "Se mezclan 2 kg de café a $30.000/kg con 3 kg a $20.000/kg. ¿Cuál es el precio promedio por kilogramo de la mezcla?",
+    "options": {
+      "A": "$25.000",
+      "B": "$24.000",
+      "C": "$22.000",
+      "D": "$26.000"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Costo total 60.000+60.000=120.000 sobre 5 kg",
+      "Promedio ponderado por masa"
+    ]
+  },
+  {
+    "id": "RQ-049",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Lectura de gráfica temperatura vs consumo",
+    "statement": "Observa la gráfica de temperatura media mensual y consumo de energía de un edificio (ver imagen). En el mes con temperatura de 30 °C el consumo registrado fue de 400 kWh. ¿Qué mes corresponde?",
+    "options": {
+      "A": "Enero (22 °C)",
+      "B": "Marzo (26 °C)",
+      "C": "Julio (30 °C)",
+      "D": "Octubre (18 °C)"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Leer ejes de gráfica de líneas doble variable",
+      "Asociar 30 °C con 400 kWh en julio"
+    ],
+    "statement_image": "RQ-049.png"
+  },
+  {
+    "id": "RQ-050",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Correlación temperatura-consumo",
+    "statement": "Observa la misma gráfica temperatura vs consumo (ver imagen). ¿Qué relación se observa entre temperatura y consumo de energía?",
+    "options": {
+      "A": "A mayor temperatura, mayor consumo de energía.",
+      "B": "A mayor temperatura, menor consumo.",
+      "C": "No hay relación entre temperatura y consumo.",
+      "D": "El consumo es constante independiente de la temperatura."
+    },
+    "correct_option": "A",
+    "key_points": [
+      "Interpretar tendencia creciente conjunta",
+      "Correlación positiva aire acondicionado"
+    ],
+    "statement_image": "RQ-049.png"
+  },
+  {
+    "id": "RQ-051",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Predicción e interpolación en gráfica",
+    "statement": "Observa la gráfica temperatura vs consumo (ver imagen). Si en un mes la temperatura fuera de 28 °C, ¿qué consumo sería más razonable estimar?",
+    "options": {
+      "A": "150 kWh",
+      "B": "250 kWh",
+      "C": "360 kWh",
+      "D": "600 kWh"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Interpolar entre valores conocidos (26°C→320, 30°C→400)",
+      "Estimación proporcional no exacta"
+    ],
+    "statement_image": "RQ-049.png"
+  },
+  {
+    "id": "RQ-052",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Validación de procedimientos: porcentaje",
+    "statement": "Se quiere calcular el 35% de 800. Se proponen:\nI. 800×0,35\nII. 800×35/100\nIII. 800/100×35\n¿Cuál(es) procedimiento(s) es(son) correcto(s)?",
+    "options": {
+      "A": "I solamente",
+      "B": "I y II solamente",
+      "C": "I, II y III",
+      "D": "II solamente"
+    },
+    "correct_option": "C",
+    "key_points": [
+      "Equivalencia entre decimal, fracción y regla de tres",
+      "Tres formas válidas de calcular porcentaje"
+    ]
+  },
+  {
+    "id": "RQ-053",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Promedio ponderado de notas",
+    "statement": "La nota final es 70% examen + 30% taller. Un estudiante saca 4,0 en examen y 5,0 en taller (escala 1-5). ¿Cuál es su nota final?",
+    "options": {
+      "A": "4,5",
+      "B": "4,3",
+      "C": "4,7",
+      "D": "4,0"
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Ponderar: 0,7×4,0 + 0,3×5,0 = 2,8+1,5=4,3",
+      "No promediar simple (4,5)"
+    ]
+  },
+  {
+    "id": "RQ-054",
+    "section": "RAZONAMIENTO_CUANTITATIVO",
+    "topic": "Volumen y datos faltantes: tanque",
+    "statement": "Un tanque cilíndrico de radio 1 m y altura 2 m está conectado a otro del mismo radio pero altura desconocida. Para estimar la capacidad total solo se mide el primero. ¿Qué se puede afirmar?",
+    "options": {
+      "A": "Es suficiente, el segundo tanque es igual.",
+      "B": "No es suficiente, falta la altura del segundo tanque y el volumen del tubo de conexión.",
+      "C": "Es suficiente si se asume que ambos están llenos.",
+      "D": "No es suficiente, falta el peso del agua."
+    },
+    "correct_option": "B",
+    "key_points": [
+      "Volumen cilindro πr²h requiere ambas alturas",
+      "Identificar datos faltantes del sistema"
+    ],
+    "statement_image": "RQ-054.png"
   }
 ]
