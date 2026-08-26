@@ -7,7 +7,7 @@ Tutor de práctica para la prueba **ICFES Saber Pro**: presenta una sesión de p
 - **Fases 0–7 completadas** (config, modelos Pydantic, banco de 20 preguntas, núcleo determinista, grafo LangGraph, proveedor LLM con mock/Gemini, interfaz Flet y suite de pruebas).
 - **Fase 8 completada:** integración real con Gemini (requiere `GEMINI_API_KEY`, provider `mock|gemini`).
 - **Fase Docker completada:** monolito `python:3.14-slim` + `docker-compose.yml` + CI GHCR (`.github/workflows/docker.yml`).
-- Suite de tests: **64 tests** (`pytest`, `tests/test_app.py` skipeado tras deprecación Streamlit).
+- Suite de tests: **65 tests** (`pytest`, `tests/test_app.py` incluido; 142 preguntas totales).
 
 ## Stack
 
@@ -30,8 +30,8 @@ src/
   data/                 Banco de preguntas e imágenes
   providers/            Capa de proveedores de feedback (ABC, mock, Gemini)
 data/
-  questions.json        Banco de preguntas (5 secciones, 4 cada una)
-  images/               Imágenes de preguntas (RQ-002.png, RQ-003.png)
+  questions.json        Banco de preguntas (142 totales; RQ 54 tras ampliación RQ-030..054)
+  images/               Imágenes de preguntas (RQ-002.png, RQ-003.png, RQ-033.png...)
 tests/                  Suite de pruebas (pytest)
 docs/                   Documentación del proyecto
 ```
@@ -74,7 +74,7 @@ docker compose down
 **Ejecutar la suite de pruebas (sin Docker):**
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest tests -q        # 64 tests (test_app skipeado sin streamlit)
+.\.venv\Scripts\python.exe -m pytest tests -q        # 65 tests
 ```
 
 **Habilitar Gemini real:** poner `GEMINI_API_KEY` y `FEEDBACK_PROVIDER=gemini` en `.env`. Ver `docs/RUNBOOK.md`.

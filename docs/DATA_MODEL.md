@@ -80,6 +80,6 @@ Esquema del grafo LangGraph:
 
 ## 5. Banco de preguntas
 
-- 20 preguntas, 4 por sección, en `data/questions.json`.
+- 142 preguntas en `data/questions.json` (54 RQ, 29 CC, 26 LC, 29 IN, 4 CE — ampliado Ago 2026 con RQ-030..RQ-054).
 - Se carga con `load_questions()`; se filtra con `get_questions_by_section(section)` y se muestrea con `random_sample(section, n)` (respeta el agotamiento del banco).
 - `random_sample` no repite preguntas dentro de una sesión.

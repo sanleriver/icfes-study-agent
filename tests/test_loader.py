@@ -4,7 +4,7 @@ from src.models import Section
 
 def test_banco_carga_entre_16_y_20_preguntas():
     questions = load_questions()
-    assert 16 <= len(questions) <= 130
+    assert 16 <= len(questions) <= 200
 
 
 def test_todas_las_preguntas_son_validas():
