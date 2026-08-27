@@ -133,10 +133,16 @@ class ResultsView:
         header = ft.Row(
             [
                 ft.Container(
-                    content=ft.Icon(ft.Icons.EMOJI_EVENTS, color=ft.Colors.WHITE, size=28),
-                    bgcolor=_ACCENT,
+                    content=ft.Image(
+                        src="icons/logo.png",
+                        width=56,
+                        height=56,
+                        fit=ft.ImageFit.CONTAIN,
+                    ),
+                    width=56,
+                    height=56,
                     border_radius=ft.BorderRadius.all(14),
-                    padding=14,
+                    clip_behavior=ft.ClipBehavior.ANTI_ALIAS,
                 ),
                 ft.Column(
                     [
