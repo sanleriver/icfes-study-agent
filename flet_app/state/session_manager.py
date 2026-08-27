@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import json
 from typing import TYPE_CHECKING, Any
+
+from flet.controls.services.shared_preferences import SharedPreferences
 
 from src.models import Section
 
@@ -11,21 +14,21 @@ if TYPE_CHECKING:
 
 
 class SessionManager:
-    """Wrapper sobre `page.session.store` de Flet.
+    """Wrapper sobre `page.session.store` de Flet con persistencia durable.
 
-    Proporciona una API limpia para manejar el estado de la sesión del tutor:
-    - `graph_runner`: instancia singleton de `GraphRunner`
-    - `section`: sección del examen elegida
-    - `num_questions`: cantidad de preguntas de la sesión
-    - `current_question`: datos de la pregunta actual (dict del interrupt)
-    - `pending_answer`: opción seleccionada pendiente de enviar al grafo
-    - `final_result`: resultado final de la sesión (dict completo del grafo)
+    Fase B: `page.session.store` es volátil (se pierde en F5 / cambio de
+    pestaña). Para que el progreso sobreviva, cada setter escribe además
+    en `SharedPreferences` (JSON) y cada getter hace fallback a prefs si el
+    store está vacío. El `thread_id` lo gestiona `GraphRunner` vía prefs
+    y el checkpointer SQLite es la fuente de verdad (`GraphRunner.get_state`).
 
-    El `thread_id` persistente lo gestiona `GraphRunner` via `SharedPreferences`.
+    Claves persistentes: section, num_questions, current_question,
+    pending_answer, final_result, total_questions, current_index.
     """
 
     def __init__(self, page: ft.Page) -> None:
         self.page = page
+        self._prefs = SharedPreferences()
 
     # ------------------------------------------------------------------
     # GraphRunner (singleton por sesión)
@@ -109,6 +112,120 @@ class SessionManager:
 
     def set_current_index(self, i: int) -> None:
         self.page.session.store.set("current_index", int(i))
+
+    # ------------------------------------------------------------------
+    # Persistencia durable (SharedPreferences JSON) — Fase B
+    # ------------------------------------------------------------------
+
+    async def _persist(self, key: str, value: Any) -> None:
+        """Guarda en SharedPreferences (JSON si es dict/list)."""
+        try:
+            if value is None:
+                await self._prefs.set(key, "")
+            elif isinstance(value, (dict, list)):
+                await self._prefs.set(key, json.dumps(value, ensure_ascii=False))
+            elif isinstance(value, (str, int, float, bool)):
+                await self._prefs.set(key, value)
+            else:
+                await self._prefs.set(key, json.dumps(value, ensure_ascii=False, default=str))
+        except Exception:
+            pass  # no bloquear UI por fallo de prefs
+
+    async def _load(self, key: str) -> Any:
+        try:
+            raw = await self._prefs.get(key)
+            if raw is None or raw == "":
+                return None
+            if isinstance(raw, (dict, list, int, float, bool)):
+                return raw
+            # intentar JSON
+            try:
+                return json.loads(raw)
+            except Exception:
+                return raw
+        except Exception:
+            return None
+
+    async def persist_section(self, section: Section) -> None:
+        self.set_section(section)
+        await self._persist("section", section.value)
+
+    async def persist_num_questions(self, n: int) -> None:
+        self.set_num_questions(n)
+        await self._persist("num_questions", int(n))
+
+    async def persist_current_question(self, q_data: dict[str, Any]) -> None:
+        self.set_current_question(q_data)
+        await self._persist("current_question", q_data)
+
+    async def persist_pending_answer(self, option: str) -> None:
+        self.set_pending_answer(option)
+        await self._persist("pending_answer", option)
+
+    async def persist_final_result(self, result: dict[str, Any]) -> None:
+        self.set_final_result(result)
+        # serializar summary/feedbacks puede contener Pydantic; json default=str
+        await self._persist("final_result", result)
+
+    async def persist_progress(self, total: int, index: int) -> None:
+        self.set_total_questions(total)
+        self.set_current_index(index)
+        await self._persist("total_questions", int(total))
+        await self._persist("current_index", int(index))
+
+    async def hydrate_session(self) -> None:
+        """Hidrata `page.session.store` desde SharedPreferences si está vacío."""
+        try:
+            if self.page.session.store.get("section") is None:
+                raw = await self._load("section")
+                if isinstance(raw, str) and raw:
+                    try:
+                        self.page.session.store.set("section", raw)
+                    except Exception:
+                        pass
+            if self.page.session.store.get("num_questions") is None:
+                raw = await self._load("num_questions")
+                if isinstance(raw, int):
+                    self.page.session.store.set("num_questions", raw)
+            if self.page.session.store.get("current_question") is None:
+                raw = await self._load("current_question")
+                if isinstance(raw, dict):
+                    self.page.session.store.set("current_question", raw)
+            if self.page.session.store.get("pending_answer") is None:
+                raw = await self._load("pending_answer")
+                if isinstance(raw, str) and raw:
+                    self.page.session.store.set("pending_answer", raw)
+            if self.page.session.store.get("final_result") is None:
+                raw = await self._load("final_result")
+                if isinstance(raw, dict):
+                    self.page.session.store.set("final_result", raw)
+            if self.page.session.store.get("total_questions") is None:
+                raw = await self._load("total_questions")
+                if isinstance(raw, int):
+                    self.page.session.store.set("total_questions", raw)
+            if self.page.session.store.get("current_index") is None:
+                raw = await self._load("current_index")
+                if isinstance(raw, int):
+                    self.page.session.store.set("current_index", raw)
+        except Exception:
+            pass
+
+    async def clear_persistent_state(self) -> None:
+        """Limpia tanto session.store como SharedPreferences por-sesión."""
+        self.reset_session_state()
+        for k in ("current_question", "pending_answer", "final_result", "total_questions", "current_index"):
+            try:
+                await self._prefs.set(k, "")
+            except Exception:
+                pass
+
+    async def clear_all_persistent(self) -> None:
+        self.clear_session()
+        for k in ("section", "num_questions", "current_question", "pending_answer", "final_result", "total_questions", "current_index"):
+            try:
+                await self._prefs.set(k, "")
+            except Exception:
+                pass
 
     # ------------------------------------------------------------------
     # Utilidades

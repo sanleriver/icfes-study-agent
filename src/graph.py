@@ -1,3 +1,6 @@
+import sqlite3
+from pathlib import Path
+
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer
 from langgraph.graph import END, START, StateGraph
@@ -7,6 +10,49 @@ from src.core.evaluation import build_summary, evaluate_session
 from src.data.loader import random_sample
 from src.models import AnswerRecord, SessionState
 from src.providers import FeedbackProvider, MockFeedbackProvider
+
+# ------------------------------------------------------------------
+# Checkpointer persistente (Fase B)
+# ------------------------------------------------------------------
+_DEFAULT_DB_PATH = Path(__file__).resolve().parent.parent / "data" / "checkpoints.db"
+
+
+def _build_serde() -> JsonPlusSerializer:
+    return JsonPlusSerializer(
+        allowed_msgpack_modules=[
+            ("src.models.section", "Section"),
+            ("src.models.question", "Question"),
+            ("src.models.session", "AnswerRecord"),
+            ("src.models.session", "EvaluationResult"),
+            ("src.models.session", "Feedback"),
+        ]
+    )
+
+
+def create_sqlite_saver(db_path: str | Path | None = None):
+    """Crea un `SqliteSaver` persistente.
+
+    Si `langgraph-checkpoint-sqlite` no está instalado, hace fallback a
+    `InMemorySaver` (útil para tests sin el extra).
+    """
+    serde = _build_serde()
+    path = Path(db_path) if db_path is not None else _DEFAULT_DB_PATH
+    try:
+        from langgraph.checkpoint.sqlite import SqliteSaver
+
+        # Asegurar directorio padre
+        path.parent.mkdir(parents=True, exist_ok=True)
+        conn = sqlite3.connect(str(path), check_same_thread=False)
+        saver = SqliteSaver(conn, serde=serde)
+        # setup lazy via cursor; forzar creación de tablas ya
+        saver.setup()
+        return saver
+    except ImportError:
+        return InMemorySaver(serde=serde)
+
+
+def get_default_db_path() -> Path:
+    return _DEFAULT_DB_PATH
 
 
 def initialize_session(state: SessionState) -> dict:
@@ -92,16 +138,27 @@ def should_continue(state: SessionState) -> str:
     return "evaluate_session"
 
 
-def build_graph(feedback_provider: FeedbackProvider | None = None):
+def build_graph(
+    feedback_provider: FeedbackProvider | None = None,
+    checkpointer=None,
+    db_path: str | Path | None = None,
+):
     """Construye el grafo de la sesión de estudio.
 
-    Compilado con checkpointer `InMemorySaver` para soportar `interrupt()`.
+    Compilado con checkpointer para soportar `interrupt()`.
     Cada pregunta requiere un `thread_id` y se reanuda con
     `Command(resume=opcion_seleccionada)`.
 
     `feedback_provider` inyecta el proveedor de retroalimentación del nodo
     `generate_feedback` (Fase 5). Si no se indica, se usa `MockFeedbackProvider`
     determinista para que la suite de tests no dependa de una API key.
+
+    Persistencia (Fase B):
+    - Si se pasa `checkpointer`, se usa tal cual.
+    - Si se pasa `db_path`, crea un `SqliteSaver` persistente.
+    - Si no se indica nada, usa `InMemorySaver` (compat tests).
+      La app Flet debe pasar `db_path` o `create_sqlite_saver()` explícitamente
+      para sobrevivir a F5/reinicio Docker.
     """
     provider = feedback_provider if feedback_provider is not None else MockFeedbackProvider()
     builder = StateGraph(SessionState)
@@ -122,13 +179,10 @@ def build_graph(feedback_provider: FeedbackProvider | None = None):
     builder.add_edge("generate_feedback", "generate_summary")
     builder.add_edge("generate_summary", END)
 
-    serde = JsonPlusSerializer(
-        allowed_msgpack_modules=[
-            ("src.models.section", "Section"),
-            ("src.models.question", "Question"),
-            ("src.models.session", "AnswerRecord"),
-            ("src.models.session", "EvaluationResult"),
-            ("src.models.session", "Feedback"),
-        ]
-    )
-    return builder.compile(checkpointer=InMemorySaver(serde=serde))
+    if checkpointer is not None:
+        saver = checkpointer
+    elif db_path is not None:
+        saver = create_sqlite_saver(db_path)
+    else:
+        saver = InMemorySaver(serde=_build_serde())
+    return builder.compile(checkpointer=saver)

@@ -315,6 +315,13 @@ class ConfigView:
             )
         )
 
+    def _has_active_session(self) -> bool:
+        """Detecta sesión en curso (pregunta pendiente o final sin limpiar)."""
+        return (
+            self.manager.get_current_question() is not None
+            or self.manager.get_pending_answer() is not None
+        )
+
     async def _on_start(self, _) -> None:
         """Valida, inicializa el grafo si hace falta y navega a /question."""
         assert self.section_dropdown is not None
@@ -323,6 +330,12 @@ class ConfigView:
             return
         section = Section(raw_key)
         num_value = self._read_num()
+
+        # Guard Fase B: si hay sesión activa, pedir confirmación antes de descartar
+        if self._has_active_session():
+            confirmed = await self._confirm_abandon()
+            if not confirmed:
+                return
 
         button = self.start_button
         assert button is not None
@@ -349,9 +362,17 @@ class ConfigView:
 
             # Nueva sesión: descarta el estado por-sesión de la sesión
             # anterior (US-07) para permitir sesiones ilimitadas.
-            self.manager.reset_session_state()
-            self.manager.set_section(section)
-            self.manager.set_num_questions(num_value)
+            try:
+                await self.manager.clear_persistent_state()
+            except Exception:
+                self.manager.reset_session_state()
+            # Persistencia durable
+            try:
+                await self.manager.persist_section(section)
+                await self.manager.persist_num_questions(num_value)
+            except Exception:
+                self.manager.set_section(section)
+                self.manager.set_num_questions(num_value)
 
             runner = self.manager.get_graph_runner()
             if runner is None:
@@ -384,3 +405,55 @@ class ConfigView:
                 tight=True,
             )
             self.page.update()
+
+    async def _confirm_abandon(self) -> bool:
+        """Muestra diálogo de confirmación y espera respuesta del usuario."""
+        import asyncio
+
+        loop = asyncio.get_running_loop()
+        fut: asyncio.Future[bool] = loop.create_future()
+
+        def _on_confirm(_):
+            if not fut.done():
+                fut.set_result(True)
+            try:
+                # Flet 0.86.5: pop_dialog() si existe, si no cerrar via open=False
+                if hasattr(self.page, "pop_dialog"):
+                    self.page.pop_dialog()
+                elif hasattr(self.page, "close_dialog"):
+                    self.page.close_dialog()  # type: ignore
+                else:
+                    dlg.open = False
+                    self.page.update()
+            except Exception:
+                pass
+
+        def _on_cancel(_):
+            if not fut.done():
+                fut.set_result(False)
+            try:
+                if hasattr(self.page, "pop_dialog"):
+                    self.page.pop_dialog()
+                elif hasattr(self.page, "close_dialog"):
+                    self.page.close_dialog()  # type: ignore
+                else:
+                    dlg.open = False
+                    self.page.update()
+            except Exception:
+                pass
+
+        dlg = ft.AlertDialog(
+            title=ft.Text("¿Abandonar sesión en curso?"),
+            content=ft.Text("Perderás el progreso de la sesión actual y se iniciará una nueva."),
+            actions=[
+                ft.TextButton("Cancelar", on_click=_on_cancel),
+                ft.FilledButton("Abandonar y reiniciar", on_click=_on_confirm),
+            ],
+            actions_alignment=ft.MainAxisAlignment.END,
+            modal=True,
+        )
+        self.page.show_dialog(dlg)
+        try:
+            return await fut
+        except Exception:
+            return False

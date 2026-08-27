@@ -10,6 +10,8 @@ services:
     environment:
       - FEEDBACK_PROVIDER=${FEEDBACK_PROVIDER:-mock}
       - GEMINI_MODEL=${GEMINI_MODEL:-gemini-3.5-flash}
+    volumes:
+      - flet_data:/app/data
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:8000/ > /dev/null || exit 1"]
@@ -28,3 +30,6 @@ services:
     environment:
       - FEEDBACK_PROVIDER=mock
     profiles: ["tests"]
+
+volumes:
+  flet_data:

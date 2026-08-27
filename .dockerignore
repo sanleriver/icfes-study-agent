@@ -35,6 +35,8 @@ docs/
 
 # Datos generados
 data/*.tmp
+data/checkpoints.db
+data/checkpoints.db-*
 *.tmp
 
 # Sistema
