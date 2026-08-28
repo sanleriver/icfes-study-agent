@@ -61,7 +61,42 @@ class ResultsView:
             return ft.View(controls=[], route="/results")
 
     async def _build_results(self) -> ft.View:
+        # Hidratación durable (Fase B)
+        try:
+            await self.manager.hydrate_session()
+        except Exception:
+            pass
         final = self.manager.get_final_result()
+        # Intentar hidratar desde checkpointer si aún None (tras F5)
+        if final is None:
+            try:
+                runner = self.manager.get_graph_runner()
+                if runner is None:
+                    from flet_app.state.graph_runner import GraphRunner
+                    from src.providers import create_feedback_provider, MockFeedbackProvider
+
+                    try:
+                        provider = create_feedback_provider()
+                    except Exception:
+                        provider = MockFeedbackProvider()
+                    runner = GraphRunner(self.page)
+                    await runner.initialize(provider)
+                    self.manager.set_graph_runner(runner)
+                snap = await runner.get_state()
+                if snap is not None and snap.values:
+                    vals = snap.values
+                    if vals.get("summary"):
+                        final = {
+                            "summary": vals.get("summary"),
+                            "feedbacks": vals.get("feedbacks") or [],
+                            "results": vals.get("results"),
+                            "questions": vals.get("questions"),
+                            "answers": vals.get("answers"),
+                            "message": vals.get("message", ""),
+                        }
+                        await self.manager.persist_final_result(final)
+            except Exception:
+                logger.exception("No se pudo hidratar final desde checkpointer")
         if final is None:
             self._show_snack("Inicia una sesión desde la pantalla de configuración.")
             self._deferred_navigate("/")
@@ -369,7 +404,10 @@ class ResultsView:
         """Reinicia la sesión (US-07) — mismo reset que ConfigView._on_start."""
         try:
             runner = self.manager.get_graph_runner()
-            self.manager.reset_session_state()
+            try:
+                await self.manager.clear_persistent_state()
+            except Exception:
+                self.manager.reset_session_state()
             if runner is not None:
                 await runner.new_thread()
             await self.page.push_route("/")

@@ -70,43 +70,145 @@ class QuestionView:
             return ft.View(controls=[], route="/question")
 
     async def _build_session(self) -> ft.View:
-        runner = self.manager.get_graph_runner()
-        if runner is None:
-            # Deep-link a /question sin sesión configurada.
-            self._show_snack("Inicia una sesión desde la pantalla de configuración.")
-            self._deferred_navigate("/")
-            return ft.View(controls=[], route="/question")
+        # Hidratación durable (Fase B): restaurar prefs si session.store vacío
+        try:
+            await self.manager.hydrate_session()
+        except Exception:
+            pass
 
+        runner = self.manager.get_graph_runner()
+        # Recuperación tras F5 / reconexión: recrear runner desde SQLite + thread_id
+        if runner is None:
+            try:
+                from flet_app.state.graph_runner import GraphRunner
+                from src.providers import create_feedback_provider, MockFeedbackProvider
+
+                try:
+                    provider = create_feedback_provider()
+                except Exception:
+                    provider = MockFeedbackProvider()
+                runner = GraphRunner(self.page)
+                await runner.initialize(provider)
+                self.manager.set_graph_runner(runner)
+                # Si el thread es nuevo (sin snapshot) y no hay prefs, es deep-link real
+                snap = await runner.get_state()
+                has_state = snap is not None and snap.values
+                # snap.values puede ser {} si es thread nuevo
+                if not has_state:
+                    # Verificar si hay prefs que indican sesión previa
+                    has_prefs = self.manager.get_section() is not None
+                    if not has_prefs:
+                        self._show_snack("Inicia una sesión desde la pantalla de configuración.")
+                        self._deferred_navigate("/")
+                        return ft.View(controls=[], route="/question")
+            except Exception:
+                logger.exception("No se pudo reconstruir el runner persistente")
+                self._show_snack("Inicia una sesión desde la pantalla de configuración.")
+                self._deferred_navigate("/")
+                return ft.View(controls=[], route="/question")
+
+        # Guard contra invoke duplicado: si el checkpointer ya está en interrupt,
+        # reutilizar esa pregunta sin re-invocar (Fase B — evita re-muestreo).
         pending = self.manager.get_pending_answer()
         if pending is not None:
             result = await runner.resume(pending)
             self.manager.clear_pending_answer()
+            # limpiar persistencia de pending ya consumido
+            try:
+                await self.manager._persist("pending_answer", "")
+                await self.manager._persist("current_question", "")
+            except Exception:
+                pass
         elif self.manager.get_final_result() is not None:
             # La sesión ya terminó: nada que preguntar.
             self._deferred_navigate("/results")
             return ft.View(controls=[], route="/question")
         else:
+            # Intentar hidratar desde checkpointer antes de invocar de nuevo
+            try:
+                snap = await runner.get_state()
+                if snap is not None and snap.values:
+                    vals = snap.values
+                    # Si ya hay preguntas y estamos en interrupt (next no vacío)
+                    if snap.next and vals.get("questions") and not vals.get("summary"):
+                        # Reconstruir interrupt desde snapshot
+                        # next indica nodo pendiente; tasks[0].interrupts contiene la pregunta
+                        interrupts = getattr(snap, "tasks", None)
+                        q_data = None
+                        if snap.tasks:
+                            try:
+                                q_data = snap.tasks[0].interrupts[0].value  # type: ignore
+                            except Exception:
+                                q_data = None
+                        if q_data is None:
+                            # fallback a current_question de prefs
+                            q_data = self.manager.get_current_question()
+                        if q_data is not None:
+                            answered = len(vals.get("answers") or [])
+                            total = len(vals.get("questions") or [])
+                            await self.manager.persist_current_question(q_data)
+                            await self.manager.persist_progress(total, answered + 1)
+                            return self._render_question(q_data, answered + 1, total)
+                    # Si el snapshot ya está completo (summary)
+                    if vals.get("summary") or vals.get("feedbacks") is not None:
+                        # sesión ya evaluada pero final_result aún no en session.store
+                        cached = await self.manager._load("final_result")
+                        if isinstance(cached, dict) and cached:
+                            self.manager.set_final_result(cached)
+                            self._deferred_navigate("/results")
+                            return ft.View(controls=[], route="/question")
+                        # reconstruir final desde vals
+                        final = {
+                            "summary": vals.get("summary"),
+                            "feedbacks": vals.get("feedbacks"),
+                            "results": vals.get("results"),
+                            "questions": vals.get("questions"),
+                            "answers": vals.get("answers"),
+                            "message": vals.get("message", ""),
+                        }
+                        await self.manager.persist_final_result(final)
+                        self._deferred_navigate("/results")
+                        return ft.View(controls=[], route="/question")
+            except Exception:
+                logger.exception("Error hidratando desde checkpointer, se hará invoke fresco")
+
+            # No hay snapshot útil → invoke inicial
+            section = self.manager.get_section()
+            if section is None:
+                self._show_snack("Inicia una sesión desde la pantalla de configuración.")
+                self._deferred_navigate("/")
+                return ft.View(controls=[], route="/question")
             result = await runner.invoke(
                 {
-                    "section": self.manager.get_section(),
+                    "section": section,
                     "num_questions": self.manager.get_num_questions(),
                 }
             )
             if result.get("message"):
                 self._show_snack(result["message"])
 
+        # Si vinimos de resume, result ya está definido; si vinimos de interrupt hidrata ya retornamos
+        # Aquí solo queda manejar result de invoke/resume
         interrupt = result.get("__interrupt__")
         if interrupt:
             q_data = interrupt[0].value
-            self.manager.set_current_question(q_data)
             answered = len(result.get("answers") or [])
             total = len(result.get("questions") or [])
-            # Fase 6A — guardar progreso para detectar última pregunta en _on_submit
-            self.manager.set_total_questions(total)
-            self.manager.set_current_index(answered + 1)
+            # Persistencia durable
+            try:
+                await self.manager.persist_current_question(q_data)
+                await self.manager.persist_progress(total, answered + 1)
+            except Exception:
+                self.manager.set_current_question(q_data)
+                self.manager.set_total_questions(total)
+                self.manager.set_current_index(answered + 1)
             return self._render_question(q_data, answered + 1, total)
 
-        self.manager.set_final_result(result)
+        # Sin interrupt => sesión finalizada
+        try:
+            await self.manager.persist_final_result(result)
+        except Exception:
+            self.manager.set_final_result(result)
         self._deferred_navigate("/results")
         return ft.View(controls=[], route="/question")
 
@@ -367,7 +469,11 @@ class QuestionView:
             # Import perezoso: evita la dependencia circular router ↔ views.
             from flet_app.router import render_route
 
-            self.manager.set_pending_answer(self._selected)
+            # Persistir pending de forma durable para sobrevivir a navegación/F5
+            try:
+                await self.manager.persist_pending_answer(self._selected)
+            except Exception:
+                self.manager.set_pending_answer(self._selected)
             await render_route(self.page, "/question")
         except Exception:
             logger.exception("Error al enviar la respuesta")

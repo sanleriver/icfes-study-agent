@@ -12,6 +12,10 @@ __pycache__/
 
 # Datos generados
 data/*.tmp
+data/checkpoints.db
+data/checkpoints.db-*
+*.db
+*.db-journal
 
 # Caches y artefactos
 .pytest_cache/
